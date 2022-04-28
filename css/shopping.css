@@ -1,0 +1,339 @@
+.shopping-header{
+    width:1440px;
+    margin:0 auto;
+    background-color: #E0E0E0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    /* border:1px solid blue; */
+}
+/*麵包屑*/
+.navigation{
+    /* border:1px solid blue; */
+    margin-left:50px;
+    margin-top: 10px;
+
+}
+.navigation a{
+    text-decoration: none;
+    color:#4A240C;
+    font-size:16px;
+    letter-spacing:5px;
+}
+
+h1{
+    font-size: 36px;
+    text-align:center;
+    margin:0 auto;
+    margin-top:25px;
+    margin-bottom:20px;
+    width:160px;
+    height:46px;
+    border-bottom:5px solid #FBBC04;
+}
+.shopping-main{
+    box-sizing: border-box;
+    padding:5px 0;
+    width:1440px;
+    margin:0 auto;
+    background-color:#E0E0E0;
+    /* border:1px solid red; */
+}
+    
+
+/*表單的容器*/
+.form-container{
+    display: flex;
+    /* border:1px dashed grey; */
+    /* border-radius: 5px; */
+    background-color: #fff;
+    width:1200px;
+    margin:0 auto;
+    padding:5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+
+
+}
+/*左側選擇的商品欄位*/
+.selected{
+    box-sizing: border-box;
+    /* border-right:1px solid grey; */
+    width:300px;
+    /* height:300px; */
+    margin-right:20px;
+    /* padding:20px; */
+  
+}
+.selected img{
+    width:300px;
+    
+}
+.selected h2{
+    font-size: 22px;
+    line-height: 2;
+    margin-left:10px;
+    margin-bottom: px;
+}
+.selected p{
+    font-size: 20px;
+    line-height: 2;
+    margin-left:10px;
+    margin-bottom: 10px;
+    
+}
+
+/*表單本體*/
+.shopping-form{ 
+    /* border-left:2px dashed grey; */
+
+}
+
+.time{
+    width:860px;
+    /* border:1px solid blue; */
+    margin-top:20px;
+
+}
+.time label{
+    font-size: 20px;
+}
+.time select{
+    display:inline-block;
+    font-size: 20px;
+    height:30px;
+    margin-left: 30px;
+    /* border:0.5px solid grey; */
+}
+
+.time option{
+    font-size: 20px;
+}
+
+/*選擇人數的欄位*/
+.number{
+    width:860px;
+    /* border:1px solid blue; */
+    /* margin-top:20px; */
+
+}
+.adult-number{
+    /* border:1px solid yellow; */
+    margin-top: 10px;
+}
+.adult-number span{
+    display:inline-block;
+    font-size: 20px;
+    height:20px;
+    margin-right: 40px;
+    vertical-align: middle;
+    
+}
+
+.adult-number button{
+    display:inline-block;
+    border:none;
+    background-color:#fff;
+    font-size: 24px;
+    vertical-align:middle;
+    cursor: pointer;
+    color:#4A240C;
+}
+
+.adult-number input{
+    border:0;
+    width:40px;
+    height:40px;
+    background-color:white;
+    border:2px solid #FBBC04;
+
+}
+
+.child-number{
+    /* border:1px solid yellow; */
+    margin-top:10px;
+}
+.child-number span{
+    display:inline-block;
+    font-size: 20px;
+    height:20px;
+    margin-right: 40px;
+    vertical-align: middle;
+    
+}
+
+.child-number button{
+    display:inline-block;
+    border:none;
+    background-color:#fff;
+    font-size: 24px;
+    cursor: pointer;
+    color:#4A240C;
+    vertical-align: middle;
+
+}
+.child-number input{
+    border:0;
+    width:40px;
+    height:40px;
+    background-color:white;
+    border:2px solid #FBBC04;
+}
+
+.diet-habit{
+    /* border:1px solid yellow; */
+    margin-top:20px;
+    font-size: 20px;
+}
+.diet-habit span{
+margin-right: 30px;
+}
+
+.diet-habit label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.diet-habit label[for*="meat"]{
+    margin-left:40px;
+}
+
+.diet-habit input{
+    width:40px;
+    font-size: 20px;
+    
+}
+.diet-habit label[for*="note"]{
+    margin-left:40px;
+}
+.diet-habit input[type="text"]{
+    width:300px;
+}
+
+.info{
+    /* border:1px solid yellow; */
+    margin-top:20px;
+    font-size: 20px;
+
+}
+
+.info label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.info input{
+    font-size: 20px;    
+}
+.info input[type="text"]{
+    width:150px;
+    margin-right: 40px;
+}
+.textarea{
+    /* border:1px solid yellow; */
+    height:50px;
+    /* width:300px; */
+    margin-top:20px;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 50px;
+    
+
+}
+.textarea label{
+    display: block;
+    margin-right: 10px;
+    
+}
+.textarea textarea{
+    height:80px;
+    width:300px;
+    
+}
+
+.confirm{
+    /* border-top:2px solid #FBBC04; */
+    width:1000px;
+    background-color: #fff;
+    margin:0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content:end;
+    border-radius: 5px;;
+    box-shadow: 3px 3px 3px grey;
+}
+.select-pay{
+    width:180px;
+    /* border:1px solid green; */
+    margin-right: auto;
+
+}
+.select-pay label{
+  font-size: 20px;
+  
+  
+}
+.select-pay input{
+    font-size: 20px;
+}
+
+.creditcard-container{
+    box-sizing: border-box;
+    width:180px;
+    height:60px;
+    /* border:1px solid blue; */
+    /* border-bottom: 5px solid #FBBC04; */
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* margin-left: auto; */
+
+}
+.atm-container{
+    box-sizing: border-box;
+    width:180px;
+    height:60px;
+    /* border:1px solid blue; */
+    /* border-bottom: 5px solid #FBBC04; */
+    border-radius: 5px;
+    padding-top: 20px; 
+    padding-left: 20px;  
+    margin-top: 10px;
+    /* margin-left: auto; */
+
+}
+
+.price{
+    
+    /* border: 1px  solid yellow; */
+    display:flex;
+}
+.price div{ 
+    /* border: 1px solid red; */
+    
+    font-size: 32px;
+    line-height: 4;
+    
+}
+#price-div{
+    font-size: 32px;
+    width:200px;
+    line-height: 4;
+    color:red;
+    margin-left: 10px;
+
+}
+.price button{
+    display: inline-block;
+    margin-top: 41px;
+    margin-right: 20px;
+   border:none;
+   background-color:#FF9105;
+   color:white;
+   width:120px;
+   font-size: 24px;
+   height:48px;
+   border-radius: 5px;
+   cursor: pointer;
+  
+}

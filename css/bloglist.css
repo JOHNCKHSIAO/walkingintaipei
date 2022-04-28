@@ -1,0 +1,134 @@
+.bloglist-main{
+    box-sizing: border-box;
+    background-color:#E0E0E0;
+    /* border:1px solid red; */
+    width:1440px;
+    margin:0 auto;
+    padding-bottom: 50px;
+
+}
+.bloglist-main-div{
+    display:flex;
+    /* border:1px solid green; */
+}
+/*側邊攔*/
+.bloglist-aside{
+    width:240px;
+    height:400px;
+    /* border:1px solid red; */
+    padding:20px;
+    box-sizing: border-box;
+    background-color:#F5F5F5;
+    position:sticky;
+    top:60px;
+    box-shadow: 3px 3px 3px grey;
+   
+
+}
+.bloglist-aside ol{
+    /* width:200px; */
+    /* border:1px solid blue; */
+    box-sizing: border-box;
+    position:relative;
+
+}
+.bloglist-aside ol:before{
+    content:"";
+    display:block;
+    height:180px;
+    border-left:5px solid #FBBC04;
+    position:absolute;
+    top:-1px;
+    left:-3px;
+}
+.bloglist-aside li{
+    /* border:1px solid yellow; */
+    height:30px;
+    margin:20px;
+   
+
+}
+.bloglist-aside h2{
+    font-size: 28px;
+}
+.bloglist-aside img{
+    width:18px;
+}
+.bloglist-aside span{
+    font-size: 20px;
+    color:black;
+}
+.bloglist-aside a{
+    text-decoration: none;
+}
+
+/*主要頁面*/
+.bloglist-section{
+    box-sizing: border-box;
+    /* border:1px solid black; */
+}
+.bloglist-section>div{  
+    box-sizing: border-box;
+    width:1200px;
+    height:66px;
+    padding:10px;
+    background-color:#D6D2C5;
+    /* border:1px solid navy; */
+
+}
+.bloglist-section h1{
+    background-color:#D6D2C5;
+    font-size: 36px;
+    text-align:center;
+    margin:0 auto;
+    width:160px;
+    height:46px;
+    /* border:1px solid red; */
+    border-bottom:5px solid #FBBC04;
+}
+
+.bloglist-section>p{
+    font-size: 24px;
+    color:#4A240C;
+    text-align: center;
+    margin-top:20px;
+}
+.bloglist-ol{
+    width:1000px;
+    margin:0 auto;
+    /* border:1px solid navy; */
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+   
+}
+.bloglist-ol li{
+    width:300px;
+    height:330px;
+    margin-top: 30px;
+    /* border:1px solid red; */
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+.bloglist-ol a{
+    text-decoration: none;
+    
+}
+
+.bloglist-ol li:hover{
+    transform:scale(1.05);
+    
+}
+.bloglist-ol img{
+    width:300px;
+    height:240px;
+    
+}
+
+.bloglist-ol p{
+    font-size: 18px;
+    color:black;
+    margin:10px;
+    line-height: 2;
+}

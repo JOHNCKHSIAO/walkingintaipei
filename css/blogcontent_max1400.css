@@ -1,0 +1,133 @@
+@media screen and (min-width:1200px) and (max-width:1399.98px){
+
+    .bloglist-main{
+        box-sizing: border-box;
+        background-color:#E0E0E0;
+        /* border:1px solid red; */
+        width:1200px;
+        margin:0 auto;
+        padding-bottom: 50px;
+    
+    }
+    .bloglist-main-div{
+        margin:0 auto;
+        display:flex;
+        /* border:1px solid green; */
+    }
+    /*側邊攔*/
+    .bloglist-aside{
+        width:200px;
+        height:330px;
+        /* border:1px solid red; */
+        padding:10px;
+        box-sizing: border-box;
+        background-color:#F5F5F5;
+        position:sticky;
+        top:50px;
+        box-shadow: 3px 3px 3px grey;
+       
+    
+    }
+    .bloglist-aside ol{
+        /* width:200px; */
+        /* border:1px solid blue; */
+        box-sizing: border-box;
+        position:relative;
+    
+    }
+    .bloglist-aside ol:before{
+        content:"";
+        display:block;
+        height:180px;
+        border-left:5px solid #FBBC04;
+        position:absolute;
+        top:-1px;
+        left:-3px;
+    }
+    .bloglist-aside li{
+        /* border:1px solid yellow; */
+        height:30px;
+        margin:20px;
+       
+    
+    }
+    .bloglist-aside h2{
+        font-size: 24px;
+    }
+    .bloglist-aside img{
+        width:15px;
+    }
+    .bloglist-aside span{
+        font-size: 17px;
+        color:black;
+    }
+    .bloglist-aside a{
+        text-decoration: none;
+    }
+    
+    
+    /*主要頁面*/
+    .blogcontent-section{
+        box-sizing: border-box;
+        /* border:1px solid black; */
+        
+    
+    }
+    .blogcontent-section h1{
+        background-color:#D6D2C5;
+        box-sizing: border-box;
+        width:1000px;
+        height:64px;
+        line-height:2;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    article{
+        width:100%;
+        font-size: 18px;
+        line-height: 2;
+    }
+    p{
+        margin:40px;
+        width:850px;
+        margin:0 auto;
+        position:relative;
+        
+        
+        /* border:1px solid blue; */
+    }
+    .blogcontent-img1{   
+        display:block;
+        width:720px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
+    .blogcontent-img2{
+        display:block;
+        width:720px;
+        margin:0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    
+    }
+    .blogcontent-img3{
+        display:block;
+        width:50px;
+        position:absolute;
+        right:20px;
+        bottom:20px;
+    }
+    
+    
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,251 @@
+.login-main{
+    box-sizing: border-box;
+    /* padding:5px; */
+    width:1440px;
+    margin:0 auto;
+    background-color:#E0E0E0;
+    /* border:1px solid red; */
+    display:flex;
+    
+}
+.bgimage{
+    width:928px;
+    /* border: 1px solid black; */
+    background-image: url("../image/login/trip-29.jpg");
+    background-size: cover;
+}
+.login-section{
+    /* border:1px solid blue; */
+    width:450px;
+    margin-left:auto;
+    padding:30px;
+    background-color:#E0E0E0;
+
+}
+/* .choice-bar{
+    
+    width:450px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+} */
+.use-soclialmedia{
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    width:450px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    position:relative;
+    margin-bottom: 10px;
+
+}
+.use-soclialmedia span{
+    /* border:1px solid yellow; */
+    display:block;
+    text-align: center;
+    font-size: 24px;
+    margin:0 auto;
+    
+    
+}
+.use-soclialmedia span::before{
+    content:"";
+    display:inline-block;
+    width:120px;
+    border-bottom: 1px dashed grey;
+    position:absolute;
+    top:25px;
+    left:0px;
+
+}
+.use-soclialmedia span::after{
+    content:"";
+    display:inline-block;
+    width:120px;
+    border-bottom: 1px dashed grey;
+    position:absolute;
+    top:25px;
+    right:0px;
+}
+
+.socialmeedia-btn-container{
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: space-between;
+}
+.socialmeedia-btn-container button{
+    display:block;
+    width:200px;
+    height:50px;
+    background-color: #fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#facebook-signup-btn{
+    background-color:#3b5998;
+    color:white;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+    font-size: 18px;
+    
+}
+#google-signup-btn{
+    background-color:white;
+    color:black;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+    font-size: 18px;
+}
+
+#facebook-signup-btn img{
+    display:inline-block;
+    margin-right: 15px;
+    width:22px;
+    vertical-align:bottom;
+}
+#google-signup-btn img{
+    display:inline-block;
+    margin-right: 15px;
+    width:22px;
+    vertical-align:bottom;
+
+}
+
+
+.use-email{
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    width:450px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    position:relative;
+    margin-top: 40px;
+}
+.use-email span{
+    /* border:1px solid yellow; */
+    display:block;
+    text-align: center;
+    font-size: 24px;
+    margin:0 auto;
+
+}
+.use-email span::before{
+    content:"";
+    display:inline-block;
+    width:120px;
+    border-bottom: 1px dashed grey;
+    position:absolute;
+    top:25px;
+    left:0px;
+
+}
+.use-email span::after{
+    content:"";
+    display:inline-block;
+    width:120px;
+    border-bottom: 1px dashed grey;
+    position:absolute;
+    top:25px;
+    right:0px;
+}
+
+h1{
+    
+    font-size: 36px;
+    text-align:center;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    width:310px;
+    height:45px;
+    /* border-bottom:5px solid #FBBC04; */
+}
+.btn3{
+    display:block;
+    width:120px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+    line-height: 2;;
+    border:none;
+    background:#FBBC04;
+    color:white;
+    border-radius: 5px;;
+    cursor:pointer ;
+
+}
+#signup-btn{
+
+}
+#login-btn{
+
+}
+#password-btn{
+
+}
+.newuser-formplace{
+    /* border:1px solid yellow; */
+    width:100%
+}
+.form-ol{
+    width:100%;
+    /* border: 1px solid red; */
+
+}
+.form-ol li{
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+    box-sizing: border-box;
+    margin-top:10px;
+    /* border:1px solid black; */
+    
+}
+.form-ol input{
+    display:inline-block;
+    box-sizing: border-box;
+    padding-left:10px;
+    width:450px;
+    height:46px;
+    font-size:20px;
+    /* font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; */
+    font-weight: 200;
+    color:black;
+    border-radius: 2px;
+    border:none;
+    
+}
+.form-ol input:hover{
+    /* border:0.2px solid blue; */
+}
+#createnew-btn{
+    display:block;
+    width:200px;
+    height: 60px;
+    margin:0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+    line-height: 3;;
+    border:none;
+    background:#FF9105;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer ;
+}
+.login-container{
+    /* border:1px solid red; */
+ 
+  margin-top: 40px;
+  text-align: end;
+  font-size: 20px;
+}
+
+.login-container a{
+    font-size: 20px;
+    margin-left: 20px;
+    color:red;
+}
+
+
+
+

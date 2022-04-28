@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <!--導航欄-->
+        <ol class="nav-ol">
+            <li class="logo-li"><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></li>
+            <li><a href="./maintrip.html">精選行程</a></li>
+            <li><a href="./bloglist.html">走走小記</a></li>
+            <li><a href="./customized.html">客製旅遊</a></li>
+            <li><a href="./itemlist.html">所有行程</a></li>
+            <li><a href="./login.html">會員登入</a></li>
+            <li><a href="#" class="engversion-a">ENG</a></li>
+            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+                <div class="hidesearchbar" id="searchbararea">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button>
+                </div>
+            </li>
+            <li id="gototopli">Top</li>
+           
+           
+        </ol>
+    </nav>
+    <main class="login-main">
+        <section class="bgimage">
+            
+        </section>
+        <section class="login-section">
+            <h1>歡迎來到台北走走</h1>
+            <div class="use-soclialmedia">
+                <span>以社群帳號繼續</span>
+            </div>
+            <div class="socialmeedia-btn-container">
+                <button id="facebook-signup-btn"><img src="./image/login/facebook.png" alt="">使用Facebook</button>
+                <button id="google-signup-btn"><img src="./image/login/gooogle.png" alt="">使用Google</button>
+            </div>
+            <div class="use-email">
+                <span>以電子郵件註冊</span>
+            </div>
+            <!-- <div class="choice-bar">               
+                <button id="signup-btn" class="btn3">註冊</button>
+                <button id="login-btn"class="btn3">登入</button>
+                <button id="password-btn" class="btn3">忘記密碼</button>
+            </div> -->
+                <div class="newuser-formplace">
+                    <form action="#" >
+                        <ol class="form-ol">
+                            <li>
+                                <input type="text" name="newemail" id="newemail"placeholder="請輸入E-mail">
+                             </li>
+                            <li>
+                                <input type="text" name="newpassword" id="newpassword"placeholder="請輸入密碼">
+                            </li>
+                            <li>
+                                <input type="text" name="newname" id="newname"placeholder="請輸入姓名">
+                            </li>
+                            <li>
+                                <input type="text" name="newphone" id="newphone"placeholder="請輸入手機">
+                            </li>
+                            
+                        </ol>
+                        <button id="createnew-btn">建立新帳號</button>
+                    </form>
+                    <div class="login-container">
+                        已經有帳號了?<a href="./shooping.html">按此登入</a>
+                    </div>
+
+                </div>
+                
+
+            
+        </section>
+
+    </main>
+    <footer class="footer">
+        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <ol class="footer-ol">
+            <li><a href=""><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href=""><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href=""><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
+            
+        </ol>
+        <!--免責聲明-->
+        <p class="declare">
+            本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
+            參考資源:島內散步:https://walkin.tw/<br>
+            方格子https://vocus.cc/<br>
+            走靜貓空https://maokong.travel.taipei/<br>
+            新北市觀光旅遊網https://newtaipei.travel/
+        </p>
+    </footer>
+    <script src="./JS/myproject.js"></script>
+</body>
+</html>

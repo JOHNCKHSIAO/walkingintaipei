@@ -1,0 +1,222 @@
+
+@media screen and (min-width:1200px) and (max-width:1399.98px){
+    body{
+        font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+        background-color:#F5F5F5
+       
+    
+    }
+    /*導覽列*/
+    .nav_underline{
+        /*首頁以外  選到的要有底線*/
+        border-bottom:5px solid #FBBC04;
+    }
+    .nav{
+        width:1200px;
+        height:58px;
+        background-color: #fff;
+        /* border: 1px solid green; */
+        margin:0 auto;
+        position:sticky;
+        top:0px;
+        z-index: 1;
+    }
+    .nav-ol{
+        height:100%;
+        /* border:1px solid blue; */
+        margin:0 auto;
+        display:flex;
+        justify-content:flex-end;
+        position:relative;
+    }
+    .nav-ol li{
+        width:83px;
+        /* border:1px solid red; */
+        text-align:center;   
+    }
+    .nav-ol :nth-child(7){
+        width:58px;
+        text-align: center;
+    }
+    .nav-ol :nth-child(7) a{
+        width:58px;
+        text-align: center;
+    }
+    .nav-ol :nth-child(8){
+        width:50px;
+        text-align: center;
+    }
+    
+    
+    
+    .logo-li {
+        margin-right:auto;
+        /* border: 1px solid black; */
+    }
+    
+    /*導覽列logo圖*/
+    .nav-logo{
+      width:150px;
+      display:block;
+      padding-top: 7.8px;
+      padding-left: 5px;
+     
+    }
+    .nav-logo:hover{
+        cursor: pointer;
+       
+    }
+    
+    .nav-ol a{
+        display:block;
+        height:100%;
+        width:83px;
+        text-decoration:none;
+        color:black;
+        font-size:16px;
+        line-height:3.5;
+        
+    }
+    /* .nav-ol.engversion-a a{
+        width:80px;
+    }
+    .nav-ol.engversion-a{
+        width:80px;
+    } */
+    .nav-ol a:hover{
+        /* border-bottom:5px solid goldenrod; */
+        color:#FBBC04;
+    }
+    .searchbarlogo{
+        width:33px;
+        height:33px;
+        margin-top:10px;
+    }
+    
+    .searchbarlogo:hover{
+      transform:scale(1.25);
+      cursor: pointer;
+    }
+    
+    
+    /*click觸發的搜尋bar*/
+    .searchbar{
+        /* border:1px solid black; */
+        width:290px;
+        height:41px;
+        position:absolute;
+        top:56px;
+        right:0px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:#fff;
+        border-radius:10px;
+    
+    }
+    .searchbar input{
+      display:inline-block;
+      border:1px solid #E0E0E0;
+      font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+      font-size:15px;
+      height:28px;
+      width:166px;
+    }
+    .searchbar button{
+        font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
+        height:28px;
+        width:42px;
+        font-size:14px;
+       display:inline-block;
+       border:0;
+       background-color: #fff;
+       cursor: pointer;
+    }
+     /*隱藏的搜尋bar*/
+     .hidesearchbar{
+        display:none;
+     }
+    
+    
+    #gototopli{
+        /* display:block; */
+        display:none;
+        position:fixed;
+        bottom:50px;
+        right:0px;
+        z-index: 99;
+        box-sizing: border-box;
+        padding-top: 36px;
+        width:85px;
+        height:85px;
+        font-size: 24px;
+        text-align: center;
+        background-color: #fff;
+        opacity: 60%;
+        cursor: pointer;
+    }
+       
+    
+    
+    /*footer*/
+    
+    .footer{
+        box-sizing: border-box;
+        width:1200px;
+        height:166px;
+        margin:0 auto;
+        background-color: grey;
+        /* border:1px solid black; */
+        display:flex;
+    }
+    .footer-logo-img{
+        /*logoimg*/
+        display:block;
+        /* width:200px; */
+        cursor: pointer;
+        
+    }
+    .footer-logo-a{
+        display:block;
+        height:125px;
+        width:125px;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .footer-ol{
+        /* box-sizing: border-box;
+        border:2px solid white; */
+        width:207px;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        
+    }
+    .footer-ol li{
+        /* border:1px solid red; */
+        margin-top: 108px;
+    }
+    
+    .footer-ol a{
+        display:block;
+        width:41px;
+        height:33px;
+    }
+    
+    .footer-ol img{
+        width:100%;
+    }
+    
+    /*版權免責聲明*/
+    
+    .declare{
+        /* border:1px solid white; */
+        font-size: 14px;
+        line-height: 1.5;
+        width:332px;
+        margin-left: auto;
+        margin-right:22px;
+        margin-top:22px;
+    }
+    
+}

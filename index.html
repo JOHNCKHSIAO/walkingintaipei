@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台北走走</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_max1400.css">
+    <link rel="stylesheet" href="./css/common_max1400.css">
+    <link rel="stylesheet" href="./css/index_max1200.css">
+    <link rel="stylesheet" href="./css/index_max992.css">
+    <link rel="stylesheet" href="./css/index_max768.css"> 
+    <link rel="stylesheet" href="./css/index_max576.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
+        
+</head>
+<body>
+    <nav class="nav">
+        <!--導航欄-->
+        <ol class="nav-ol">
+            <li class="logo-li"><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></li>
+            <li><a href="./maintrip.html">精選行程</a></li>
+            <li><a href="./bloglist.html">走走小記</a></li>
+            <li><a href="./customized.html">客製旅遊</a></li>
+            <li><a href="./itemlist.html">所有行程</a></li>
+            <li><a href="./login.html">會員登入</a></li>
+            <li><a href="#" class="engversion-a">ENG</a></li>
+            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+                <div class="hidesearchbar" id="searchbararea">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button>
+                </div>
+            </li>
+            <li id="gototopli">Top</li>
+           
+           
+        </ol>
+    </nav>
+    <header class="index-header">
+        
+        <section class="indexslide" id="indexslideid">
+            <img src="./image/index/slide1.jpg" alt="" class="slideimg on fade">
+            <img src="./image/index/slide2.jpg" alt="" class="slideimg fade">
+            <img src="./image/index/slide3.jpg" alt="" class="slideimg fade">
+            <img src="./image/index/slide4.jpg" alt="" class="slideimg fade">
+            <img src="./image/index/slide5.jpg" alt="" class="slideimg fade">
+            <!--大圖輪播區-->
+            <h2 class="slidetitle fade">旅行，漫步尋訪城市的美好角落</h2>
+            <h2 class="slidetitle fade">旅行，漫步尋訪城市的美好角落二</h2>
+            <h2 class="slidetitle fade">旅行，漫步尋訪城市的美好角落三</h2>
+            <h2 class="slidetitle fade">旅行，漫步尋訪城市的美好角落四</h2>
+            <h2 class="slidetitle fade">旅行，漫步尋訪城市的美好角落五</h2>
+            <button class="slide-left-btn" id="leftbtn"></button>
+            <button class="slide-right-btn" id="rightbtn"></button>
+            <!--輪播圖的箭頭-->
+            <div class="dots">
+                <span class="dot">  </span>
+                <span class="dot">  </span>
+                <span class="dot">  </span>
+                <span class="dot">  </span>
+                <span class="dot">  </span>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="indexmain"> <!--主要內容區-->             
+            <section class="news"> <!--最新活動列表-->
+                
+                <div class="news-title">
+                    <h2 class="news-title-up">最新</h2>
+                    <h2 class="news-title-bottom">活動</h2> 
+                    <img src="./image/index/stamp.png" alt="">
+                </div>
+                
+                <ol class="news-ol">
+                    <li>
+                        <a href="./item.html" class="activity1">
+                            <p>散步大稻埕導覽活動開放報名!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./item.html"  class="activity2">
+                            <p>靜遊貓空健行活動開始報名!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./maintrip.html"  class="activity3">
+                            <p>坪林慢活2天1夜輕旅行開始報名!</p>
+                        </a>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="customized"> <!--客製旅遊-->
+                <h2>客製旅遊</h2>
+                <p>打造與眾不同旅行體驗，歡迎各級學校及公司行號洽詢!</p>
+                <ol class="customized-ol"> <!--客製旅遊的介紹選項-->
+                    <li>
+                        <div class="customizedpic-outline">
+                            <div class="customizedpic-1"></div>
+                        </div>
+                        <h3 class="customh3">
+                            企業親子日
+                        </h3>
+                        <p>
+                            想要辦一場與眾不同的旅行嗎?<br>
+                            台北走走是您辦活動的好夥伴!
+                        </p>
+                    </li>
+
+                    <li>
+                        <div class="customizedpic-outline">
+                            <div class="customizedpic-2"></div>
+                        </div>
+                        <h3>
+                            校外教學
+                        </h3>
+                        <p>
+                            我們有豐富的在地文化導覽經驗，<br>
+                            能帶領學生進行古蹟文化體驗!
+                        </p>
+                    </li>
+
+                    <li>
+                        <div class="customizedpic-outline">
+                            <div class="customizedpic-3">
+                        </div>        
+                        </div>
+                        <h3>
+                            員工旅遊
+                        </h3>
+                        <p>
+                            想要辦一場與眾不同的旅行嗎?<br>
+                            台北走走是您辦活動的好夥伴!
+                        </p>
+                    </li>
+
+                </ol>
+                <img src="./image/index/mail.png" alt="" class="airplane-icon"><!--裝飾的icon-->
+                <a href="./customized.html">客製旅遊諮詢</a>
+                <img src="./image/index/evaluate.png" alt="" class="good-icon"><!--裝飾的icon-->
+
+            </section>
+           
+            <section class="ourclient"><!--我們的客戶列表-->
+                <h2>我們的客戶</h2>
+                <ol class="ourclient-ol">                    
+                    <li>
+                        <div>
+                            <h3>平平國小周老師</h3>
+                            <p>
+                                台北走走是我見過最專業的導覽團隊，不論在知識方面或團體的氣氛都掌握得很好。讓我與20個孩子享受了一個美好的午後!
+                            </p>
+                        </div>
+                        <img src="./image/index/ourcus1.jpg" alt="" class="client-pic">
+                    </li>
+                    <li>
+                        <div>
+                            <h3>安安保險林經理</h3>
+                            <p>
+                                疫情之下無法出國，不如來場國內小旅遊，放鬆之餘，也凝聚團隊向心力!<br>
+                                台北走走~讚!<br>
+                                安安銷售團隊~讚~
+                            </p>
+                        </div>
+                        <img src="./image/index/ourcus2.jpg" alt="" class="client-pic">
+                    </li> 
+                    <li>
+                        <div>
+                            <h3>美國學校張老師</h3>
+                            <p>
+                                帶著學生漫步在台北街頭，從不一樣的角度探索這座城市!結合戶外活動與導覽，外國學生也能感受城市的美好!
+                            </p>
+                        </div>
+                        <img src="./image/index/ourcus3.jpg" alt="" class="client-pic">
+                    </li>
+                    <li>
+                        <div>
+                            <h3>福福青年陳社長</h3>
+                            <p>
+                                第一屆福福青年「期初成長營」順利結束!感謝台北走走團隊在規劃期間密切討論，最後成就了如此成功的活動!
+                            </p>
+                            
+                        </div>
+                        <img src="./image/index/ourcus4.jpg" alt="" class="client-pic">
+                    </li>
+                </ol>
+
+            </section>
+            
+            <section class="ourstory"> <!--我們的故事-->
+                <h2>我們的故事</h2>
+                <img src="./image/index/open-book.png" alt="" class="ourstory-icon"> <!--裝飾的icon-->
+                <div class="ourstory-div">
+                    <img src="./image/index/ourstory1.jpg" alt="" >
+                    <div>
+                        <h3>旅途的開始:2014年春天</h3>
+                        <p>
+                            2014年的春天，4個大學生在課堂上相識，開始了分組報告的旅程。
+                            他們遇到了熱血沸騰的學運，把課堂報告改成了導覽台北的民主遺跡。
+                            報告獲得了老師與同學的巨大迴響，他們思考著自己還可以多做些甚麼?
+                        </p>
+                        <h3>路上的風景:2015年</h3>
+                        <p>他們決定延畢一年，把想法化作實際行動，思考創業的可能，一邊參與
+                            社區活動。4人團隊變成8人，大家一起為了「台北走走」而努力。
+                        </p>
+
+                    </div>
+                    <div>
+                        <h3>來到分叉路:2018年</h3>
+                        <p>
+                            2014年的春天，4個大學生在課堂上相識，開始了分組報告的旅程。
+                            他們遇到了熱血沸騰的學運，把課堂報告改成了導覽台北的民主遺跡。
+                            報告獲得了老師與同學的巨大迴響，他們思考著自己還可以多做些甚麼?
+                        </p>
+                        <h3>「疫外」的旅程:2020年</h3>
+                        <p>他們決定延畢一年，把想法化作實際行動，思考創業的可能，一邊參與
+                            社區活動。4人團隊變成8人，大家一起為了「台北走走」而努力。
+                        </p>
+                    </div>
+                    <img src="./image/index/ourstory2.jpg" alt="">
+                    
+                </div>
+
+            </section>
+        
+    </main>
+
+    <footer class="footer">
+        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <ol class="footer-ol">
+            <li><a href="#"><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href="#"><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href="#"><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
+            
+        </ol>
+        <!--免責聲明-->
+        <p class="declare">
+            本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
+            參考資源:島內散步:https://walkin.tw/<br>
+            方格子https://vocus.cc/<br>
+            走靜貓空https://maokong.travel.taipei/<br>
+            新北市觀光旅遊網https://newtaipei.travel/
+        </p>
+    </footer>
+    <script src="./JS/myproject.js"></script>
+</body>
+</html>
