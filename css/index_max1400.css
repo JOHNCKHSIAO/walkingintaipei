@@ -1,4 +1,4 @@
-@media screen and (min-width:1200px) and (max-width:1399.98px){
+@media screen and (max-width:1440px){
     .index-header{
         box-sizing: border-box;
         width:1200px;
@@ -9,7 +9,7 @@
     
     
     .indexslide{
-        width:1200px;
+        width:100%;
         height:500px;
         /* background-image: url('../image/index/slide1.jpg'); */
         background-size: cover;
@@ -115,28 +115,29 @@
     /*以下是最新活動列表*/
     .news{
         box-sizing: border-box;
-        width:1128px;
+        width:95%;/*1140px*/
         height:282px;
         background-color: #fff;
         margin:0 auto;
         margin-top: 50px;
         padding:16px;
-        border:1px solid green;
+        /* border:1px solid green; */
         border-radius: 5px;
         position:relative;
         display:flex;
     }
     .news-ol{
+         /*寬度是上層減去newstitle剩下的100%*/
         width:100%;
-        height:100%;
+        /* height:100%; */
         /* border:2px solid black; */
         display:flex;
         justify-content:space-between;
     }
     .news-ol li{
         /* border:1px solid blue; */
-        width:300px;
-        height:250px;
+        width:31%;
+        height:100%;
     }
     .news-title{
         /*列表第一欄 最新活動的標題div*/
@@ -188,8 +189,8 @@
     .activity1{
         text-decoration: none;
         display:block;
-        width:300px;
-        height:250px;
+        width:100%;
+        height:100%;
         background-image: url("../image/index/newactivity1.jpg");
         background-size: cover;
         position:relative;
@@ -199,8 +200,8 @@
     .activity2{
         text-decoration: none;
         display:block;
-        width:300px;
-        height:250px;
+        width:100%;
+        height:100%;
         background-image: url("../image/index/newactivity2.jpg");
         background-size: cover;
         position:relative;
@@ -210,8 +211,8 @@
     .activity3{
         text-decoration: none;
         display:block;
-        width:300px;
-        height:250px;
+        width:100%;
+        height:100%;
         background-image: url("../image/index/newactivity3.jpg");
         background-size: cover;
         position:relative;
@@ -236,7 +237,7 @@
     .customized{
         box-sizing: border-box;
         /* border:1px solid blueviolet; */
-        width:100%;
+        width:100%;/*1200px*/
         margin-top: 100px;
         padding:10px;
         position:relative;
@@ -248,7 +249,7 @@
         margin-top:40px;
         margin-bottom:30px;
         width:128px;
-        height:38px;
+        height:40px;
         border-bottom:5px solid #FBBC04;
         
     }
@@ -257,18 +258,19 @@
         margin:40px auto 20px auto;
         text-align: center;
         color:#4A240C;
-        font-size: 20px;
+        font-size: 22px;
     }
     /*客製旅遊的清單*/
     .customized-ol{
-        width:900px;
+        width:80%; /*960px*/
         margin:0 auto;
         display:flex;
         justify-content: space-between;
+        /* border:1px solid red; */
     
     }
     .customized-ol li{
-        width:282px;
+        width:31%; /**/
         height:415px;
         /* border:1px solid black; */
         position:relative;
@@ -340,8 +342,7 @@
     
     
     .customized-ol p{
-        width:262px;
-        text-align: center;
+        width:100%;        
         margin-left: 20px;
         font-size: 16px;
         color:#4A240C;
@@ -400,7 +401,7 @@
     
     .ourclient-ol{
         box-sizing: border-box;
-        width:1137px;
+        width:95%;
         /* border:1px solid red; */
         margin:0 auto;
         margin-top: 20px;
@@ -416,7 +417,7 @@
         background-color:#D6D2C5;
         /* border:1px solid blue; */
         margin-bottom: 20px;
-        width:556px;
+        width:49%;
         height:290px;
         padding:10px;
         border-radius:5px;
@@ -426,13 +427,15 @@
         
     }
     .ourclient-ol div{
+        /*我們的客戶的文字區塊*/
        
      /* border:1px solid red; */
-        width:250px;
-        height:250px;
+     width:calc(50%-50px);
+    height:250px;
     
     }
     .ourclient-ol h3{
+        width:100%;
         font-size:24px;
         border-left:5px solid #FBBC04;
         text-align: center;
@@ -442,7 +445,7 @@
     .ourclient-ol p{
         font-size: 16px;
         color:#4A240C;
-        width:250px;
+        width:100%;
         /* margin:0 auto; */
         /* border:1px solid black; */
         word-spacing: 2px;
@@ -453,7 +456,7 @@
     /*我們的客戶圖案*/
     .client-pic{
         display:block;
-        width:250px;
+        /* width:calc(50%-50px); */
         height:250px;
         border-radius: 5px;
     }
@@ -487,9 +490,9 @@
     }
     .ourstory-div{
         box-sizing:border-box;
-        width:1080px;
+        width:91%;
         margin:0 auto;
-        /* border:1ps solid red; */
+        /* border:1px solid red; */
         display:flex;
         flex-wrap: wrap;
         /* align-items: center; */
@@ -498,7 +501,7 @@
     
     }
     .ourstory-div img{
-        width:500px;
+        width:48%;
         height:332px;
         margin-top: 20px;
         display:block;
@@ -506,8 +509,8 @@
     }
     
     .ourstory-div>div{
-        width:500px;
-        height:332px;
+        width:48%;
+        /* height:332px; */
         /* border:1px solid red; */
         margin-top: 20px;
     } 
@@ -519,7 +522,9 @@
     }
     
     .ourstory-div p{
-        font-size: 15px;
+        width:100%;
+        /* border:1px solid red; */
+        font-size: 18px;
         color:#4A240C;
         line-height: 2;
         margin-bottom: 50px;

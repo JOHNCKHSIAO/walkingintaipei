@@ -13,7 +13,7 @@ h1{
     text-align:center;
     margin:0 auto;
     margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom: 20px;;
     width:160px;
     height:46px;
     border-bottom:5px solid #FBBC04;
@@ -26,8 +26,6 @@ h1{
 }
 .header-ol{
     box-sizing: border-box;
-    
-    /* width:100%; */
     /* border:1px solid black; */
     display:flex;
     flex-wrap: wrap;
@@ -38,6 +36,7 @@ h1{
     width:640px;
     display:flex;
     justify-content:space-between;
+    margin-top:20px;
     /* padding:30px; */
     /* border:1px solid white; */
     
@@ -90,6 +89,7 @@ background: linear-gradient(#e66465, #9198e5);
 }
 .header-text{
     /*介紹文字部分*/
+    width:45%;
     box-sizing: border-box;
     /* border:1px solid white; */
     padding:20px;
@@ -102,9 +102,11 @@ background: linear-gradient(#e66465, #9198e5);
     
 }
 .header-text p{
+    width:100%;
     font-size: 20px;
     line-height: 2;
     color:#4A240C;
+    /* border:1px solid red; */
     
 }
 
@@ -151,10 +153,12 @@ background: linear-gradient(#e66465, #9198e5);
     margin-bottom: 20px;
 }
 .main-ol p{
+    width:510px;
     font-size: 20px;
     line-height: 2;
     color:#4A240C;
     margin-top: 10px;
+    /* border:1px solid red; */
     
 }
 .main-ol img{

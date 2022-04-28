@@ -5,6 +5,30 @@ body{
 
 }
 /*導覽列*/
+/*導覽列logo圖*/
+.logo-div {
+    margin-right:auto;
+    /* border: 1px solid black; */
+}
+.logo-div a{
+    /* border:1px solid red; */
+}
+.nav-logo{
+    /*logo 的img檔*/
+    width:180px;
+    display:block;
+    padding-top: 7.8px;
+    padding-left: 5px;
+   
+  }
+
+.nav-logo:hover{
+      cursor: pointer;
+     
+}
+.hambergericon{
+    display:none;
+}
 .nav_underline{
     /*首頁以外  選到的要有底線*/
     border-bottom:5px solid #FBBC04;
@@ -18,11 +42,16 @@ body{
     position:sticky;
     top:0px;
     z-index: 1;
+    display:flex;
+    justify-content: space-between;
 }
+
+
 .nav-ol{
     height:100%;
+    width:655px;
     /* border:1px solid blue; */
-    margin:0 auto;
+    /* margin:0 auto; */
     display:flex;
     justify-content:flex-end;
     position:relative;
@@ -32,38 +61,19 @@ body{
     /* border:1px solid red; */
     text-align:center;   
 }
+.nav-ol :nth-child(6){
+    width:70px;
+    text-align: center;
+}
+.nav-ol :nth-child(6) a{
+    width:70px;
+    text-align: center;
+}
 .nav-ol :nth-child(7){
-    width:70px;
-    text-align: center;
-}
-.nav-ol :nth-child(7) a{
-    width:70px;
-    text-align: center;
-}
-.nav-ol :nth-child(8){
     width:60px;
     text-align: center;
 }
 
-
-
-.logo-li {
-    margin-right:auto;
-    /* border: 1px solid black; */
-}
-
-/*導覽列logo圖*/
-.nav-logo{
-  width:180px;
-  display:block;
-  padding-top: 7.8px;
-  padding-left: 5px;
- 
-}
-.nav-logo:hover{
-    cursor: pointer;
-   
-}
 
 .nav-ol a{
     display:block;
