@@ -1,4 +1,594 @@
 @media screen and (max-width:575.98px){
+    html{
+        font-size: 62.5%;
+    }
+    .index-header{
+        box-sizing: border-box;
+        width:720px;
+        /* border:1px solid red; */
+        margin:0 auto;
+        background-color:#fff;
+    }
+    
+    
+    .indexslide{
+        width:300vw;
+        height:300px;
+        margin: 0 auto;
+        position: relative;
+        border:1px solid red;
+        display:none;
+    }
+    .slideimg{
+        height:300px;
+        position:absolute;
+        left:50%;
+        transform: translateX(-50%);
+        display:none;
+    }
+    .on{
+        display:block;
+    }
+    
+    
+     .slide-left-btn{
+        display:block;
+        width:30px;
+        height:50px;
+        border:none;
+        background-color: white;
+        opacity: 70%;
+        clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
+        position: absolute;
+        top:50%;
+        left:20px;
+        cursor: pointer;
+        display:none;
+       
+    }
+    
+    .slide-right-btn{
+        display:block;
+        width:30px;
+        height:50px;
+        border:none;
+        background-color: white;
+        opacity: 70%;
+        clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
+        position: absolute;
+        top:50%;
+        left:1150px;
+        cursor: pointer;
+        display:none;
+    } 
+    
+    /*點點的區塊*/
+     .dots{
+        width:70px;
+        margin:0 auto;
+        position:absolute;
+        top:480px;
+        left:50%; 
+        transform: translate(-50%,0);
+        display:none;
+    }
+
+    .dot{
+        height:8px;
+        width:8px;
+        border-radius: 50%;
+        background-color:#fff;
+        margin-right:2px;
+        display:inline-block;
+        opacity: 70%;
+        display:none;
+    }
+    .doton{
+        opacity: 100%;
+    } 
+    .slidetitle{
+        display:none;
+        font-size:3rem;
+        color:grey;
+        text-shadow: 1px 1px  black;
+        position:absolute;
+        top:40px;
+        left:40px;
+        display:none;
+    }
+    .post{
+        display:block;
+    }
+
+        /*換圖的動畫*/
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .3}
+        to {opacity: 1}
+    }
+    /*換圖的動畫*/
+
+    /*main部分*/
+    .indexmain{ 
+        box-sizing: border-box;
+        padding: 5px;
+        width:auto;
+        background-color: #E0E0E0;
+        margin:0 auto;
+        /* border:1px solid red; */
+        /* display:none; */
+    
+    }
+    /*以下是最新活動列表*/
+    .news{
+        box-sizing: border-box;
+        width:auto;
+        height:auto;
+        background-color:#E0E0E0;
+        margin:0 auto;
+        margin-top: 50px;
+        padding:0px;
+        /* border:1px solid green; */
+        border-radius: 5px;
+        position:relative;
+        display:block;
+    }
+    .news-ol{
+         /*手機板寬度等於上層*/
+        width:auto;
+        height:auto;
+        /* border:2px solid black; */
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding-top: 20px;
+        
+    }
+    .news-ol li{
+        /* border:1px solid blue; */
+        width:auto;
+        height:250px;
+    }
+    .news-title{
+        /*列表第一欄 最新活動的標題div*/
+        width:100%;
+        position:relative;
+        display:flex;
+        justify-content: center;
+    
+    }
+    .news-title ::before{
+        content:"";
+        height:82px;
+        border-left: 5px solid #FBBC04;
+        position:absolute;
+        top:85px;
+        left:21px;
+        /* display:none;   */
+    }
+ 
+    .news-title-up{
+        font-size: 3rem;
+        width:60px;
+        height:40px;
+        color:black;
+        letter-spacing:0px; 
+        margin:0;
+        border-bottom:5px solid #FBBC04;
+    }
+    .news-title-bottom{
+        font-size: 3rem;
+        width:60px;
+        height:40px;
+        color:black;
+        letter-spacing:0px; 
+        margin:0;
+        border-bottom:5px solid #FBBC04;
+    }
+    .news-title>img{
+        width:75px;
+        transform:rotate(335deg);
+        position:absolute;
+        top:-10%;
+        left:3%;
+    }
+    
+    .activity1{
+        text-decoration: none;
+        display:block;
+        width:295px;
+        height:220px;
+        max-width: 100%;
+        background-image: url("../image/index/newactivity1.jpg");
+        background-size: cover;
+        position:relative;
+        border-radius: 5px;
+        /* border:1px solid red; */
+        /* display:none; */
+        margin:0 auto;
+        margin-bottom: 20px;
+        
+        
+    }
+    .activity2{
+        text-decoration: none;
+        display:block;
+        width:295px;
+        height:220px;
+        max-width: 100%;
+        background-image: url("../image/index/newactivity2.jpg");
+        background-size: cover;
+        position:relative;
+        border-radius: 5px;
+        /* display:none; */
+        margin:0 auto;
+        margin-bottom: 20px;
+        
+    }
+    .activity3{
+        text-decoration: none;
+        display:block;
+        width:295px;
+        height:220px;
+        max-width: 100%;
+        background-image: url("../image/index/newactivity3.jpg");
+        background-size: cover;
+        position:relative;
+        border-radius: 5px;
+        /* display:none; */
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+
+    .news-ol p{
+        font-size:2rem;
+        position:absolute;
+        bottom:30px;
+        left:35px;
+        text-shadow: 1px 1px 2px black;
+        /* display:none; */
+        color:white;
+    
+    }
+
+    /*客製旅遊*/
+    .customized{
+        box-sizing: border-box;
+        /* border:1px solid blueviolet; */
+        width:auto;
+        margin-top:30px;
+        padding:10px;
+        position:relative;
+        /* border:1px solid green; */
+    }
+    .customized h2{
+        font-size:3rem;
+        text-align:center;
+        margin:0 auto;
+        margin-top:10px;
+        margin-bottom:30px;
+        width:128px;
+        height:40px;
+        border-bottom:5px solid #FBBC04;
+        
+    }
+    
+    .customized>p{
+        margin:20px auto 20px auto;
+        text-align: center;
+        color:#4A240C;
+        font-size:2.4rem;
+        line-height: 2;
+    }
+    /*客製旅遊的清單*/
+    .customized-ol{
+        width:auto;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* border:1px solid red; */
+    
+    }
+    .customized-ol li{
+        padding:10px;
+        background-color:#D6D2C5;
+        width:auto;
+        height:auto;
+        /* border:1px solid black; */
+        position:relative;
+        /* display:flex; */
+        margin-top: 20px;
+        border-radius:10px;
+        box-shadow: 1px 1px 1px grey;
+    }
+    /*客製旅遊的小圖*/
+    .customizedpic-1{
+        /* border:1px solid red; */
+        height:200px;
+        width:200px;
+        max-width: 200px;
+        border-radius: 50%;
+        background-image: url("../image/index/indexcus1.jpg");
+        background-size: cover;
+    }
+    
+    .customizedpic-2{
+        /* border:1px solid red; */
+        height:200px;
+        width:200px;
+        max-width: 200px;
+        max-width: 200px;
+        border-radius: 50%;
+        background-image: url("../image/index/indexcus2.jpg");
+        background-size: cover;
+    
+    }
+    .customizedpic-3{
+        /* border:1px solid red; */
+        height:200px;
+        width:200px;
+        max-width: 200px;
+        border-radius: 50%;
+        background-image: url("../image/index/indexcus3.jpg");
+        background-size: cover;
+    
+    }
+    /*克製旅行小圖的外框*/
+    .customizedpic-outline{
+        box-sizing: border-box;
+        width:220px;
+        height:220px;
+        padding:10px;
+        border-radius: 50%;
+        background-color: #F5E75C;
+        margin:0 auto;
+    }
+    
+    .customized-ol h3{
+        /* border:1px solid red; */
+        height:auto;
+        width:30%;
+        margin:0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size:24px;
+        text-align:center;
+        color:black;
+        /* writing-mode: vertical-lr; */
+        display:block;
+        border-left: 5px solid  #FBBC04;
+        min-width:130px;
+    
+    }
+    .customized-ol .customh3{
+        width:35%;
+        border-left: 5px solid  #FBBC04;
+        min-width:130px;
+    }
+    .customized-ol h3::before{
+        /* 小標題的底線 */
+        content:"";
+        border-left:5px solid #FBBC04;
+        height:30px;
+        display:block;
+        position:absolute;
+        top:300px;
+        left:90px;
+        display:none;
+        
+    }
+    .customized-ol .customh3::before{
+         content:"";
+        border-left:5px solid #FBBC04;
+        height:30px;
+        display:block;
+        position:absolute;
+        top:300px;
+        left:78px;
+        display:none; 
+    }
+    
+    
+    .customized-ol p{
+        width:90%;        
+        margin-left:18px;
+        font-size: 2rem;
+        color:#4A240C;
+        margin:0 auto;
+        margin-top: 20px;
+        line-height:2;
+    
+    }
+    .customized a{
+        text-decoration: none;
+        display:block;
+        width:150px;
+        height:50px;
+        margin:40px auto 40px auto;
+        background-color:#FF9105;
+        font-size:20px;
+        line-height:2.5;
+        text-align: center;
+        color:#fff;
+        border-radius: 5px;
+    }
+    .customized a:hover{
+        transform:scale(1.05);
+    }
+    .airplane-icon{
+        width:80px;
+        height:80px;
+        position:absolute;
+        top:5%;
+        right:5%;
+    
+    }
+    .good-icon{
+        width: 75px;
+        height:75px;
+        transform: rotate(15deg);
+        position:absolute;
+        left:30px;
+        bottom:-30px;
+    }
+        
+    .ourclient{ 
+        /* border:1px solid green; */
+    }
+    .ourclient h2{
+        font-size: 30px;
+        text-align:center;
+        margin:0 auto;
+        margin-top:40px;
+        margin-bottom:20px;
+        width:157px;
+        height:40px;
+        border-bottom:5px solid #FBBC04;
+    }
+    
+    .ourclient-ol{
+        box-sizing: border-box;
+        width:100%;
+        /* border:1px solid red; */
+        margin:0 auto;
+        margin-top: 20px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ourclient-ol li{
+        box-sizing: border-box;
+        background-color:#D6D2C5;
+        /* border:1px solid blue; */
+        margin-bottom: 20px;
+        width:95%;
+        height:auto;
+        padding:10px;
+        border-radius:10px;
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 1px 1px 1px grey;
+       
+        
+    }
+    .ourclient-ol div{
+        /*我們的客戶的文字區塊*/  
+     /* border:1px solid red; */
+     width:95%;
+    height:auto;
+    }
+    .ourclient-ol h3{
+        width:65%;
+        margin: 0 auto;
+        font-size:24px;
+        border-left:5px solid #FBBC04;
+        text-align: center;
+    }
+    .ourclient-ol p{
+        font-size:2rem;
+        color:#4A240C;
+        width:100%;
+        /* margin:0 auto; */
+        /* border:1px solid black; */
+        word-spacing: 2px;
+        line-height: 2;
+        margin-top:20px;
+    
+    }
+    /*我們的客戶圖案*/
+    .client-pic{
+        display:block;
+        width:200px;
+        height:200px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+    }
+    
+    /*下面是我們的故事*/
+    .ourstory{
+        /* border:1px solid green; */
+        position:relative;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+   
+    .ourstory h2{
+        font-size: 3rem;
+        text-align:center;
+        margin:0 auto;
+        margin-top:100px;
+        margin-bottom:20px;
+        width:160px;
+        height:40px;
+        border-bottom:5px solid #FBBC04;
+    }
+    
+    .ourstory-icon{
+        width:102px;
+        height:111px;
+        position:absolute;
+        top:-60px;
+        left:190px;
+        display:none;
+    }
+    .ourstory-div{
+        box-sizing:border-box;
+        width:100%;
+        margin:0 auto;
+        border:1px solid red;
+        display:flex;
+       flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-between;
+        padding:10px 10px;
+    
+    }
+    .ourstory-div img{
+        width:300px;
+        height:auto;
+        margin: 20px auto 20px auto;
+        display:block;
+        border-radius: 5px;   
+        /* border:1px solid blue; */
+    }
+    
+    .ourstory-div>div{
+        width:100%;
+        height:auto;
+        /* border:1px solid blue; */
+        margin-top: 20px;
+    } 
+    .ourstory-div h3{
+        font-size: 2.4rem;
+        border-left:5px solid #FBBC04;
+        text-indent: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .ourstory-div p{
+        width:100%;
+        border:1px solid red;
+        font-size:2rem;
+        color:#4A240C;
+        line-height: 2;
+        margin-bottom: 50px;
+        
+    }
+    .ourstory-div :nth-child(4){
+        border:1px solid black;
+        order:3;   
+    }
+ 
     
     
 }

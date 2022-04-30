@@ -144,6 +144,10 @@ body{
  .hidesearchbar{
     display:none;
  }
+ /*手機版關掉側邊欄的按鈕*/
+ .moile_closenav{
+     display:none;
+ }
 
 
 #gototopli{

@@ -33,8 +33,9 @@
     function hideOrAppear(){
         
         if (document.documentElement.scrollTop > 1000){
-            gototopli.style.display="block";
-           
+            gototopli.style.display="block";    
+        }else if(Window.innerWidth<576){
+            gototopli.style.display="none";
         }else{
             gototopli.style.display="none";
         } 
@@ -143,4 +144,19 @@
 })(); 
 
 /* 這是大圖輪播的程式碼--左右按鍵可控  下方原點可控   自動撥放  ej/ 功能結束*/
-        
+/*點擊漢寶圖讓側邊欄跑出來*/
+(function(){
+    let hambergericon=document.querySelector(".hambergericon");
+    console.log(hambergericon);
+    let nav_ol_mobile=document.querySelector(".nav-ol");
+    console.log(nav_ol_mobile);
+    let moile_closenav=document.querySelector("#moile_closenav");
+    hambergericon.addEventListener("click",function(){
+        nav_ol_mobile.classList.add("nav_ol_mobile");
+        console.log("test");
+
+    })
+    moile_closenav.addEventListener("click",function(){
+        nav_ol_mobile.classList.remove("nav_ol_mobile");
+    })
+})();        
