@@ -6,22 +6,51 @@
     margin:0 auto;
     background-color: #fff;
 }
-.mainslide{
+
+.slideimg{
     width:100%;
-    height:500px;
-    background-image: url("../image/main/slide1.jpg");
-    background-size: cover;
-    position:relative;
+    display:none;
+}
+.on{
+    display:block;
 }
 
+.slide-left-btn{
+    display:block;
+    width:30px;
+    height:50px;
+    border:none;
+    background-color: white;
+    opacity: 70%;
+    clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
+    position: absolute;
+    top:275px;
+    left:20px;
+    cursor: pointer;
+   
+}
 
+.slide-right-btn{
+    display:block;
+    width:30px;
+    height:50px;
+    border:none;
+    background-color: white;
+    opacity: 70%;
+    clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
+    position: absolute;
+    top:275px;
+    left:1390px;
+    cursor: pointer;
+}
+/*點點的區塊*/
 .dots{
     width:70px;
     margin:0 auto;
     position:absolute;
-    top:480px;
+    top:580px;
     left:50%; /*還要再調*/
-    transform:translateX(50%);
+    transform: translate(-50%,0);
 }
 
 .dot{
@@ -31,43 +60,34 @@
     background-color:#fff;
     margin-right:2px;
     display:inline-block;
-    
+    opacity: 70%;
 }
-.mainslide h2{
-    font-size: 30px;
-    color:white;
-    position:absolute;
-    top:290px;
-    left:150px;
-    text-shadow:  1px 1px 2px black;;
-}
-.slide-left-btn{
-    display:block;
-    width:30px;
-    height:50px;
-    border:none;
-    background-color: white;
+.doton{
     opacity: 100%;
-    clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
-    position: absolute;
-    top:50%;
-    left:20px;
-    cursor: pointer;
+}
+.slidetitle{
+    display:none;
+    font-size: 36px;
+    color:grey;
+    text-shadow: 1px 1px  black;
+    position:absolute;
+    top:60px;
+    left:50px;
+}
+.post{
+    display:block;
 }
 
-.slide-right-btn{
-    display:block;
-    width:30px;
-    height:50px;
-    border:none;
-    background-color: white;
-    opacity: 100%;
-    clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
-    position: absolute;
-    top:50%;
-    left:1150px;
-    cursor: pointer;
-}
+/*換圖的動畫*/
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .3}
+    to {opacity: 1}
+  }
 
 /*下面是main*/
 .maintrip-main{

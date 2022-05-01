@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/common_max1400.css">
+    <link rel="stylesheet" href="./css/common_max576.css">
     <link rel="stylesheet" href="./css/maintrip.css">
     <link rel="stylesheet" href="./css/maintrip_max1400.css">
+    <link rel="stylesheet" href="./css/common_max576.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
     </style>
 </head>
 <body>
     <nav class="nav">
+        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <img src="./image/index/more.png" alt="" class="hambergericon">
+         
         <!--導航欄-->
         <ol class="nav-ol">
-            <li class="logo-li"><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></li>
             <li><a href="./maintrip.html">精選行程</a></li>
             <li><a href="./bloglist.html">走走小記</a></li>
             <li><a href="./customized.html">客製旅遊</a></li>
@@ -26,23 +31,30 @@
             <li><a href="./login.html">會員登入</a></li>
             <li><a href="#" class="engversion-a">ENG</a></li>
             <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
-                <div class="hidesearchbar" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button>
+                <div class="hidesearchbar searchbar_mobile" id="searchbararea">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
-            <li id="gototopli">Top</li>
-           
-           
         </ol>
+        
     </nav>
     <header class="main-header">
         
 
         <section class="mainslide">
+            <img src="./image/main/slide1.jpg" alt="" class="slideimg on fade">
+            <img src="./image/main/slide2.jpg" alt="" class="slideimg fade">
+            <img src="./image/main/slide3.jpg" alt="" class="slideimg fade">
+            <img src="./image/main/slide4.jpg" alt="" class="slideimg fade">
+            <img src="./image/main/slide5.jpg" alt="" class="slideimg fade">
             <!--大圖輪播區-->
-            <h2>暫忘工作世界的紛擾~來坪林好好生活</h2>
-            <button class="slide-left-btn"></button>
-            <button class="slide-right-btn"></button>
+            <h2 class="slidetitle fade">來坪林慢活，好好放空1</h2>
+            <h2 class="slidetitle fade">來坪林慢活，好好放空2</h2>
+            <h2 class="slidetitle fade">來坪林慢活，好好放空3</h2>
+            <h2 class="slidetitle fade">來坪林慢活，好好放空4</h2>
+            <h2 class="slidetitle fade">來坪林慢活，好好放空5</h2>
+            <button class="slide-left-btn" id="leftbtn"></button>
+            <button class="slide-right-btn" id="rightbtn"></button>
             <!--輪播圖的箭頭-->
             <div class="dots">
                 <span class="dot">  </span>
@@ -51,6 +63,7 @@
                 <span class="dot">  </span>
                 <span class="dot">  </span>
             </div>
+
         </section>
     </header>
     <main class="maintrip-main">
@@ -227,6 +240,10 @@
             新北市觀光旅遊網https://newtaipei.travel/
         </p>
     </footer>
-    <script src="./JS/myproject.js"></script>
+    <script src="./JS/common.js"></script>
+    <script type="module">
+        import {controlSlide} from './JS/singlefunction.js'
+        controlSlide();
+    </script>
 </body>
 </html>

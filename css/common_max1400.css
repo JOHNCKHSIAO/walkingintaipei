@@ -15,7 +15,7 @@
     .logo-div a{
         /* border:1px solid red; */
     }
-    .nav-logo{
+    img.nav-logo{
         /*logo 的img檔*/
         width:150px;
         display:block;
@@ -151,9 +151,15 @@
         display:none;
         
     }
+    .mobile_closenav{
+        display:none;
+
+    }
+    .gototop_mobile{
+        display:none
+    }
     
-    
-    #gototopli{
+    .gototopdiv{
         /* display:block; */
         display:none;
         position:fixed;
@@ -170,6 +176,7 @@
         opacity: 60%;
         cursor: pointer;
     }
+ 
        
     
     

@@ -1,53 +1,5 @@
-/*顯示隱藏的searchbar*/
-
-(function(){
-    let searchbarArea=document.querySelector("#searchbararea");
-    let searchbarLi=document.querySelector("#searchbarid");
-    searchbarLi.addEventListener("click",function(e){
-        e.stopPropagation();
-        searchbarArea.className="searchbar";
-    })
-    document.addEventListener("click",function(){
-        searchbarArea.classList.add("hidesearchbar");
-    })
-
-})();
-
-// /*顯示隱藏的searchbar結束*/
-
-
-// /*這是back to top的程式碼*/
-
-(function(){
-    let gototopli=document.querySelector("#gototopli");
-    window.addEventListener("scroll",hideOrAppear);
-    gototopli.addEventListener("click",function(){
-        // alert("test");
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-    })
-
-    function hideOrAppear(){
-        
-        if (document.documentElement.scrollTop > 1000){
-            gototopli.style.display="block";    
-        }else if(Window.innerWidth<576){
-            gototopli.style.display="none";
-        }else{
-            gototopli.style.display="none";
-        } 
-    }
-})();
-
-// /*back to top的程式碼結束*/
-
-
 // /*--------------- 這是大圖輪播的程式碼--左右按鍵可控  下方原點可控   自動撥放----------*/
-
-(function(){
+export function controlSlide(){
     let turnleftbtn=document.querySelector("#leftbtn");
     let turnrightbtn=document.querySelector("#rightbtn");
     let dots=document.querySelectorAll(".dot");
@@ -141,22 +93,6 @@
       
     }
 
-})(); 
+};
 
 /* 這是大圖輪播的程式碼--左右按鍵可控  下方原點可控   自動撥放  ej/ 功能結束*/
-/*點擊漢寶圖讓側邊欄跑出來*/
-(function(){
-    let hambergericon=document.querySelector(".hambergericon");
-    console.log(hambergericon);
-    let nav_ol_mobile=document.querySelector(".nav-ol");
-    console.log(nav_ol_mobile);
-    let moile_closenav=document.querySelector("#moile_closenav");
-    hambergericon.addEventListener("click",function(){
-        nav_ol_mobile.classList.add("nav_ol_mobile");
-        console.log("test");
-
-    })
-    moile_closenav.addEventListener("click",function(){
-        nav_ol_mobile.classList.remove("nav_ol_mobile");
-    })
-})();        

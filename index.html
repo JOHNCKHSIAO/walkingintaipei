@@ -23,8 +23,9 @@
 <body>
     <nav class="nav">
         <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
         <img src="./image/index/more.png" alt="" class="hambergericon">
-        <div id="gototopli">Top</div>  
+         
         <!--導航欄-->
         <ol class="nav-ol">
             <li><a href="./maintrip.html">精選行程</a></li>
@@ -35,7 +36,7 @@
             <li><a href="#" class="engversion-a">ENG</a></li>
             <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
                 <div class="hidesearchbar searchbar_mobile" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="moile_closenav" id="moile_closenav">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
         </ol>
@@ -240,6 +241,10 @@
             新北市觀光旅遊網https://newtaipei.travel/
         </p>
     </footer>
-    <script src="./JS/myproject.js"></script>
+    <script src="./JS/common.js"></script>
+    <script type="module">
+        import {controlSlide} from './JS/singlefunction.js'
+        controlSlide();
+    </script>
 </body>
 </html>

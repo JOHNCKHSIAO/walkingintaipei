@@ -13,7 +13,7 @@ body{
 .logo-div a{
     /* border:1px solid red; */
 }
-.nav-logo{
+img.nav-logo{
     /*logo 的img檔*/
     width:180px;
     display:block;
@@ -144,13 +144,15 @@ body{
  .hidesearchbar{
     display:none;
  }
+ .mobile_closenav{
+    display:none;
+}
  /*手機版關掉側邊欄的按鈕*/
- .moile_closenav{
-     display:none;
- }
 
-
-#gototopli{
+ .gototop_mobile{
+    display:none
+}
+.gototopdiv{
     /* display:block; */
     display:none;
     position:fixed;

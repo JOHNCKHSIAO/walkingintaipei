@@ -168,7 +168,7 @@
         position:absolute;
         top:85px;
         left:21px;
-        /* display:none;   */
+        display:none;  
     }
  
     .news-title-up{
@@ -421,10 +421,10 @@
         transform:scale(1.05);
     }
     .airplane-icon{
-        width:80px;
-        height:80px;
+        width:50px;
+        height:50px;
         position:absolute;
-        top:5%;
+        top:20px;
         right:5%;
     
     }
@@ -545,7 +545,7 @@
         box-sizing:border-box;
         width:100%;
         margin:0 auto;
-        border:1px solid red;
+        /* border:1px solid red; */
         display:flex;
        flex-direction: column;
         /* align-items: center; */
@@ -577,14 +577,14 @@
     
     .ourstory-div p{
         width:100%;
-        border:1px solid red;
+        /* border:1px solid red; */
         font-size:2rem;
         color:#4A240C;
         line-height: 2;
         margin-bottom: 50px;
         
     }
-    .ourstory-div :nth-child(4){
+    .ourstory-div :nth-child(4)~img{
         border:1px solid black;
         order:3;   
     }

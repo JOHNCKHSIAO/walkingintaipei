@@ -7,16 +7,22 @@
     <title>靜遊貓空—健行半日遊</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_max1400.css">
+    <link rel="stylesheet" href="./css/common_max576.css">
     <link rel="stylesheet" href="./css/item.css">
+    <link rel="stylesheet" href="./css/itemlist_max1400.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
     </style>
 </head>
 <body>
     <nav class="nav">
+        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <img src="./image/index/more.png" alt="" class="hambergericon">
+         
         <!--導航欄-->
         <ol class="nav-ol">
-            <li class="logo-li"><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></li>
             <li><a href="./maintrip.html">精選行程</a></li>
             <li><a href="./bloglist.html">走走小記</a></li>
             <li><a href="./customized.html">客製旅遊</a></li>
@@ -24,12 +30,13 @@
             <li><a href="./login.html">會員登入</a></li>
             <li><a href="#" class="engversion-a">ENG</a></li>
             <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
-                <div class="hidesearchbar" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button>
+                <div class="hidesearchbar searchbar_mobile" id="searchbararea">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
-            <li id="gototopli">Top</li>
-           
+        </ol>
+        
+    </nav>      
            
         </ol>
     </nav>
@@ -122,6 +129,6 @@
             新北市觀光旅遊網https://newtaipei.travel/
         </p>
     </footer>
-    <script src="./JS/myproject.js"></script>
+    <script src="./JS/common.js"></script>
 </body>
 </html>
