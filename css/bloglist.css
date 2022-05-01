@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;
+}
 .bloglist-main{
     box-sizing: border-box;
     background-color:#E0E0E0;
@@ -123,6 +126,7 @@
 .bloglist-ol img{
     width:300px;
     height:240px;
+    border-radius: 5px 5px 0px 0px;
     
 }
 

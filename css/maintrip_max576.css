@@ -1,5 +1,313 @@
 @media screen and (max-width:575.98px){
-   
-}
+    .main-header{
+        box-sizing: border-box;
+        width:1200px;
+        /* border:1px solid blue; */
+        margin:0 auto;
+        background-color: #fff;
+    }
+    .mainslide{
+        width:100%;
+        height:600px;
+        position: relative;
+        
+    }
+    .slideimg{
+        width:100%;
+        display:none;
+    }
+    .on{
+        display:block;
+    }
+    
+    .slide-left-btn{
+        display:block;
+        width:30px;
+        height:50px;
+        border:none;
+        background-color: white;
+        opacity: 70%;
+        clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
+        position: absolute;
+        top:275px;
+        left:20px;
+        cursor: pointer;
+       
+    }
+    
+    .slide-right-btn{
+        display:block;
+        width:30px;
+        height:50px;
+        border:none;
+        background-color: white;
+        opacity: 70%;
+        clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
+        position: absolute;
+        top:275px;
+        left:1390px;
+        cursor: pointer;
+    }
+    /*點點的區塊*/
+    .dots{
+        width:70px;
+        margin:0 auto;
+        position:absolute;
+        top:580px;
+        left:50%; /*還要再調*/
+        transform: translate(-50%,0);
+    }
+    
+    .dot{
+        height:8px;
+        width:8px;
+        border-radius: 50%;
+        background-color:#fff;
+        margin-right:2px;
+        display:inline-block;
+        opacity: 70%;
+    }
+    .doton{
+        opacity: 100%;
+    }
+    .slidetitle{
+        display:none;
+        font-size: 36px;
+        color:grey;
+        text-shadow: 1px 1px  black;
+        position:absolute;
+        top:60px;
+        left:50px;
+    }
+    .post{
+        display:block;
+    }
+    
+    /*換圖的動畫*/
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .3}
+        to {opacity: 1}
+      }
+    
+    /*下面是main*/
+    .maintrip-main{
+        box-sizing: border-box;
+        padding:5px;
+        width:auto;
+        margin:0 auto;
+        /* border:1px solid yellow; */
+        background-color: #E0E0E0;
+         
+    }
+    h1{
+        font-size: 3rem;
+        text-align:center;
+        margin:0 auto;
+        margin-top:30px;
+        margin-bottom:20px;
+        width:332px;
+        height:40x;
+        border-bottom:5px solid #FBBC04;
+    }
+    .section{
+        box-sizing: border-box;
+        width:auto;
+        /* border:1px solid red; */
+        margin:0 auto;
+        margin-top: 0px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .postcard{
+        box-sizing:border-box;
+        background-color: #fff;
+        width:360px;
+        height:300px;
+        margin-top: 30px;
+        display:flex;
+        box-shadow: 3px 3px 3px grey;
+        /* transform: translate(0,-20px); */
+        border-radius: 5px;
+       
+        
+    }
+    .postcard-left{
+        width:0px;
+        height:270px;
+        border-right:0
+    }
+    
+    .postcard-left img{
+        /*郵票的圖*/
+        
+        margin:0 auto;
+        margin-top: 10px;
+        width:50px;
+        height:50px;
+        display:none;
+    }
+    .postcard-right{
+        /* border:1px solid red; */
+        box-sizing: border-box;
+    }
+    .postcard-right p{
+        box-sizing: border-box;
+        width:360px;
+        padding:5px;
+        font-size:2rem;
+        color:#4A240C;
+        height:75px;
+        /* border:1px solid red; */
+        border-bottom: 3px solid #D3D3D3;
+        vertical-align: bottom;
+        
+    }
+    .postcard-right span{
+        display:block;
+        width:360px;
+        margin-top:30px;
+        /* border:1px solid blue; */
+        
+    }
+    .postcard-pic{
+        /*精選旅行的照片*/
+        display:block;
+        margin-top: 30px;
+        height:228px;
+        width:360px;
+        box-shadow: 3px 3px 3px grey;
+        border-radius: 5px;
+        /* transform: rotate(1deg); */
+    } 
+
+    section.section :nth-child(1){ 
+        order:1;
+    }
+    section.section :nth-child(2){
+        order:2;
+    }
+    section.section :nth-child(3){
+        order:4;
+    }
+    section.section :nth-child(4){
+        order:3;
+    }
+    section.section :nth-child(5){
+        order:5;
+    }
+    section.section :nth-child(6){
+        order:6;
+    }
+    section.section :nth-child(7){
+        order:8;
+    }
+    section.section :nth-child(8){
+        order:7;
+    }
+    section.section :nth-child(9){
+        order:9;
+    }
+    section.section :nth-child(10){
+        order:10;
+    }
+
+    .information{
+        /* border:1px solid yellow; */
+        width: 100%;
+        margin:0 auto;
+        padding-top:1px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+    .information-h2{
+        font-size: 3rem;
+        text-align:center;
+        margin:0 auto;
+        margin-top:60px;
+        margin-bottom:10px;
+        width:130px;
+        height:40px;
+        border-bottom:5px solid #FBBC04;
+    }
+    
+    .information h3{
+        font-size: 2rem;
+        border-left:5px solid #FBBC04;
+        text-indent: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .information p{
+        font-size: 2rem;
+        line-height: 2;
+        margin-bottom: 20px;
+        color:#4A240C;
+        
+    }
+    .information a{
+        display:block;
+        width:140px;
+        height:48px;
+        text-decoration:none;
+        background-color:#FF9105;
+        color:white;
+        margin:0 auto;
+        margin-top: 20px;
+        border-radius:5px;
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 2;
+    }
+    .information-ol{
+        margin:0 auto;
+        display:flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .information-ol li{
+        background-color: #fff;
+       width:350px;
+       box-sizing: border-box;
+       padding:20px;
+       margin-top: 20px;
+       border-radius: 5px;
+       box-shadow: 1px 1px 1px grey;
+       /* border:1px solid grey; */
+    }
+    .information-ol>.timeline{
+        background-color:transparent;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 0px 0px grey;
+    }
+    .timeline div{
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px grey;
+        border-radius: 5px;
+        /* border:1px solid yellow; */
+        width:350px;
+        padding:20px;
+        background-color: #fff;
+    }
+    .timeline :nth-child(2){
+        margin-top: 20px;
+    }
+    
+    }
+
 
 

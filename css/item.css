@@ -1,3 +1,6 @@
+html{
+    font-size: 62.6%;
+}
 .item-header{
     width:1440px;
     box-sizing: border-box;
@@ -58,7 +61,7 @@ h1{
     /* box-shadow: 1px 1px 1px grey; */
     /* margin-bottom: 10px; */
 }
-.item-section-left div{
+.item-section-left ol{
     box-sizing: border-box;
     width:850px;
     background-color: #fff;

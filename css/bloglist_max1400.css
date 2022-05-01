@@ -127,6 +127,7 @@
     .bloglist-ol img{
         width:250px;
         height:200px;
+        border-radius: 5px 5px 0px 0px;
         
     }
     
