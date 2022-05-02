@@ -186,6 +186,10 @@
         top:0;
         right:0;
         display:block;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-delay: 1s;
+
     }
 
     .nav_ol_mobile>li{
