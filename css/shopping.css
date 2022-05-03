@@ -37,17 +37,17 @@ h1{
     width:1440px;
     margin:0 auto;
     background-color:#E0E0E0;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
     
 
 /*表單的容器*/
 .form-container{
     display: flex;
-    /* border:1px dashed grey; */
+    border:1px dashed grey;
     /* border-radius: 5px; */
     background-color: #fff;
-    width:1200px;
+    width:1000px;
     margin:0 auto;
     padding:5px;
     box-sizing: border-box;
@@ -59,7 +59,7 @@ h1{
 /*左側選擇的商品欄位*/
 .selected{
     box-sizing: border-box;
-    /* border-right:1px solid grey; */
+    border-right:1px solid grey;
     width:300px;
     /* height:300px; */
     margin-right:20px;
@@ -71,17 +71,16 @@ h1{
     
 }
 .selected h2{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 2;
     margin-left:10px;
     margin-bottom: px;
 }
 .selected p{
-    font-size: 20px;
+    font-size: 22px;
     line-height: 2;
     margin-left:10px;
     margin-bottom: 10px;
-    
 }
 
 /*表單本體*/
@@ -97,25 +96,25 @@ h1{
 
 }
 .time label{
-    font-size: 20px;
+    font-size: 22px;
 }
 .time select{
     display:inline-block;
-    font-size: 20px;
+    font-size: 22px;
     height:30px;
     margin-left: 30px;
     /* border:0.5px solid grey; */
 }
 
 .time option{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /*選擇人數的欄位*/
 .number{
-    width:860px;
+    width:550px;
     /* border:1px solid blue; */
-    /* margin-top:20px; */
+    margin-top:20px;
 
 }
 .adult-number{
@@ -124,12 +123,12 @@ h1{
 }
 .adult-number span{
     display:inline-block;
-    font-size: 20px;
-    height:20px;
+    font-size: 22px;
+    height:22px;
     margin-right: 40px;
-    vertical-align: middle;
-    
+    vertical-align: middle; 
 }
+
 
 .adult-number button{
     display:inline-block;
@@ -141,12 +140,13 @@ h1{
     color:#4A240C;
 }
 
-.adult-number input{
+.adult-number span[id]{
     border:0;
     width:40px;
     height:40px;
     background-color:white;
     border:2px solid #FBBC04;
+    margin-right: 0;
 
 }
 
@@ -156,10 +156,14 @@ h1{
 }
 .child-number span{
     display:inline-block;
-    font-size: 20px;
-    height:20px;
+    font-size: 22px;
+    height:22px;
     margin-right: 40px;
     vertical-align: middle;
+}
+
+.child-number :nth-child(2){
+    margin-left: 20px;
     
 }
 
@@ -173,14 +177,27 @@ h1{
     vertical-align: middle;
 
 }
-.child-number input{
+.child-number span[id]{
     border:0;
     width:40px;
     height:40px;
     background-color:white;
     border:2px solid #FBBC04;
+    margin-right: 0;
 }
 
+.price_container{
+    /* border: 1px solid red; */
+    font-size: 32px;
+    margin-top:150px;
+}
+.price_container>span{
+    color:red;
+    margin-left: 20px;
+}
+
+
+/*---------------------------------------------------------*/
 .diet-habit{
     /* border:1px solid yellow; */
     margin-top:20px;

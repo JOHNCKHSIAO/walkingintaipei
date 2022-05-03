@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping-test</title>
+</head>
+<body>
+    <div class="diet-habit">
+        <span>飲食習慣</span>
+        <label for="mk22-diet-habit-veg">素食</label>
+        <input type="number" id="mk22-diet-habit-veg" name="mk22-diet-habit-veg">人
+        <label for="mk22-diet-habit-meat">葷食</label>
+        <input type="number" id="mk22-diet-habit-meat" name="mk22-diet-habit-meat">人
+        <label for="diet-habit-note">備註</label>
+        <input type="text" id="diet-habit-note" name="diet-habit-note">
+    </div>
+    <div class="info">
+        <label for="mk22-name">姓名</label>
+        <input type="text" name="mk22-name" id="mk22-name">
+        <label for="mk22-phonenumber">連絡電話</label>
+        <input type="tel" name="mk22-phonenumber" id="mk22-phonenumber"
+        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required placeholder="09xx-xxx-xxx">
+    </div>
+    <div class="textarea">
+        <label for="mk22-textarea">備註</label>
+        <textarea name="mk22-textarea" id="mk22-textarea"></textarea>
+    </div>
+    
+
+    <div class="confirm">
+        <div class="select-pay"> 
+            <div class="creditcard-container">
+                <label for="creditcard">信用卡結帳</label>
+                <input type="radio" name="select-way" id="creditcard" >
+            </div>
+            
+            <div class="atm-container">
+                <label for="atm">網路ATM結帳</label>
+                <input type="radio" name="select-way" id="atm" >
+            </div>    
+        </div>
+
+        <div class="price">
+            <div>消費金額</div>
+            <div id="price-div">TWD000元</div>
+            <button id="confirm-btn">確認結帳</button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
