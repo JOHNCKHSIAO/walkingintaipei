@@ -19,7 +19,7 @@
 
     let gototopdiv=document.querySelector("#gototop");
     /*判斷是否為手機版*/
-    if(screen.availWidth<576){
+    if(window.innerWidth<576){
         gototopdiv.classList.remove("gototopdiv");  
     }
     /*監測scroll行為*/
@@ -58,11 +58,19 @@
     let mobile_closenav=document.querySelector("#mobile_closenav");
     hambergericon.addEventListener("click",function(){
         nav_ol_mobile.classList.add("nav_ol_mobile");
-        console.log("test");
-
+        setTimeout(function(){
+        nav_ol_mobile.classList.add("nav_ol_open");
+        },0)
+        
     })
     mobile_closenav.addEventListener("click",function(e){
         e.stopPropagation();
-        nav_ol_mobile.classList.remove("nav_ol_mobile");
+        nav_ol_mobile.classList.add("nav_ol_close");
+        setTimeout(function(){
+            nav_ol_mobile.classList.remove("nav_ol_mobile");
+            nav_ol_mobile.classList.remove("nav_ol_open");
+            nav_ol_mobile.classList.remove("nav_ol_close");
+            },2000)
+        
     })
 })();        

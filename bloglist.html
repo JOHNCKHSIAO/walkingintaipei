@@ -45,21 +45,21 @@
                 <ol>
                     <li><h2>文章分類<h2></li>
                     <li>
-                        <a href="./bloglist.html">
+                        <a href="#">
                             <img src="./image/blog/article.png" alt="">
-                            <span>旅行紀錄(3)</span>
+                            <span id="travel_note">旅行紀錄(3)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/blog/article.png" alt="">
+                            <span id="culture_atricle">文化記事(3)</span>
                         </a>
                     </li>
                     <li>
                         <a href="./bloglist.html">
                             <img src="./image/blog/article.png" alt="">
-                            <span>文化記事(3)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./bloglist.html">
-                            <img src="./image/blog/article.png" alt="">
-                            <span>所有文章(6)</span>
+                            <span id="all_article">所有文章(6)</span>
                         </a>
                     </li>
                 </ol>
@@ -69,38 +69,38 @@
                 <div><h1>走走小記</h1></div>
                 <p>這裡紀錄我們的旅行跟各地的風景</p>
                 <ol class="bloglist-ol">
-                    <li>
+                    <li class="culture">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list1.jpg" alt="">
                             <p>文化記事:青山宮與台北大拜拜</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list2.jpg" alt="">
                             <p>旅行紀錄:3/23(二)陽明山健行一日遊~</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list3.jpg" alt="">
                             <p>旅行紀錄:3/23(二)政大—貓空健走紀錄</p>
                         </a>
                     </li>
     
-                    <li>
+                    <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list4.jpg" alt="">
                             <p>旅行紀錄:3/24(三)陽明山一日散步</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="culture">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list5.jpg" alt="">
                             <p>文化記事:隱藏在貓空山裡的優人神鼓</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="travel-note"> 
                         <a href="">
                             <img src="./image/blog/list6.jpg" alt="">
                             <p>旅行紀錄:3/25(四)銀河洞健行</p>
@@ -131,6 +131,10 @@
         </p>
     </footer>
 
-    <script src="./JS/common.js"></script>  
+    <script src="./JS/common.js"></script>
+    <script type="module">
+        import {blogListFilter} from './JS/singlefunction.js'
+        blogListFilter();
+    </script>  
 </body>
 </html>

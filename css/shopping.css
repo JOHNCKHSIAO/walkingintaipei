@@ -185,11 +185,30 @@ h1{
     border:2px solid #FBBC04;
     margin-right: 0;
 }
-
+.price-div{
+    width:650px;
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
 .price_container{
     /* border: 1px solid red; */
     font-size: 32px;
-    margin-top:150px;
+}
+.next_step{
+    font-size: 32px;
+    line-height: 2;
+    text-align: center;
+    color:white;
+    width:110px;
+    height:64px;
+    background-color: #FF9105;
+    border-radius: 5px;
+    margin-left: 150px;
+    cursor: pointer;
+
 }
 .price_container>span{
     color:red;

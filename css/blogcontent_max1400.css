@@ -122,6 +122,20 @@
         right:20px;
         bottom:20px;
     }
+    .media_container{
+        /* border:1px solid red; */
+        width:220px;
+        position:absolute;
+        right:1%;
+        bottom:-2%;
+    }
+    .media_container>img{
+        width:40px;
+        margin-top: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
     
     
 

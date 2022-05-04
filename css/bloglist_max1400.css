@@ -48,7 +48,6 @@
         height:30px;
         margin:20px;
        
-    
     }
     .bloglist-aside h2{
         font-size: 24px;
@@ -57,7 +56,7 @@
         width:15px;
     }
     .bloglist-aside span{
-        font-size: 17px;
+        font-size: 18px;
         color:black;
     }
     .bloglist-aside a{
@@ -108,7 +107,7 @@
     }
     .bloglist-ol li{
         width:250px;
-        height:275px;
+        height:290px;
         margin-top: 30px;
         /* border:1px solid red; */
         background-color: #fff;
@@ -132,7 +131,7 @@
     }
     
     .bloglist-ol p{
-        font-size: 15px;
+        font-size: 18px;
         color:black;
         margin:10px;
         line-height: 2;

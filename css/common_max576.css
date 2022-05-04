@@ -184,13 +184,24 @@
         background-color:#FF9105;
         position:absolute;
         top:0;
-        right:0;
+        right:-50Vw;
         display:block;
-        transition-property: width;
-        transition-duration: 2s;
-        transition-delay: 1s;
-
+     
     }
+    .nav_ol_open{
+        transform: translateX(-50vw);
+        transition-duration: .5s;
+        transition-property: all;
+        transition-timing-function: ease;
+    }
+    .nav_ol_close{
+        transform: translateX(50vw);
+        transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease;
+    }
+
+    
 
     .nav_ol_mobile>li{
         /* border:1px solid red; */

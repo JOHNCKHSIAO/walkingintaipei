@@ -32,8 +32,8 @@
     opacity: 70%;
     clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
     position: absolute;
-    top:275px;
-    left:20px;
+    top:48%;
+    left:1.3%;
     cursor: pointer;
    
 }
@@ -47,28 +47,28 @@
     opacity: 70%;
     clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
     position: absolute;
-    top:275px;
-    left:1390px;
+    top:48%;
+    left:96%;
     cursor: pointer;
 }
 /*點點的區塊*/
 .dots{
-    width:70px;
+    width:80px;
     margin:0 auto;
     position:absolute;
-    top:580px;
-    left:50%; /*還要再調*/
+    top:96%;
+    left:50%; 
     transform: translate(-50%,0);
 }
 
 .dot{
-    height:8px;
-    width:8px;
+    height:10px;
+    width:10px;
     border-radius: 50%;
     background-color:#fff;
     margin-right:2px;
     display:inline-block;
-    opacity: 70%;
+    opacity: 50%;
 }
 .doton{
     opacity: 100%;
@@ -76,11 +76,44 @@
 .slidetitle{
     display:none;
     font-size: 36px;
-    color:grey;
-    text-shadow: 1px 1px  black;
+    
+}
+.title1{
     position:absolute;
-    top:60px;
-    left:50px;
+    top:15%;
+    left:10%;
+    color:white;
+    text-shadow:3px 3px 3px black ;
+}
+.title2{
+    position:absolute;
+    top:30%;
+    left:10%;
+    color:white;
+    text-shadow:3px 3px 3px black ;
+}
+.title3{
+    position:absolute;
+    top:20%;
+    left:60%;
+    color:grey;
+    text-shadow:3px 3px 3px white;
+}
+.title4{
+    position:absolute;
+    top:70%;
+    left:60%;
+    color:white;
+    text-shadow:3px 3px 3px black;
+
+}
+.title5{
+    position:absolute;
+    top:30%;
+    left:60%;
+    color:white;
+    text-shadow:1px 1px 1px black;
+
 }
 .post{
     display:block;
@@ -93,7 +126,7 @@
   }
   
   @keyframes fade {
-    from {opacity: .3}
+    from {opacity: .2}
     to {opacity: 1}
   }
 /*換圖的動畫*/
@@ -430,6 +463,7 @@
  /* border:1px solid red; */
     width:300px;
     height:300px;
+    margin-top: 15px;
 
 }
 .ourclient-ol h3{
@@ -447,7 +481,7 @@
     /* border:1px solid black; */
     word-spacing: 2px;
     line-height: 2;
-    margin-top: 20px;
+    margin-top: 15px;
 
 }
 /*我們的客戶圖案*/
@@ -455,6 +489,7 @@
     display:block;
     width:300px;
     height:300px;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
@@ -519,7 +554,7 @@
 }
 
 .ourstory-div p{
-    font-size: 18px;
+    font-size: 20px;
     color:#4A240C;
     line-height: 2;
     margin-bottom: 50px;

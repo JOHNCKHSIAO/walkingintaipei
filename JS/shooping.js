@@ -6,69 +6,67 @@
     let childPlus=document.querySelector("#child-number-plus-btn");
     let adultNumber=document.querySelector("#mk22-adult-number");
     let childNumber=document.querySelector("#mk22-child-number");
-   
- 
+    let next_step=document.querySelector(".next_step");
     let adultIndex=0;
     let childIndex=0;
-    // let selectValue="";
+    let selectValue="";
+    let totalPrice=document.querySelector("#totalprice");
 
-    selectForm.addEventListener("change",function(e){
-        e.preventDefault();
+    selectForm.addEventListener("change",function(){
         selectValue=selectForm.value;
         console.log(selectValue);
     })
 
-    adultPlus.addEventListener("click",function(){
-        adultIndex+=1
+    adultPlus.addEventListener("click",function(e){
+        e.preventDefault();
+        selectValue==""?  alert("請先選擇梯次!") :adultCal(1);
         adultNumber.textContent=adultIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
     })
     
-
-    // adultMinus.addEventListener("click",function(){
-    //     if(selectValue==""){
-    //         alert("請先選擇梯次!")
-    //     }else{
-    //         adultIndex-=1;
-    //         if(adultIndex<=0){
-    //             console.log(adultIndex);
-    //             adultIndex=0;
-    //             adultNumber.value=adultIndex;
-    //         }
-           
-    //     }
-    // })
+    adultMinus.addEventListener("click",function(e){
+        e.preventDefault();
+        selectValue==""?  alert("請先選擇梯次!") :adultCal(-1);
+        adultNumber.textContent=adultIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+    })
  
-
-
-    // childPlus.addEventListener("click",function(){
-    //     childCal(1);
+    childPlus.addEventListener("click",function(e){
+        e.preventDefault();
+        selectValue==""?  alert("請先選擇梯次!") :childCal(1);
         
-    // })
-    // childMinus.addEventListener("click",function(){
-    //    childCal(-1);
-    // })
-    
-  
-    
+        childNumber.textContent=childIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+        
+    })
+    childMinus.addEventListener("click",function(e){
+        e.preventDefault();
+        selectValue==""?  alert("請先選擇梯次!") :childCal(-1);
+        console.log(childIndex);
+        childNumber.textContent=childIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+    })
 
-   
-   
-    // adultNumber.value=adultIndex;
-    // childNumber.value=childIndex;
-    // let sum=adultIndex*500+childIndex*300;
-    // sumprice.textContent=sum;
-      
+    next_step.addEventListener("click",function(){
+        (childIndex==0 && adultIndex==0 )? alert("請先確認人數"): nextStep();
+    })
 
-
+function nextStep(){
+    let numOfInput= childIndex+adultIndex
     
+}
+
 
 
 function adultCal(arg){
     adultIndex+=arg;
+    if (adultIndex<=0){
+        adultIndex=0;
+    }
 }
 function childCal(arg){
-    childIndex+=arg
+    childIndex+=arg;
+    if (childIndex<=0){
+        childIndex=0;
+    }
 }
-
-// console.log(adultIndex);
-// console.log(childIndex);
