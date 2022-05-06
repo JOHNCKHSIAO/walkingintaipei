@@ -70,26 +70,72 @@
                     <div class="adult-number">
                         <span>成人(7歲以上)</span>
                         <span>每人500元</span>
-                        <button id="adult-number-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                        <div id="adult-number-minus-btn"><i class="fa-solid fa-minus"></i></div>
                         <span id="mk22-adult-number">0</span>
-                        <button id="adult-number-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        <div id="adult-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
+                        <!-- <span class="adult-alert">請先選擇梯次</span> -->
                     </div>
                     <div class="child-number">
                         <span>兒童(0~6歲)</span>
                         <span>每人300元</span>
-                        <button id="child-number-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                        <div id="child-number-minus-btn"><i class="fa-solid fa-minus"></i></div>
                         <span id="mk22-child-number">0</span>
-                        <button id="child-number-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        <div id="child-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
+                        <span class="select-alert">請先選擇梯次</span>
                     </div>
                 </div>
                 <div class="price-div">
                     <div class="price_container">
-                        消費金額共<span id="totalprice">TWD000元</span>
+                        消費金額共<span id="totalprice">TWD0元</span>
                     </div>
                     <div class="next_step">下一步</div>
-                <div>
+                </div>
+                 <!--以下是下一步過後的操作-->  
+                <div class="info" id="info">
+                    <div class="info_major">
+                        <div>主要聯絡人:報名期間主要聯絡您</div>
+                        <div>
+                            <label for="mk22_major_name">姓名</label>
+                            <input type="text" name="mk22_major_name" id="mk22_major_name" required minlength="2">
+                        </div>
+                        <div>
+                            <label for="mk22_major_phone">連絡電話</label>
+                            <input type="tel" name="mk22_major_phone" id="mk22_major_phone"
+                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required placeholder="09xx-xxx-xxx">
+                        </div>
+                        <div>
+                            <label for="major_id">身分證字號</label>
+                            <input type="password" placeholder="請輸入身分證字號"id="major_id" required minlength="10"
+                            pattern="^[A-Z]{1}[1-2]{1}[0-9]{8}$" >    
+                        </div>
+                       
+                        
+                        
+                    </div>
+                    <div class="diet-habit">
+                        <span>飲食習慣</span>
+                        <label for="mk22_diet_habit_veg">素食</label>
+                        <input type="number" id="mk22_diet_habit_veg" name="mk22_diet_habit_veg">人
+                        <label for="mk22_diet_habit_meat">葷食</label>
+                        <input type="number" id="mk22_diet_habit_meat" name="mk22_diet_habit_meat">人
+                        <label for="diet_habit_note">備註</label>
+                        <input type="text" id="diet_habit_note" name="diet_habit_note">
+                        <span id="diet_confirm"></span>
+                    </div>
+                    <div class="textarea">
+                        <label for="mk22_textarea">備註</label>
+                        <textarea name="mk22_textarea" id="mk22_textarea"></textarea>
+                    </div>
+                    <div class="nextOrLast">
+                        <button class="nextOrLast_choice" id="buy">確認結帳</button>
+                        <div class="nextOrLast_choice" id="laststep">回上一步</div>
+
+                    </div>
+
+                </div>
+
             </form>
         </div>
         

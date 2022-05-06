@@ -101,8 +101,8 @@ html{
     margin:0 auto;
     /* border:1px solid navy; */
     display:flex;
-    justify-content:space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
    
 }
 .bloglist-ol li{
@@ -114,6 +114,7 @@ html{
     border-radius: 5px;
     
 }
+
 .bloglist-ol a{
     text-decoration: none;
     
@@ -142,4 +143,8 @@ html{
 }
 .displayBlock{
     display:block;
+}
+.displayFlex_jc_start{
+    display:flex;
+    justify-content: start;
 }

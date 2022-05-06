@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的行程 測試版!!!!!</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_max1400.css">
+    <link rel="stylesheet" href="./css/common_max576.css">
     <link rel="stylesheet" href="./css/shopping.css">
-    <title>shopping-test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+    </style>
 </head>
 <body>
+    <nav class="nav">
+        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <img src="./image/index/more.png" alt="" class="hambergericon">
+         
+        <!--導航欄-->
+        <ol class="nav-ol">
+            <li><a href="./maintrip.html">精選行程</a></li>
+            <li><a href="./bloglist.html">走走小記</a></li>
+            <li><a href="./customized.html">客製旅遊</a></li>
+            <li><a href="./itemlist.html">所有行程</a></li>
+            <li><a href="./login.html">會員登入</a></li>
+            <li><a href="#" class="engversion-a">ENG</a></li>
+            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+                <div class="hidesearchbar searchbar_mobile" id="searchbararea">
+                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
+                </div>
+            </li>
+        </ol>
+        
+    </nav>
+    <header class="shopping-header">
+        <div class="navigation"><a href="./itemlist.html">所有行程</a> <a href="./item.html">>貓空健行半日遊></a><a href="./shooping.html">我的行程</a> </div>
+        <h1>我的行程</h1>
+    </header>
     <main class="shopping-main">
         <div class="form-container">
             <div class="selected">
@@ -37,76 +70,102 @@
                     <div class="adult-number">
                         <span>成人(7歲以上)</span>
                         <span>每人500元</span>
-                        <button id="adult-number-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                        <div id="adult-number-minus-btn"><i class="fa-solid fa-minus"></i></div>
                         <span id="mk22-adult-number">0</span>
-                        <button id="adult-number-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        <div id="adult-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
                     </div>
                     <div class="child-number">
                         <span>兒童(0~6歲)</span>
                         <span>每人300元</span>
-                        <button id="child-number-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                        <div id="child-number-minus-btn"><i class="fa-solid fa-minus"></i></div>
                         <span id="mk22-child-number">0</span>
-                        <button id="child-number-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        <div id="child-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
                     </div>
                 </div>
                 <div class="price-div">
                     <div class="price_container">
-                        消費金額共<span id="totalprice">TWD000元</span>
+                        消費金額共<span id="totalprice">TWD0元</span>
                     </div>
                     <div class="next_step">下一步</div>
-                <div>
+                </div>
+                <div class="info">
+                    <div class="info_major">
+                        <div>主要聯絡人:報名期間主要聯絡您</div>
+                        <div>
+                            <label for="mk22-major-name">姓名</label>
+                            <input type="text" name="mk22-major-name" id="mk22-major-name">
+                        </div>
+                        <div>
+                            <label for="mk22-major-phone">連絡電話</label>
+                            <input type="tel" name="mk22-major-phone" id="mk22-major-phone"
+                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required placeholder="09xx-xxx-xxx">
+                        </div>
+                        <div>
+                            <label for="major-id">身分證字號</label>
+                            <input type="text" placeholder="請輸入身分證字號"id="major-id" >    
+                        </div>
+                       
+                        
+                        
+                    </div>
+                    <div class="info_other">
+                        <div>成員:參與者的基本資料</div>
+                        <div>
+                            <label for="mk22-other-name">姓名</label>
+                            <input type="text" name="mk22-other-name" id="mk22-other-name">
+                        </div>
+                        <div>
+                            <label for="mk22-other-phone">連絡電話</label>
+                            <input type="tel" name="mk22-other-phone" id="mk22-other-phone"
+                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required placeholder="09xx-xxx-xxx">
+                            
+                        </div>
+                        <div>
+                            <label for="other-id">身分證字號</label>     
+                            <input type="text" placeholder="請輸入身分證字號"id="other-id" >
+                        </div>
+                       
+                       
+                    </div>
+                    <div class="diet-habit">
+                        <span>飲食習慣</span>
+                        <label for="mk22-diet-habit-veg">素食</label>
+                        <input type="number" id="mk22-diet-habit-veg" name="mk22-diet-habit-veg">人
+                        <label for="mk22-diet-habit-meat">葷食</label>
+                        <input type="number" id="mk22-diet-habit-meat" name="mk22-diet-habit-meat">人
+                        <label for="diet-habit-note">備註</label>
+                        <input type="text" id="diet-habit-note" name="diet-habit-note">
+                    </div>
+                    <div class="textarea">
+                        <label for="mk22-textarea">備註</label>
+                        <textarea name="mk22-textarea" id="mk22-textarea"></textarea>
+                    </div>
+
+                </div>
             </form>
         </div>
         
     </main>
-    <div class="diet-habit">
-        <span>飲食習慣</span>
-        <label for="mk22-diet-habit-veg">素食</label>
-        <input type="number" id="mk22-diet-habit-veg" name="mk22-diet-habit-veg">人
-        <label for="mk22-diet-habit-meat">葷食</label>
-        <input type="number" id="mk22-diet-habit-meat" name="mk22-diet-habit-meat">人
-        <label for="diet-habit-note">備註</label>
-        <input type="text" id="diet-habit-note" name="diet-habit-note">
-    </div>
-    
-    <div class="info">
-        <label for="mk22-name">姓名</label>
-        <input type="text" name="mk22-name" id="mk22-name">
-        <label for="mk22-phonenumber">連絡電話</label>
-        <input type="tel" name="mk22-phonenumber" id="mk22-phonenumber"
-        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required placeholder="09xx-xxx-xxx">
-    </div>
-    <div class="textarea">
-        <label for="mk22-textarea">備註</label>
-        <textarea name="mk22-textarea" id="mk22-textarea"></textarea>
-    </div>
-    
-
-    <div class="confirm">
-        <div class="select-pay"> 
-            <div class="creditcard-container">
-                <label for="creditcard">信用卡結帳</label>
-                <input type="radio" name="select-way" id="creditcard" >
-            </div>
+    <footer class="footer">
+        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <ol class="footer-ol">
+            <li><a href=""><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href=""><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href=""><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
             
-            <div class="atm-container">
-                <label for="atm">網路ATM結帳</label>
-                <input type="radio" name="select-way" id="atm" >
-            </div>    
-        </div>
-
-        <div class="price">
-            <div>消費金額</div>
-            <div id="price-div">TWD000元</div>
-            <button id="confirm-btn">確認結帳</button>
-        </div>
-    </div>
-
-
-
-
-
+        </ol>
+        <!--免責聲明-->
+        <p class="declare">
+            本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
+            參考資源:島內散步:https://walkin.tw/<br>
+            方格子https://vocus.cc/<br>
+            走靜貓空https://maokong.travel.taipei/<br>
+            新北市觀光旅遊網https://newtaipei.travel/
+        </p>
+    </footer>
+    <script src="./JS/common.js"></script> 
+    <script src="./JS/shooping.js"></script>
 </body>
 </html>

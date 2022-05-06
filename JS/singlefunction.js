@@ -101,6 +101,7 @@ export function controlSlide(){
 
 /* 這是走走小記的側邊選單功能*/
 export function blogListFilter(){
+    let bloglist_ol=document.querySelector(".bloglist-ol");
     let travel_note_aside=document.querySelector("#travel_note");
     let culture_atricle_aside=document.querySelector("#culture_atricle");
     let travelnoteClass=document.querySelectorAll(".travel-note");
@@ -108,6 +109,7 @@ export function blogListFilter(){
 
     travel_note_aside.addEventListener("click",function(e){
         e.preventDefault();
+      
         travelnoteClass.forEach(function(item,i){
             item.className="";
             item.classList.add("displayBlock");
@@ -120,6 +122,7 @@ export function blogListFilter(){
     });
     culture_atricle_aside.addEventListener("click",function(e){
         e.preventDefault();
+      
         cultureClass.forEach(function(item,i){
             item.className="";
             item.classList.add("displayBlock");
