@@ -50,7 +50,8 @@ h1{
     background-color: #fff;
     width:1300px;
     margin:0 auto;
-    padding:5px;
+    margin-bottom: 50px;
+    padding:10px;
     box-sizing: border-box;
     border-radius: 5px;
     box-shadow: 3px 3px 3px grey;
@@ -60,7 +61,7 @@ h1{
 /*左側選擇的商品欄位*/
 .selected{
     box-sizing: border-box;
-    border:1px solid grey;
+    /* border:1px solid grey; */
     width:300px;
     height:380px;
     margin-right:20px;
@@ -86,31 +87,30 @@ h1{
 
 /*表單本體*/
 .shopping-form{ 
-    border:2px solid red;
+    border:2px dashed grey;
     width:900px;
-    padding-left: 20px;
-
+    position:relative;
 }
 
 .time{
     width:100%;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     margin-top:20px;
 
 }
 .time label{
-    font-size: 22px;
+    font-size: 24px;
 }
 .time select{
     display:inline-block;
-    font-size: 22px;
+    font-size: 24px;
     height:30px;
     margin-left: 30px;
     /* border:0.5px solid grey; */
 }
 
 .time option{
-    font-size: 22px;
+    font-size: 24px;
 }
 
 /*選擇人數的欄位*/
@@ -121,13 +121,13 @@ h1{
 
 }
 .adult-number{
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     margin-top: 10px;
     width:700px;
 }
 .adult-number span{
     display:inline-block;
-    font-size: 22px;
+    font-size: 24px;
     height:22px;
     margin-right: 40px;
     vertical-align: middle; 
@@ -165,7 +165,7 @@ h1{
 }
 .child-number span{
     display:inline-block;
-    font-size: 22px;
+    font-size: 24px;
     height:22px;
     margin-right: 40px;
     vertical-align: middle;
@@ -202,18 +202,30 @@ h1{
     color:red;
     opacity: 0;
 }
+.next_step_alert{
+    color:red;
+    opacity: 0;
+}
 .price-div{
-    width:650px;
-    border:1px solid green;
+    width:700px;
+    height:100px;
+    padding-left:20px;
+    padding-right: 20px;
+    /* border:1px solid green; */
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 150px;
-    position:relative;
+    margin:40px auto 0px auto;
+    /* position:absolute; */
+    top:60%;
+    left:10%;
+    background-color: #E0E0E0;
+    border-radius:5px;
 }
 .price_container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 32px;
+    background-color: #E0E0E0;
 }
 .next_step{
     font-size: 32px;
@@ -224,7 +236,6 @@ h1{
     height:64px;
     background-color: #FF9105;
     border-radius: 5px;
-    margin-left: 150px;
     cursor: pointer;
     /* position:absolute;
     top:-21px;
@@ -242,59 +253,90 @@ h1{
 
 /*主要聯絡人的資訊*/
 .info{
-    border:1px solid blue;
-    /* margin-top:20px;
-    font-size: 20px; */
-    
+    /* border:1px solid blue; */
+    padding:10px;
+    margin-top:50px;
+    margin-bottom:0px;
+    font-size: 22px;
+    display:none; 
+
 }
 .info_major{
-    display:none;
+
+}
+.info_major h2{
+    margin-bottom: 20px;
 }
 .info_major>div{
     font-size: 22px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
 .info_major label{
     font-size: 22px;
-  
-    
+    margin-left: 20px;
+    margin-right: 10px;  
 }
-.info input{
-    font-size: 22px;    
+.info_major input{
+    font-size: 22px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
 }
 
-.info input[type="text"]{
+.info_major input[type="text"]{
     width:200px;
     margin-right: 40px;
 }
-.info input[type="tel"]{
-    width:150px;
+.info_major input[type="tel"]{
+    width:200px;
+    margin-right: 40px;
+}
+.info_major input[type="password"]{
+    width:250px;
     margin-right: 40px;
 }
 
 /*其他參加者的資訊*/
 .info_other{
+    margin-bottom: 50px;
+}
+.info_other_child{
+    box-sizing: border-box;
+    padding:10px;
+    border:1px solid red;
+}
+
+
+.info_other_child h2{
+    font-size: 22px;
+    margin-top: 20px;
 
 }
 
-.info_other > div{
-    font-size: 22px;
+.info_other :nth-child(2n+1) {
+    background-color: #E0E0E0;
+  }
+/* .info_other :nth-child(2n) {
+    background-color: white;
+  } */
+
+.info_other_child > div{
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.info_other label{
+.info_other_child  label{
     font-size: 22px;
-    
+    margin-left: 20px;
+    margin-right: 10px;  
 }
-.info input[type="text"]{
+.info_other_child  input[type="text"]{
+    font-size: 22px;
     width:200px;
-    margin-right: 40px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
 }
-.info input[type="tel"]{
-    width:150px;
-    margin-right: 40px;
+.info_other_child input[type="password"]{
+    font-size: 22px;
+    width:250px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
 }
 
 /*飲食習慣*/
@@ -303,15 +345,18 @@ h1{
     /* border:1px solid yellow; */
     margin-top:20px;
     font-size: 22px;
+    border-top: 2px dashed grey; 
     display:none;
 }
-.diet-habit span{
-margin-right: 30px;
+.diet-habit h2{
+margin-top:20px;
+margin-bottom: 20px;
 }
 
 .diet-habit label{
     font-size: 22px;
     margin-right: 10px;
+    margin-left: 20px;
 }
 .diet-habit label[for*="meat"]{
     margin-left:40px;
@@ -320,22 +365,32 @@ margin-right: 30px;
 .diet-habit input{
     width:40px;
     font-size: 22px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
+
     
 }
 .diet-habit label[for*="note"]{
-    margin-left:40px;
+    margin-left:0px;
 }
 .diet-habit input[type="text"]{
     width:300px;
 }
 
-
+.diet-habit>div{
+    
+}
+#diet_confirm{
+    margin-top: 20px;
+    margin-left: 20px;
+    color:red;
+    opacity: 0;
+}
 
 
 
 .textarea{
     /* border:1px solid yellow; */
-    height:50px;
+    height:100px;
     /* width:300px; */
     margin-top:20px;
     font-size: 20px;
@@ -344,14 +399,18 @@ margin-right: 30px;
     display:none;
 
 }
+
+.textarea h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
 .textarea label{
-    display: block;
-    margin-right: 10px;
     
 }
 .textarea textarea{
     height:80px;
     width:300px;
+    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
     
 }
 
@@ -360,6 +419,7 @@ margin-right: 30px;
 }
 
 .nextOrLast_choice{
+    border:0;
     font-size: 32px;
     line-height: 2;
     text-align: center;
@@ -370,10 +430,6 @@ margin-right: 30px;
     border-radius: 5px;
     /* margin-left: 150px; */
     cursor: pointer;
-   
-   
-
-
 }
 
 .confirm{

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/common_max1400.css">
     <link rel="stylesheet" href="./css/common_max576.css">
     <link rel="stylesheet" href="./css/shopping.css">
+    <!-- <link rel="stylesheet" href="./css/shopping_max1400.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
@@ -74,7 +75,7 @@
                         <span id="mk22-adult-number">0</span>
                         <div id="adult-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
-                        <!-- <span class="adult-alert">請先選擇梯次</span> -->
+                        <span class="select-alert">請先選擇梯次</span>
                     </div>
                     <div class="child-number">
                         <span>兒童(0~6歲)</span>
@@ -83,7 +84,7 @@
                         <span id="mk22-child-number">0</span>
                         <div id="child-number-plus-btn"><i class="fa-solid fa-plus"></i></div>
                         <span>人</span>
-                        <span class="select-alert">請先選擇梯次</span>
+                        <span class="next_step_alert">請先確認人數</span>
                     </div>
                 </div>
                 <div class="price-div">
@@ -95,7 +96,7 @@
                  <!--以下是下一步過後的操作-->  
                 <div class="info" id="info">
                     <div class="info_major">
-                        <div>主要聯絡人:報名期間主要聯絡您</div>
+                        <h2>主要聯絡人:報名期間主要聯絡您</h2>
                         <div>
                             <label for="mk22_major_name">姓名</label>
                             <input type="text" name="mk22_major_name" id="mk22_major_name" required minlength="2">
@@ -110,22 +111,21 @@
                             <input type="password" placeholder="請輸入身分證字號"id="major_id" required minlength="10"
                             pattern="^[A-Z]{1}[1-2]{1}[0-9]{8}$" >    
                         </div>
-                       
-                        
-                        
+                    </div>
+                    <div class="info_other" id="info_other">
                     </div>
                     <div class="diet-habit">
-                        <span>飲食習慣</span>
+                        <h2>飲食習慣</h2>
                         <label for="mk22_diet_habit_veg">素食</label>
                         <input type="number" id="mk22_diet_habit_veg" name="mk22_diet_habit_veg">人
                         <label for="mk22_diet_habit_meat">葷食</label>
                         <input type="number" id="mk22_diet_habit_meat" name="mk22_diet_habit_meat">人
-                        <label for="diet_habit_note">備註</label>
+                        <label for="diet_habit_note"><h2>飲食備註</h2></label>
                         <input type="text" id="diet_habit_note" name="diet_habit_note">
-                        <span id="diet_confirm"></span>
+                        <div id="diet_confirm">請確認數量</div>
                     </div>
                     <div class="textarea">
-                        <label for="mk22_textarea">備註</label>
+                        <label for="mk22_textarea"><h2>其他備註事項</h2></label>
                         <textarea name="mk22_textarea" id="mk22_textarea"></textarea>
                     </div>
                     <div class="nextOrLast">
