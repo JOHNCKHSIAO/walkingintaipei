@@ -1,8 +1,6 @@
 body{
     font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
-    background-color:#F5F5F5
-   
-
+    background-color:#E0E0E0;
 }
 /*導覽列*/
 /*導覽列logo圖*/
@@ -34,7 +32,7 @@ img.nav-logo{
     border-bottom:5px solid #FBBC04;
 }
 .nav{
-    width:1440px;
+    width:auto;
     height:70px;
     background-color: #fff;
     /* border: 1px solid green; */
@@ -176,7 +174,7 @@ img.nav-logo{
 
 .footer{
     box-sizing: border-box;
-    width:1440px;
+    width:auto;
     height:200px;
     margin:0 auto;
     background-color: grey;

@@ -4,13 +4,21 @@
 
     let searchbarArea=document.querySelector("#searchbararea");
     let searchbarLi=document.querySelector("#searchbarid");
+    let hideSearchbar=function(){
+        if(window.innerWidth>576){
+            searchbarArea.classList.add("hidesearchbar");
+        }
+        
+    }
+
     searchbarLi.addEventListener("click",function(e){
         e.stopPropagation();
-        searchbarArea.className="searchbar";
+        if(window.innerWidth>576){
+            searchbarArea.className="searchbar";
+        }
+        
     })
-    document.addEventListener("click",function(){
-        searchbarArea.classList.add("hidesearchbar");
-    })
+    document.addEventListener("click",hideSearchbar);
 
 // /*顯示隱藏的searchbar結束*/
 
@@ -20,7 +28,8 @@
     let gototopdiv=document.querySelector("#gototop");
     /*判斷是否為手機版*/
     if(window.innerWidth<576){
-        gototopdiv.classList.remove("gototopdiv");  
+        gototopdiv.classList.remove("gototopdiv");
+        // document.removeEventListener("click",hideSearchbar);  
     }
     /*監測scroll行為*/
     window.addEventListener("scroll",hideOrShow);

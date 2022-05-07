@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;
+}
 .shopping-header{
     width:1440px;
     margin:0 auto;
@@ -88,6 +91,8 @@ h1{
 /*表單本體*/
 .shopping-form{ 
     border:2px dashed grey;
+    padding-left: 20px;
+    padding-right: 20px;
     width:900px;
     position:relative;
 }
@@ -301,7 +306,7 @@ h1{
 .info_other_child{
     box-sizing: border-box;
     padding:10px;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 
@@ -311,12 +316,9 @@ h1{
 
 }
 
-.info_other :nth-child(2n+1) {
+.info_other>div:nth-child(2n+1) {
     background-color: #E0E0E0;
   }
-/* .info_other :nth-child(2n) {
-    background-color: white;
-  } */
 
 .info_other_child > div{
     margin-bottom: 20px;
@@ -344,8 +346,10 @@ h1{
 .diet-habit{
     /* border:1px solid yellow; */
     margin-top:20px;
+    padding:10px;
     font-size: 22px;
     border-top: 2px dashed grey; 
+    background-color: #E0E0E0;
     display:none;
 }
 .diet-habit h2{
@@ -392,6 +396,7 @@ margin-bottom: 20px;
     /* border:1px solid yellow; */
     height:100px;
     /* width:300px; */
+    padding:10px;
     margin-top:20px;
     font-size: 20px;
     display: flex;
@@ -432,93 +437,7 @@ margin-bottom: 20px;
     cursor: pointer;
 }
 
-.confirm{
-    /* border-top:2px solid #FBBC04; */
-    width:1000px;
-    background-color: #fff;
-    margin:0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content:end;
-    border-radius: 5px;;
-    box-shadow: 3px 3px 3px grey;
-}
-.select-pay{
-    width:180px;
-    /* border:1px solid green; */
-    margin-right: auto;
 
-}
-.select-pay label{
-  font-size: 20px;
-  
-  
-}
-.select-pay input{
-    font-size: 20px;
-}
-
-.creditcard-container{
-    box-sizing: border-box;
-    width:180px;
-    height:60px;
-    /* border:1px solid blue; */
-    /* border-bottom: 5px solid #FBBC04; */
-    border-radius: 5px;
-    padding-top: 20px;
-    padding-left: 20px;
-    /* margin-left: auto; */
-
-}
-.atm-container{
-    box-sizing: border-box;
-    width:180px;
-    height:60px;
-    /* border:1px solid blue; */
-    /* border-bottom: 5px solid #FBBC04; */
-    border-radius: 5px;
-    padding-top: 20px; 
-    padding-left: 20px;  
-    margin-top: 10px;
-    /* margin-left: auto; */
-
-}
-
-.price{
-    
-    /* border: 1px  solid yellow; */
-    display:flex;
-}
-.price div{ 
-    /* border: 1px solid red; */
-    
-    font-size: 32px;
-    line-height: 4;
-    
-}
-#price-div{
-    font-size: 32px;
-    width:200px;
-    line-height: 4;
-    color:red;
-    margin-left: 10px;
-
-}
-.price button{
-    display: inline-block;
-    margin-top: 41px;
-    margin-right: 20px;
-   border:none;
-   background-color:#FF9105;
-   color:white;
-   width:120px;
-   font-size: 24px;
-   height:48px;
-   border-radius: 5px;
-   cursor: pointer;
-  
-}
 .display_block{
     display:block;
 

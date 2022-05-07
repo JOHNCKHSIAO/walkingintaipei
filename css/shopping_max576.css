@@ -1,6 +1,6 @@
-@media screen and (max-width:1440px){
+@media screen and (max-width:576px){
     .shopping-header{
-        width:1200px;
+        width:auto;
         margin:0 auto;
         background-color: #E0E0E0;
         padding-top: 5px;
@@ -11,19 +11,19 @@
     /*麵包屑*/
     .navigation{
         /* border:1px solid blue; */
-        margin-left:50px;
+        margin-left:10px;
         margin-top: 10px;
     
     }
     .navigation a{
         text-decoration: none;
         color:#4A240C;
-        font-size:16px;
-        letter-spacing:5px;
+        font-size:1.8rem;
+        letter-spacing:1px;
     }
     
     h1{
-        font-size: 30px;
+        font-size: 3rem;
         text-align:center;
         margin:0 auto;
         margin-top:25px;
@@ -35,7 +35,7 @@
     .shopping-main{
         box-sizing: border-box;
         padding:5px 0;
-        width:1200px;
+        width:auto;
         margin:0 auto;
         background-color:#E0E0E0;
         /* border:1px solid red; */
@@ -45,25 +45,25 @@
     /*表單的容器*/
     .form-container{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        border:2px solid gold;
+        border:0;
         /* border-radius: 5px; */
         background-color: #fff;
-        width:1100px;
+        width:100%;
         margin:0 auto;
         margin-bottom: 50px;
-        padding:10px;
+        padding:5px;
         box-sizing: border-box;
         border-radius: 5px;
         box-shadow: 3px 3px 3px grey;
-    
     
     }
     /*左側選擇的商品欄位*/
     .selected{
         box-sizing: border-box;
         /* border:1px solid grey; */
-        width:270px;
+        width:100%;
         height:auto;
         margin-right:20px;
         /* padding:20px; */
@@ -74,13 +74,13 @@
         
     }
     .selected h2{
-        font-size: 22px;
+        font-size: 2.2rem;
         line-height: 2;
         margin-left:10px;
         margin-bottom: px;
     }
     .selected p{
-        font-size: 20px;
+        font-size: 2rem;
         line-height: 2;
         margin-left:10px;
         margin-bottom: 10px;
@@ -88,9 +88,12 @@
     
     /*表單本體*/
     .shopping-form{ 
-        border:2px dashed grey;
-        width:900px;
+        border:0;
+        border-top:2px dashed grey;
+        width:100%;
         position:relative;
+        padding-left:0px;
+        padding-right: 0px;
     }
     
     .time{
@@ -100,23 +103,23 @@
     
     }
     .time label{
-        font-size: 24px;
+        font-size: 2.2rem;
     }
     .time select{
         display:inline-block;
-        font-size: 24px;
+        font-size: 2.2rem;
         height:30px;
-        margin-left: 30px;
+        margin-left: 0px;
         /* border:0.5px solid grey; */
     }
     
     .time option{
-        font-size: 24px;
+        font-size: 2.2rem;
     }
     
     /*選擇人數的欄位*/
     .number{
-        width:550px;
+        width:100%;
         /* border:1px solid blue; */
         margin-top:20px;
     
@@ -124,22 +127,23 @@
     .adult-number{
         /* border:1px solid yellow; */
         margin-top: 10px;
-        width:700px;
+        width:100%;
     }
     .adult-number span{
+        /* border:1px solid red; */
         display:inline-block;
-        font-size: 24px;
+        font-size:2rem;
         height:22px;
-        margin-right: 40px;
+        margin-right: 10px;
         vertical-align: middle; 
     }
     
-    
+    /*調整數量加減的區塊*/
     .adult-number>div{
         display:inline-block;
         border:none;
         background-color:#fff;
-        font-size: 24px;
+        font-size: 2rem;
         vertical-align:middle;
         cursor: pointer;
         color:#4A240C;
@@ -152,28 +156,31 @@
         background-color:white;
         border:2px solid #FBBC04;
         margin-right: 0;
-        font-size: 20px;
+        font-size: 2rem;
         line-height: 2;
         text-align: center;
     
+    }
+    .adult-number :nth-child(6){
+        display:none;
     }
     
     
     .child-number{
         /* border:1px solid yellow; */
         margin-top:10px;
-        width:700px;
+        width:100%;
     }
     .child-number span{
         display:inline-block;
-        font-size: 24px;
+        font-size:2rem;
         height:22px;
-        margin-right: 40px;
+        margin-right: 10px;
         vertical-align: middle;
     }
     
     .child-number :nth-child(2){
-        margin-left: 20px;
+        margin-left:20px;
         
     }
     
@@ -181,7 +188,7 @@
         display:inline-block;
         border:none;
         background-color:#fff;
-        font-size: 24px;
+        font-size: 2rem;
         cursor: pointer;
         color:#4A240C;
         vertical-align: middle;
@@ -194,9 +201,13 @@
         background-color:white;
         border:2px solid #FBBC04;
         margin-right: 0;
-        font-size: 20px;
+        font-size: 2rem;
         line-height: 2;
         text-align: center;
+    }
+
+    .child-number :nth-child(6){
+        display:none;
     }
     
     .select-alert{
@@ -208,12 +219,12 @@
         opacity: 0;
     }
     .price-div{
-        width:700px;
-        height:100px;
-        padding-left:20px;
-        padding-right: 20px;
+        width:100%;
+        height:130px;
+        padding:20px 0px 20px 0px;
         /* border:1px solid green; */
         display:flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin:40px auto 0px auto;
@@ -222,16 +233,17 @@
     }
     .price_container{
         /* border: 1px solid red; */
-        font-size: 32px;
-        background-color: #E0E0E0;
+        font-size: 2.6rem;
+        background-color:transparent;
     }
     .next_step{
-        font-size: 30px;
+        font-size: 2.6rem;
+        margin-top: 30px;
         line-height: 2;
         text-align: center;
         color:white;
         width:110px;
-        height:60px;
+        height:52px;
         background-color: #FF9105;
         border-radius: 5px;
         cursor: pointer;
@@ -252,10 +264,10 @@
     /*主要聯絡人的資訊*/
     .info{
         /* border:1px solid blue; */
-        padding:10px;
+        padding:5px;
         margin-top:50px;
         margin-bottom:0px;
-        font-size: 22px;
+        font-size: 2rem;
         display:none; 
     
     }
@@ -270,12 +282,12 @@
         margin-bottom: 20px; 
     }
     .info_major label{
-        font-size: 22px;
-        margin-left: 20px;
+        font-size: 2rem;
+        margin-left: 0px;
         margin-right: 10px;  
     }
     .info_major input{
-        font-size: 22px;
+        font-size: 2rem;
         font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
     }
     
@@ -284,11 +296,11 @@
         margin-right: 40px;
     }
     .info_major input[type="tel"]{
-        width:200px;
+        width:180px;
         margin-right: 40px;
     }
     .info_major input[type="password"]{
-        width:250px;
+        width:165px;
         margin-right: 40px;
     }
     
@@ -298,13 +310,13 @@
     }
     .info_other_child{
         box-sizing: border-box;
-        padding:10px;
+        padding:5px;
         /* border:1px solid red; */
     }
     
     
     .info_other_child h2{
-        font-size: 22px;
+        font-size: 2rem;
         margin-top: 20px;
     
     }
@@ -319,18 +331,18 @@
     }
     
     .info_other_child  label{
-        font-size: 22px;
-        margin-left: 20px;
+        font-size: 2rem;
+        margin-left: 0px;
         margin-right: 10px;  
     }
     .info_other_child  input[type="text"]{
-        font-size: 22px;
+        font-size: 2rem;
         width:200px;
         font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
     }
     .info_other_child input[type="password"]{
-        font-size: 22px;
-        width:250px;
+        font-size: 2rem;
+        width:165px;
         font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
     }
     /*飲食習慣*/
@@ -346,29 +358,31 @@
     .diet-habit h2{
     margin-top:20px;
     margin-bottom: 20px;
+    font-size: 2rem;
     }
     
     .diet-habit label{
-        font-size: 22px;
+        font-size: 2rem;
         margin-right: 10px;
-        margin-left: 20px;
+        margin-left:0px;
     }
     .diet-habit label[for*="meat"]{
-        margin-left:40px;
+        margin-left:30px;
+        font-size: 2rem;
     }
     
     .diet-habit input{
-        width:40px;
-        font-size: 22px;
+        width:50px;
+        font-size: 2rem;
         font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
     
         
     }
     .diet-habit label[for*="note"]{
-        margin-left:40px;
+        margin-left:0px;
     }
     .diet-habit input[type="text"]{
-        width:300px;
+        width:250px;
     }
     
     .diet-habit>div{
@@ -396,7 +410,7 @@
     }
     
     .textarea h2{
-        font-size: 22px;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
     .textarea label{
@@ -415,12 +429,12 @@
     
     .nextOrLast_choice{
         border:0;
-        font-size: 30px;
+        font-size: 2.6rem;
         line-height: 2;
         text-align: center;
         color:white;
         width:150px;
-        height:60px;
+        height:52px;
         background-color: #FF9105;
         border-radius: 5px;
         /* margin-left: 150px; */

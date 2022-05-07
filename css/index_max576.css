@@ -4,7 +4,7 @@
     }
     .index-header{
         box-sizing: border-box;
-        width:720px;
+        width:100vw;
         /* border:1px solid red; */
         margin:0 auto;
         background-color:#fff;
@@ -12,19 +12,24 @@
     
     
     .indexslide{
-        width:300vw;
-        height:300px;
+        width:100vw;
+        height:500px;
         margin: 0 auto;
         position: relative;
         border:1px solid red;
-        display:none;
+        display:block;
+    }
+    picture{
+        height:500px;
+       width:231px;
     }
     .slideimg{
-        height:300px;
-        position:absolute;
+       height:500px;
+       width:231px;
+         /* position:absolute;
         left:50%;
-        transform: translateX(-50%);
-        display:none;
+        transform: translateX(-50%); */
+         display:none; 
     }
     .on{
         display:block;

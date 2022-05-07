@@ -54,7 +54,9 @@
     let next_stepFn=function(e){
         //先判斷有無選取人數
         e.preventDefault();
-        if( childIndex==0 && adultIndex==0 ){
+        if(window.innerWidth<=576 && (childIndex==0 && adultIndex==0)){
+            alert("請先選擇人數")
+        }else if( childIndex==0 && adultIndex==0 ){
             next_step_alert.style.opacity=100;
         }else{
             console.log("click");
@@ -132,12 +134,16 @@ function childCal(arg){
 
 /*先選梯次 否則警告*/
 function alertselect(arg){
-    
-    if (arg==1){
-        select_alert.style.opacity="100";
+    if (window.innerWidth<=576 && arg==1){
+            alert("請先選擇梯次");
     }else{
-        select_alert.style.opacity="0";
+        if (arg==1){
+            select_alert.style.opacity="100";
+        }else{
+            select_alert.style.opacity="0";
+        }
     }
+   
 }
 
 /*新增貼文*/
