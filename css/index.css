@@ -3,21 +3,20 @@ html{
 }
 .index-header{
     box-sizing: border-box;
-    width:100%;
+    width:auto;
     /* border:1px solid red; */
     margin:0 auto;
-    background-color:#fff;
 }
-
 
 .indexslide{
-    width:auto;
-    height:auto;
-    /* background-image: url('../image/index/slide1.jpg'); */
-
+    width:100%;
     position: relative;
-    
 }
+
+.img_oringin{
+    width:100%;
+}
+
 .slideimg{
     width:100%;
     display:none;
@@ -38,7 +37,6 @@ html{
     top:48%;
     left:1.3%;
     cursor: pointer;
-   
 }
 
 .slide-right-btn{
@@ -98,7 +96,7 @@ html{
 .title3{
     position:absolute;
     top:20%;
-    left:60%;
+    left:50%;
     color:grey;
     text-shadow:3px 3px 3px white;
 }
@@ -443,9 +441,6 @@ html{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
-
 }
 .ourclient-ol li{
     box-sizing: border-box;

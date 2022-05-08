@@ -13,6 +13,9 @@ html{
     position: relative;
     
 }
+.img_oringin{
+    width:100%;
+}
 .slideimg{
     width:100%;
     display:none;
@@ -104,7 +107,7 @@ html{
     text-shadow:3px 3px 3px black;
     position:absolute;
     top:15%;
-    left:65%;
+    left:55%;
 
 }
 .title5{
@@ -112,7 +115,7 @@ html{
     text-shadow:3px 3px 3px black;
     position:absolute;
     top:80%;
-    left:65%;
+    left:55%;
 
 }
 

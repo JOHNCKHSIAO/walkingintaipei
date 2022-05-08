@@ -4,7 +4,7 @@
     }
     .index-header{
         box-sizing: border-box;
-        width:100vw;
+        width:auto;
         /* border:1px solid red; */
         margin:0 auto;
         background-color:#fff;
@@ -12,23 +12,14 @@
     
     
     .indexslide{
-        width:100vw;
-        height:500px;
+        width:auto;
         margin: 0 auto;
         position: relative;
-        border:1px solid red;
+        /* border:1px solid red; */
         display:block;
     }
-    picture{
-        height:500px;
-       width:231px;
-    }
+  
     .slideimg{
-       height:500px;
-       width:231px;
-         /* position:absolute;
-        left:50%;
-        transform: translateX(-50%); */
          display:none; 
     }
     .on{
@@ -37,68 +28,50 @@
     
     
      .slide-left-btn{
-        display:block;
-        width:30px;
-        height:50px;
-        border:none;
-        background-color: white;
-        opacity: 70%;
-        clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
-        position: absolute;
-        top:50%;
-        left:20px;
-        cursor: pointer;
         display:none;
        
     }
     
     .slide-right-btn{
-        display:block;
-        width:30px;
-        height:50px;
-        border:none;
-        background-color: white;
-        opacity: 70%;
-        clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
-        position: absolute;
-        top:50%;
-        left:1150px;
-        cursor: pointer;
         display:none;
     } 
+
+    h2.title1{
+        font-size: 2rem;
+    }
+    h2.title2{
+        font-size: 2rem;
+    }
+    h2.title3{
+        top:20%;
+        left:20%;
+        font-size:2rem;
+ 
+    }
+    h2.title4{
+        top:70%;
+        left:20%;
+        font-size: 2rem;
     
+    }
+    h2.title5{
+        top:30%;
+        left:20%;
+        font-size: 2rem;
+    
+    }
     /*點點的區塊*/
      .dots{
-        width:70px;
-        margin:0 auto;
-        position:absolute;
-        top:480px;
-        left:50%; 
-        transform: translate(-50%,0);
         display:none;
     }
 
     .dot{
-        height:8px;
-        width:8px;
-        border-radius: 50%;
-        background-color:#fff;
-        margin-right:2px;
-        display:inline-block;
-        opacity: 70%;
         display:none;
     }
     .doton{
         opacity: 100%;
     } 
     .slidetitle{
-        display:none;
-        font-size:3rem;
-        color:grey;
-        text-shadow: 1px 1px  black;
-        position:absolute;
-        top:40px;
-        left:40px;
         display:none;
     }
     .post{
@@ -130,13 +103,12 @@
     }
     /*以下是最新活動列表*/
     .news{
-        box-sizing: border-box;
         width:auto;
         height:auto;
-        background-color:#E0E0E0;
         margin:0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
         padding:0px;
+        padding-top:40px;
         /* border:1px solid green; */
         border-radius: 5px;
         position:relative;
@@ -203,15 +175,9 @@
     }
     
     .activity1{
-        text-decoration: none;
-        display:block;
         width:295px;
         height:220px;
         max-width: 100%;
-        background-image: url("../image/index/newactivity1.jpg");
-        background-size: cover;
-        position:relative;
-        border-radius: 5px;
         /* border:1px solid red; */
         /* display:none; */
         margin:0 auto;
@@ -220,30 +186,19 @@
         
     }
     .activity2{
-        text-decoration: none;
-        display:block;
+       
         width:295px;
         height:220px;
         max-width: 100%;
-        background-image: url("../image/index/newactivity2.jpg");
-        background-size: cover;
-        position:relative;
-        border-radius: 5px;
-        /* display:none; */
         margin:0 auto;
         margin-bottom: 20px;
         
     }
     .activity3{
-        text-decoration: none;
-        display:block;
+        
         width:295px;
         height:220px;
         max-width: 100%;
-        background-image: url("../image/index/newactivity3.jpg");
-        background-size: cover;
-        position:relative;
-        border-radius: 5px;
         /* display:none; */
         margin:0 auto;
         margin-bottom: 20px;
@@ -317,9 +272,6 @@
         height:200px;
         width:200px;
         max-width: 200px;
-        border-radius: 50%;
-        background-image: url("../image/index/indexcus1.jpg");
-        background-size: cover;
     }
     
     .customizedpic-2{
@@ -328,20 +280,12 @@
         width:200px;
         max-width: 200px;
         max-width: 200px;
-        border-radius: 50%;
-        background-image: url("../image/index/indexcus2.jpg");
-        background-size: cover;
-    
     }
     .customizedpic-3{
         /* border:1px solid red; */
         height:200px;
         width:200px;
         max-width: 200px;
-        border-radius: 50%;
-        background-image: url("../image/index/indexcus3.jpg");
-        background-size: cover;
-    
     }
     /*克製旅行小圖的外框*/
     .customizedpic-outline{
@@ -422,9 +366,7 @@
         color:#fff;
         border-radius: 5px;
     }
-    .customized a:hover{
-        transform:scale(1.05);
-    }
+
     .airplane-icon{
         width:50px;
         height:50px;

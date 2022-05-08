@@ -1,74 +1,44 @@
 @media screen and (max-width:575.98px){
     .main-header{
         box-sizing: border-box;
-        width:1200px;
+        width:auto;
         /* border:1px solid blue; */
         margin:0 auto;
-        background-color: #fff;
     }
     .mainslide{
         width:100%;
-        height:600px;
+        height:auto;
         position: relative;
         
     }
     .slideimg{
-        width:100%;
         display:none;
+    }
+    .img_oringin{
+        width:100%;
     }
     .on{
         display:block;
     }
     
     .slide-left-btn{
-        display:block;
-        width:30px;
-        height:50px;
-        border:none;
-        background-color: white;
-        opacity: 70%;
-        clip-path:polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
-        position: absolute;
-        top:275px;
-        left:20px;
-        cursor: pointer;
-       
+        display:none;
     }
     
     .slide-right-btn{
-        display:block;
-        width:30px;
-        height:50px;
-        border:none;
-        background-color: white;
-        opacity: 70%;
-        clip-path: polygon(38% 0,50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
-        position: absolute;
-        top:275px;
-        left:1390px;
-        cursor: pointer;
+        display:none;
     }
     /*點點的區塊*/
     .dots{
-        width:70px;
-        margin:0 auto;
-        position:absolute;
-        top:580px;
-        left:50%; /*還要再調*/
-        transform: translate(-50%,0);
+        display:none;
     }
     
     .dot{
-        height:8px;
-        width:8px;
-        border-radius: 50%;
-        background-color:#fff;
-        margin-right:2px;
-        display:inline-block;
-        opacity: 70%;
+        display:none;
     }
     .doton{
         opacity: 100%;
+        display:none;
     }
     .slidetitle{
         display:none;
@@ -82,17 +52,37 @@
     .post{
         display:block;
     }
+    .title1{
+        color:white;
+        font-size: 2rem;
+        top:60%;
+        left:10%;
+    }
+    .title2{
+        color:white;
+        font-size: 2rem;
+        top:30%;
+        left:10%;
+    }
+    .title3{
+        color:white;
+        font-size: 2rem;
+        top:20%;
+        left:40%;
+    }
     
-    /*換圖的動畫*/
-    .fade {
-        animation-name: fade;
-        animation-duration: 2s;
-      }
-      
-      @keyframes fade {
-        from {opacity: .3}
-        to {opacity: 1}
-      }
+    .title4{
+        color:white;
+        font-size: 2rem;
+        top:15%;
+        left:40%;
+    }
+    .title5{
+        color:white;
+        font-size: 2rem;
+        top:60%;
+        left:30%;
+    }
     
     /*下面是main*/
     .maintrip-main{
