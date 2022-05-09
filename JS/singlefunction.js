@@ -141,7 +141,9 @@ export function copyURL(){
     let copyURL_img=document.querySelector("#copyURL_img");
     copyURL_img.addEventListener("click",function(){
         let url=window.location.href;
-        document.execCommand('copy');
+        Clipboard.writeText(url);
+        Clipboard.readText();
+        alert("連結已複製");
 
     })
 }
