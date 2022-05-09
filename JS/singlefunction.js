@@ -135,3 +135,13 @@ export function blogListFilter(){
     })
    
 }
+
+/*這是複製網址的功能*/
+export function copyURL(){
+    let copyURL_img=document.querySelector("#copyURL_img");
+    copyURL_img.addEventListener("click",function(){
+        let url=window.location.href;
+        document.execCommand('copy');
+
+    })
+}

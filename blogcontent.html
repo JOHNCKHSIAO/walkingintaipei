@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"           content="https://johnckhsiao.github.io/walkingintaipei/blogcontent.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Your Website Title" />
+    <meta property="og:description"   content="Your description" />
+    <meta property="og:image"         content="https://johnckhsiao.github.io/walkingintaipei/blogcontent.html" />
+</head>
     <title>走走小記:文化記事</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -65,6 +71,8 @@
 
             </aside>
             <section class="blogcontent-section">
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v13.0" nonce="mkDgJtPc"></script>
                 <h1>文化記事:青山宮與艋舺大拜拜</h1>
                 <article>
                     <img src="./image/blog/blogcontentpic1.jpg" alt="" class="blogcontent-img1">
@@ -111,10 +119,12 @@
                     
                 </article>
                 <div class="media_container">
-                    <img src="./image/blog/facebook.png" alt="" >
+                    <div class="fb-share-button" data-href="https://johnckhsiao.github.io/walkingintaipei/blogcontent.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjohnckhsiao.github.io%2Fwalkingintaipei%2Fblogcontent.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
                     <img src="./image/blog/line.png" alt="" >
-                    <img src="./image/blog/link.png" alt="">
+                    <img src="./image/blog/link.png" alt="" id="copyURL_img">
                 </div>
+
+                
             </section>
 
         </div>
@@ -139,5 +149,10 @@
     </footer>
 
     <script src="./JS/common.js"></script>
+    <script type="module">
+        import {copyURL} from './JS/singlefunction.js'
+        copyURL();
+    </script>
+  
 </body>
 </html>
