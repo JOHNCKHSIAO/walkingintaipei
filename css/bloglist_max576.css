@@ -16,7 +16,7 @@
     }
     .bloglist-aside ol{
         /* width:200px; */
-        /* border:1px solid blue; */
+        border:1px solid blue;
         box-sizing: border-box;
         position:relative;
     
@@ -84,15 +84,16 @@
         margin:0 auto;
         /* border:1px solid navy; */
         display:flex;
-        justify-content:space-between;
+        justify-content:start;
         flex-wrap: wrap;
-        padding:5px;
+        padding-left:6px;
        
     }
     .bloglist-ol li{
-        width:170px;
+        width:47%;
         height:auto;
-        margin-top: 30px;
+        margin-top: 50px;
+        margin-right: 6px;
         /* border:1px solid red; */
         background-color: #fff;
         border-radius: 5px;
@@ -103,8 +104,8 @@
     }
  
     .bloglist-ol img{
-        width:170px;
-        height:139px;
+        width:100%;
+        height:auto;
         border-radius: 5px 5px 0px 0px;
         
     }

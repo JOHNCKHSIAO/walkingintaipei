@@ -70,8 +70,8 @@ html{
 .blogcontent-section{
     box-sizing: border-box;
     position: relative;
-    /* border: 1px solid red;;
-     */
+    /* border: 1px solid red;; */
+    margin:0 auto;
 
 }
 .blogcontent-section h1{

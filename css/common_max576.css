@@ -178,24 +178,24 @@
          margin-right: 30px;
     }
     .nav_ol_mobile{
-        width:50vw;
+        width:60vw;
         height:100vh;
         /* border:1px solid blue;  */
         background-color:#FF9105;
         position:absolute;
         top:0;
-        right:-50Vw;
+        right:-60vw;
         display:block;
      
     }
     .nav_ol_open{
-        transform: translateX(-50vw);
+        transform: translateX(-60vw);
         transition-duration: .5s;
         transition-property: all;
         transition-timing-function: ease;
     }
     .nav_ol_close{
-        transform: translateX(50vw);
+        transform: translateX(60vw);
         transition-duration: 1s;
         transition-property: all;
         transition-timing-function: ease;

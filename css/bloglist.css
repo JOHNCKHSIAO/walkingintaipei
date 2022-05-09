@@ -70,6 +70,7 @@ html{
 .bloglist-section{
     box-sizing: border-box;
     /* border:1px solid black; */
+    margin:0 auto;
 }
 .bloglist-section>div{  
     box-sizing: border-box;
