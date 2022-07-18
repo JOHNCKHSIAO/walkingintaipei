@@ -1,0 +1,21 @@
+.h2::before {
+  content: "";
+  display: block;
+  width: 200px;
+  border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 2%;
+}
+
+.h3::before {
+  content: "";
+  display: block;
+  height: 40px;
+  border-left: 4px solid #FBBC04;
+  position: absolute;
+  top: 0%;
+  left: -2%;
+}
+
+/*# sourceMappingURL=test.css.map */

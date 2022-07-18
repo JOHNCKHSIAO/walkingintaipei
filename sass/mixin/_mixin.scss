@@ -1,0 +1,21 @@
+//標題底部裝飾線
+@mixin decorateBottomLine($width,$borderWeight,$color,$top,$left){
+    content: '';
+    display: block;
+    width:$width;
+    border-bottom: $borderWeight solid $color;
+    position: absolute;
+    top:$top;
+    left:$left;
+
+}
+
+@mixin decorateSideLine($height,$borderWeight,$color,$top,$left){
+    content: '';
+    display: block;
+    height:$height;
+    border-left: $borderWeight solid $color;
+    position: absolute;
+    top:$top;
+    left:$left;
+}

@@ -1,0 +1,18 @@
+@import'base/var';
+@import'mixin/mixin';
+.h2{
+
+    &::before{
+    @include decorateBottomLine(200px,5px,$orange,90%,2%);
+    }
+   
+
+}
+.h3{
+    
+    &::before{
+
+    @include decorateSideLine(40px,4px,$orange,0%,-2%);
+        
+    }
+}

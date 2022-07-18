@@ -1,0 +1,48 @@
+$btnWidth:180px;
+$btnHeight:40px;
+$btnLineHeight:2;
+$fontSize:20px;
+
+.hyperLinkBtn{
+    width:$btnWidth;
+    height:$btnHeight;
+    background: $darkorange;
+    border-radius: 5px; 
+    &:hover{
+        transform:scale(1.05);
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+        p{
+            font-size: $fontSize;
+            line-height:$btnLineHeight;
+            color:$white;
+            text-align: center;
+        }
+    }
+
+}
+//其他按鈕
+
+.otherBtn{
+    width:$btnWidth;
+    height:$btnHeight;
+    background: $orange;
+    border-radius: 5px;
+
+    &:hover{
+        transform:scale(1.05);
+    }
+
+    p{
+        font-size: $fontSize;
+        line-height:$btnLineHeight;
+        color:$white;
+        text-align: center;
+
+    }
+}

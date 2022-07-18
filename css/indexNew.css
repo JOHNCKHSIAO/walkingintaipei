@@ -1,8 +1,81 @@
 @charset "UTF-8";
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.25%;
+}
+
+h1 {
+  font-size: 36rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 28rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 24rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 20rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16rem;
+  line-height: 1.5;
+}
+
+.hyperLinkBtn {
+  width: 180px;
+  height: 40px;
+  background: #FF9105;
+  border-radius: 5px;
+}
+.hyperLinkBtn:hover {
+  transform: scale(1.05);
+}
+.hyperLinkBtn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hyperLinkBtn a p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.otherBtn {
+  width: 180px;
+  height: 40px;
+  background: #FBBC04;
+  border-radius: 5px;
+}
+.otherBtn:hover {
+  transform: scale(1.05);
+}
+.otherBtn p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
 .index-header {
   box-sizing: border-box;
   width: 1280px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -127,7 +200,6 @@
   width: 1280px;
   background-color: #E0E0E0;
   margin: 0 auto;
-  border: 1px solid blue;
 }
 
 .news {
@@ -139,7 +211,6 @@
   margin-top: 80px;
   padding: 20px;
   padding-top: 25px;
-  border: 1px solid green;
   border-radius: 5px;
   position: relative;
   display: flex;
@@ -222,38 +293,46 @@
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 30px;
-  width: 154px;
-  height: 46px;
+  width: 120px;
+  position: relative;
+}
+.customized h3::before {
+  content: "";
+  display: block;
+  width: 120px;
   border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 100%;
+  left: 0%;
 }
 .customized p {
-  margin: 40px auto 20px auto;
+  margin: 50px auto 50px auto;
   text-align: center;
   color: #4A240C;
+  font-weight: 700;
 }
 .customized .customized-ol {
-  width: 1080px;
+  width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 .customized .customized-ol li {
-  width: 340px;
-  height: 500px;
-  /* border:1px solid black; */
+  width: 300px;
   position: relative;
 }
 .customized .customized-ol li .customizedpic-outline {
   box-sizing: border-box;
-  width: 340px;
-  height: 340px;
+  width: 290px;
+  height: 290px;
   padding: 20px;
   border-radius: 50%;
   background-color: #F5E75C;
+  margin: 0 auto;
 }
 .customized .customized-ol li .customizedpic-outline .customizedpic {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   background-size: cover;
 }
@@ -266,54 +345,30 @@
 .customized .customized-ol li .customizedpic-outline .customimg-3 {
   background-image: url("../image/index/indexcus3.jpg");
 }
-.customized .customized-ol li .customizedpic-outline h4 {
-  margin-top: 20px;
+.customized .customized-ol li h4 {
+  margin-top: 30px;
   text-align: center;
   color: black;
+  position: relative;
 }
-.customized .customized-ol li .customizedpic-outline h4::before {
-  /* 小標題的底線 */
+.customized .customized-ol li h4::before {
   content: "";
-  border-left: 5px solid #FBBC04;
-  height: 30px;
   display: block;
-  position: absolute;
-  top: 358px;
-  left: 100px;
-}
-.customized .customized-ol li .customizedpic-outline .customh4::before {
-  content: "";
+  height: 26px;
   border-left: 5px solid #FBBC04;
-  height: 30px;
-  display: block;
   position: absolute;
-  top: 358px;
-  left: 88px;
+  top: 10%;
+  left: 25%;
 }
 .customized .customized-ol p {
-  width: 315px;
-  /* border:1px solid red; */
   margin-left: 20px;
   color: #4A240C;
   margin: 0 auto;
   margin-top: 20px;
   line-height: 2;
 }
-.customized a {
-  text-decoration: none;
-  display: block;
-  width: 180px;
-  height: 60px;
-  margin: 40px auto 40px auto;
-  background-color: #FF9105;
-  font-size: 24px;
-  line-height: 2.5;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-}
-.customized a:hover {
-  transform: scale(1.05);
+.customized .customizebtn {
+  margin: 60px auto 60px auto;
 }
 
 .airplane-icon {
@@ -325,30 +380,35 @@
 }
 
 .good-icon {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   transform: rotate(15deg);
   position: absolute;
   left: 60px;
   bottom: -60px;
 }
 
-.ourclient {
-  border: 1px solid green;
-}
-.ourclient h3 {
+.ourclient .ourclient-title {
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 190px;
+  width: 150px;
   height: 46px;
+  position: relative;
+}
+.ourclient .ourclient-title::before {
+  content: "";
+  display: block;
+  width: 150px;
   border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0%;
 }
 .ourclient .ourclient-ol {
   box-sizing: border-box;
-  width: 100%;
-  border: 1px solid red;
+  width: 1100px;
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
@@ -358,10 +418,8 @@
 .ourclient .ourclient-ol li {
   box-sizing: border-box;
   background-color: #D6D2C5;
-  /* border:1px solid blue; */
   margin-bottom: 20px;
-  width: 600px;
-  height: 350px;
+  width: 530px;
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -369,18 +427,24 @@
 }
 .ourclient .ourclient-ol li div {
   width: 300px;
-  height: 300px;
   margin-top: 15px;
 }
-.ourclient .ourclient-ol li div h3 {
-  font-size: 30px;
-  border-left: 5px solid #FBBC04;
+.ourclient .ourclient-ol li div h4 {
+  width: 200px;
+  position: relative;
   text-align: center;
 }
+.ourclient .ourclient-ol li div h4::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
 .ourclient .ourclient-ol li div p {
-  font-size: 20px;
   color: #4A240C;
-  width: 300px;
   /* margin:0 auto; */
   /* border:1px solid black; */
   word-spacing: 2px;
@@ -389,40 +453,44 @@
 }
 .ourclient .ourclient-ol li .client-pic {
   display: block;
-  width: 150px;
-  height: 150px;
-  margin-top: 20px;
+  width: 180px;
+  height: 180x;
   border-radius: 5px;
 }
 
 .ourstory {
-  /* border:1px solid green; */
   position: relative;
   margin-bottom: 50px;
   border-radius: 5px;
 }
-.ourstory h2 {
-  font-size: 36px;
+.ourstory .ourstory-title {
   text-align: center;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 20px;
-  width: 190px;
-  height: 45px;
+  width: 150px;
+  position: relative;
+}
+.ourstory .ourstory-title::before {
+  content: "";
+  display: block;
+  width: 150px;
   border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0%;
 }
 .ourstory .ourstory-icon {
-  width: 123px;
-  height: 134px;
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: -60px;
+  top: 0px;
   left: 190px;
 }
 .ourstory .ourstory-div {
   box-sizing: border-box;
-  width: 1300px;
+  width: 1180px;
   margin: 0 auto;
-  /* border:1ps solid red; */
   display: flex;
   flex-wrap: wrap;
   /* align-items: center; */
@@ -430,8 +498,8 @@
   padding: 10px 30px;
 }
 .ourstory .ourstory-div img {
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 333px;
   margin-top: 20px;
   display: block;
   border-radius: 5px;
@@ -442,14 +510,67 @@
   /* border:1px solid red; */
   margin-top: 30px;
 }
-.ourstory .ourstory-div h3 {
-  font-size: 24px;
-  border-left: 5px solid #FBBC04;
-  text-indent: 30px;
+.ourstory .ourstory-div .ourstory-subtitle1 {
   margin-bottom: 10px;
+  position: relative;
+  width: 280px;
+  text-align: center;
+}
+.ourstory .ourstory-div .ourstory-subtitle1::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 5%;
+  left: 0px;
+}
+.ourstory .ourstory-div .ourstory-subtitle2 {
+  margin-bottom: 10px;
+  position: relative;
+  width: 240px;
+  text-align: center;
+}
+.ourstory .ourstory-div .ourstory-subtitle2::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+.ourstory .ourstory-div .ourstory-subtitle3 {
+  margin-bottom: 10px;
+  position: relative;
+  width: 240px;
+  text-align: center;
+}
+.ourstory .ourstory-div .ourstory-subtitle3::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+.ourstory .ourstory-div .ourstory-subtitle4 {
+  margin-bottom: 10px;
+  position: relative;
+  width: 270px;
+  text-align: center;
+}
+.ourstory .ourstory-div .ourstory-subtitle4::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 5%;
+  left: 0%;
 }
 .ourstory .ourstory-div p {
-  font-size: 20px;
   color: #4A240C;
   line-height: 2;
   margin-bottom: 50px;

@@ -1,7 +1,13 @@
+// @import'base/reset';
+@import'base/var';
+@import 'base/font';
+@import'component/button';
+@import'mixin/mixin';
+
 .index-header{
     box-sizing: border-box;
     width:1280px;
-    border:1px solid red;
+    // border:1px solid red;
     margin:0 auto;
 }
 //大圖倫波部分
@@ -136,7 +142,7 @@
     width:1280px;
     background-color: #E0E0E0;
     margin:0 auto;
-    border:1px solid blue;
+    // border:1px solid blue;
 
 }
 
@@ -149,7 +155,7 @@
     margin-top: 80px;
     padding:20px;
     padding-top: 25px;
-    border:1px solid green;
+    // border:1px solid green;
     border-radius: 5px;
     position:relative;
     display:flex;
@@ -215,7 +221,7 @@
             content:"";
             display:block;
             height:90px;
-            border-left: 5px solid #FBBC04;
+            border-left: 5px solid $orange;
             position:absolute;
             top:102px;
             left:21px;  
@@ -264,44 +270,50 @@
         margin:0 auto;
         margin-top:40px;
         margin-bottom:30px;
-        width:154px;
-        height:46px;
-        border-bottom:5px solid #FBBC04;
+        width:120px;
+        // border:1px solid black;
+        position: relative;
+
+        &::before{
+            @include decorateBottomLine(120px,5px,$orange,100%,0%);
+        }
+
 
     }
 
     p{
-        margin:40px auto 20px auto;
+        margin:50px auto 50px auto;
         text-align: center;
         color:#4A240C;
-
+        font-weight: 700;
     }
 
     .customized-ol{
-        width:1080px;
+        width:960px;
         margin:0 auto;
+      
         display:flex;
         justify-content: space-between;
 
         li{
 
-            width:340px;
-            height:500px;
-            /* border:1px solid black; */
+            width:300px;
+            //  border:1px solid black; 
             position:relative;
             .customizedpic-outline{
 
                 box-sizing: border-box;
-                width:340px;
-                height:340px;
+                width:290px;
+                height:290px;
                 padding:20px;
                 border-radius: 50%;
                 background-color: #F5E75C;
+                margin: 0 auto;
 
                 .customizedpic{
 
-                    height:300px;
-                    width:300px;
+                    height:250px;
+                    width:250px;
                     border-radius: 50%;
                     background-size: cover;
 
@@ -323,50 +335,27 @@
                     
                 }
 
-                h4{
-                    margin-top: 20px;
-                    text-align:center;
-                    color:black;
-
-                        &::before{
-
-                             /* 小標題的底線 */
-                            content:"";
-                            border-left:5px solid #FBBC04;
-                            height:30px;
-                            display:block;
-                            position:absolute;
-                            top:358px;
-                            left:100px;
-
-                        }
                 
+            }
+            h4{
+                margin-top: 30px;
+                text-align:center;
+                color:black;
+                position:relative;
+
+                &::before{
+                    @include decorateSideLine(26px,5px,$orange,10%,25%);
+
                 }
-
-                .customh4{
-
-                    &::before{
-
-                        content:"";
-                        border-left:5px solid #FBBC04;
-                        height:30px;
-                        display:block;
-                        position:absolute;
-                        top:358px;
-                        left:88px; 
-
-                    }
-                }
-
-
+            
             }
 
         }
 
         p{
 
-            width:315px;
-            /* border:1px solid red; */
+           
+            // border:1px solid red;
             margin-left: 20px;
             color:#4A240C;
             margin:0 auto;
@@ -376,28 +365,10 @@
         }
 
     }
-
-    a{
-
-        text-decoration: none;
-        display:block;
-        width:180px;
-        height:60px;
-        margin:40px auto 40px auto;
-        background-color:#FF9105;
-        font-size:24px;
-        line-height:2.5;
-        text-align: center;
-        color:#fff;
-        border-radius: 5px;
-
-        &:hover{
-
-            transform:scale(1.05);
-
-        }
-
+    .customizebtn{
+        margin:60px auto 60px auto;
     }
+    
 }
 
 .airplane-icon{
@@ -409,8 +380,8 @@
 
 }
 .good-icon{
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
     transform: rotate(15deg);
     position:absolute;
     left:60px;
@@ -419,24 +390,29 @@
 
 .ourclient{
     
-    border:1px solid green;
+    // border:1px solid green;
 
-    h3{
+    .ourclient-title{
 
         text-align:center;
         margin:0 auto;
         margin-top:40px;
         margin-bottom:40px;
-        width:190px;
+        width:150px;
         height:46px;
-        border-bottom:5px solid #FBBC04;
+        // border:1px solid #FBBC04;
+        position: relative;
+
+        &::before{
+            @include decorateBottomLine(150px,5px,$orange,90%,0%);
+        }
 
     }
 
     .ourclient-ol{
         box-sizing: border-box;
-        width:100%;
-        border:1px solid red; 
+        width:1100px;
+        // border:1px solid red; 
         margin:0 auto;
         margin-top: 20px;
         display:flex;
@@ -447,33 +423,33 @@
 
             box-sizing: border-box;
             background-color:#D6D2C5;
-            /* border:1px solid blue; */
+            // border:1px solid blue;
             margin-bottom: 20px;
-            width:600px;
-            height:350px;
+            width:530px;
             padding:10px;
             border-radius:5px;
             display:flex;
             justify-content: space-around;
             
             div{
-
+                // border: 1px solid green;
                 width:300px;
-                height:300px;
                 margin-top: 15px;
 
-                h3{
-
-                    font-size:30px;
-                    border-left:5px solid #FBBC04;
-                    text-align: center;
-            
+                h4{
+                    // border:1px solid red;
+                    width:200px;
+                    position:relative;
+                    text-align:center;
+                    &::before{
+                         @include decorateSideLine(30px,5px,$orange,5%,0%); 
+                    }
+                
                 }
 
                 p{
-                    font-size: 20px;
-                    color:#4A240C;
-                    width:300px;
+                    color:$brown;
+                    // width:300px;
                     /* margin:0 auto; */
                     /* border:1px solid black; */
                     word-spacing: 2px;
@@ -488,9 +464,9 @@
             .client-pic{
 
                 display:block;
-                width:150px;
-                height:150px;
-                margin-top: 20px;
+                width:180px;
+                height:180x;
+                // margin-top: 20px;
                 border-radius: 5px;
 
             }
@@ -512,27 +488,30 @@
 }
 
 .ourstory{
-    /* border:1px solid green; */
+    // border:1px solid green;
     position:relative;
     margin-bottom: 50px;
     border-radius: 5px;
 
-    h2{
-        font-size: 36px;
+    .ourstory-title{
         text-align:center;
         margin:0 auto;
         margin-top:100px;
         margin-bottom:20px;
-        width:190px;
-        height:45px;
-        border-bottom:5px solid #FBBC04;
+        width:150px;
+        // border:1px solid red;
+        position: relative;
+        &::before{
+            @include decorateBottomLine(150px,5px,$orange,90%,0%);
+        }
+       
     }
 
     .ourstory-icon{
-        width:123px;
-        height:134px;
+        width:100px;
+        height:100px;
         position:absolute;
-        top:-60px;
+        top:0px;
         left:190px;
     
     }
@@ -540,9 +519,9 @@
     .ourstory-div{
 
         box-sizing:border-box;
-        width:1300px;
+        width:1180px;
         margin:0 auto;
-        /* border:1ps solid red; */
+        // border:1px solid red;
         display:flex;
         flex-wrap: wrap;
         /* align-items: center; */
@@ -551,8 +530,8 @@
 
         img{
 
-            width:600px;
-            height:400px;
+            width:500px;
+            height:333px;
             margin-top: 20px;
             display:block;
             border-radius: 5px;  
@@ -568,19 +547,54 @@
 
         }
 
-        h3{
-
-            font-size: 24px;
-            border-left:5px solid #FBBC04;
-            text-indent: 30px;
+        .ourstory-subtitle1{
             margin-bottom: 10px;
+            position: relative;
+            width:280px;
+            text-align: center;
+            
+            &::before{
+                @include decorateSideLine(30px,5px,$orange,5%,0px); 
+           }
+
+        }
+        .ourstory-subtitle2{
+            margin-bottom: 10px;
+            position: relative;
+            width:240px;
+            text-align: center;
+            
+            &::before{
+                @include decorateSideLine(30px,5px,$orange,5%,0%); 
+           }
+
+        }
+        .ourstory-subtitle3{
+            margin-bottom: 10px;
+            position: relative;
+            width:240px;
+            text-align: center;
+            
+            &::before{
+                @include decorateSideLine(30px,5px,$orange,5%,0%); 
+           }
+
+        }
+        .ourstory-subtitle4{
+            margin-bottom: 10px;
+            position: relative;
+            width:270px;
+            text-align: center;
+            
+            &::before{
+                @include decorateSideLine(30px,5px,$orange,5%,0%); 
+           }
 
         }
 
         p{
 
-            font-size: 20px;
-            color:#4A240C;
+            color:$brown;
             line-height: 2;
             margin-bottom: 50px;
 
