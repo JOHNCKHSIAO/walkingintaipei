@@ -1,0 +1,360 @@
+@charset "UTF-8";
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.25%;
+}
+
+h1 {
+  font-size: 36rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 28rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 24rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 20rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16rem;
+  line-height: 1.5;
+}
+
+.hyperLinkBtn {
+  width: 180px;
+  height: 40px;
+  background: #FF9105;
+  border-radius: 5px;
+}
+.hyperLinkBtn:hover {
+  transform: scale(1.05);
+}
+.hyperLinkBtn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hyperLinkBtn a p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.otherBtn {
+  width: 180px;
+  height: 40px;
+  background: #FBBC04;
+  border-radius: 5px;
+}
+.otherBtn:hover {
+  transform: scale(1.05);
+}
+.otherBtn p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.maintrip-header {
+  box-sizing: border-box;
+  width: auto;
+  /* border:1px solid blue; */
+  background-color: #fff;
+}
+
+.mainslide {
+  width: 100%;
+  position: relative;
+  /*點點的區塊*/
+  /*換圖的動畫*/
+}
+.mainslide .slideimg {
+  width: 100%;
+  display: none;
+}
+.mainslide .on {
+  display: block;
+}
+.mainslide .img_oringin {
+  width: 100%;
+}
+.mainslide .slide-left-btn {
+  display: block;
+  width: 30px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  opacity: 70%;
+  clip-path: polygon(50% 0, 62% 0, 13% 50%, 62% 100%, 50% 100%, 0% 50%);
+  position: absolute;
+  top: 48%;
+  left: 1.3%;
+  cursor: pointer;
+}
+.mainslide .slide-right-btn {
+  display: block;
+  width: 30px;
+  height: 50px;
+  border: none;
+  background-color: white;
+  opacity: 70%;
+  clip-path: polygon(38% 0, 50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
+  position: absolute;
+  top: 48%;
+  left: 97%;
+  cursor: pointer;
+}
+.mainslide .dots {
+  width: 80px;
+  margin: 0 auto;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.mainslide .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 2px;
+  display: inline-block;
+  opacity: 50%;
+}
+.mainslide .doton {
+  opacity: 100%;
+}
+.mainslide .slidetitle {
+  display: none;
+}
+.mainslide .title1 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  display: none;
+}
+.mainslide .title2 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.mainslide .title3 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+.mainslide .title4 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+}
+.mainslide .title5 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+}
+.mainslide .post {
+  display: block;
+}
+.mainslide .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.maintrip-main {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 1280px;
+  margin: 0 auto;
+  /* border:1px solid yellow; */
+  background-color: #E0E0E0;
+}
+
+.maintrip-main-title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  width: 400px;
+  position: relative;
+}
+.maintrip-main-title::before {
+  content: "";
+  display: block;
+  width: 400px;
+  border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0%;
+}
+
+.main-section {
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-section .postcard {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 550px;
+  height: 360px;
+  margin-top: 30px;
+  display: flex;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+  /* transform: translate(0,-20px); */
+}
+.main-section .postcard .postcard-left {
+  width: 90px;
+  border-right: 5px dashed #D3D3D3;
+}
+.main-section .postcard .postcard-left img {
+  /*郵票的圖*/
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70px;
+  height: 70px;
+}
+.main-section .postcard .postcard-right {
+  /* border:1px solid red; */
+  box-sizing: border-box;
+}
+.main-section .postcard .postcard-right P {
+  box-sizing: border-box;
+  width: 430px;
+  padding: 5px;
+  color: #4A240C;
+  font-weight: 700;
+  height: 75px;
+  border-bottom: 3px solid #D3D3D3;
+  vertical-align: bottom;
+}
+.main-section .postcard .postcard-right span {
+  display: block;
+  width: 420px;
+  margin-top: 30px;
+}
+.main-section .postcard-pic {
+  /*精選旅行的照片*/
+  display: block;
+  margin-top: 30px;
+  width: 550px;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
+  /* transform: rotate(1deg); */
+}
+
+.information-h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 140px;
+  position: relative;
+}
+.information-h2::before {
+  content: "";
+  display: block;
+  width: 140px;
+  border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0%;
+}
+
+.information {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 1px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.information .information-ol {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.information .information-ol li {
+  background-color: #fff;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px grey;
+}
+.information .information-ol li h4 {
+  text-indent: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.information .information-ol li h4::before {
+  content: "";
+  display: block;
+  height: 30px;
+  border-left: 5px solid #FBBC04;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+}
+.information .information-ol p {
+  line-height: 2;
+  margin-bottom: 20px;
+  color: #4A240C;
+}
+.information .information-ol .timeline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.information .information-ol .timeline div {
+  width: 450px;
+}
+.information .joinBtn {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=maintripNew.css.map */

@@ -6,7 +6,7 @@
 
 .index-header{
     box-sizing: border-box;
-    width:1280px;
+    width:auto;
     // border:1px solid red;
     margin:0 auto;
 }
@@ -275,7 +275,7 @@
         position: relative;
 
         &::before{
-            @include decorateBottomLine(120px,5px,$orange,100%,0%);
+            @include decorateBottomLine(120px,5px,$orange,0px,0%);
         }
 
 
@@ -442,7 +442,7 @@
                     position:relative;
                     text-align:center;
                     &::before{
-                         @include decorateSideLine(30px,5px,$orange,5%,0%); 
+                         @include decorateSideLine(30px,5px,$orange,0%,0%); 
                     }
                 
                 }

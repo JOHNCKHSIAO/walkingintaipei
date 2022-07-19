@@ -61,9 +61,9 @@
 /*點擊漢寶圖讓側邊欄跑出來*/
 (function(){
     let hambergericon=document.querySelector(".hambergericon");
-    console.log(hambergericon);
+    // console.log(hambergericon);
     let nav_ol_mobile=document.querySelector(".nav-ol");
-    console.log(nav_ol_mobile);
+    // console.log(nav_ol_mobile);
     let mobile_closenav=document.querySelector("#mobile_closenav");
     hambergericon.addEventListener("click",function(){
         nav_ol_mobile.classList.add("nav_ol_mobile");

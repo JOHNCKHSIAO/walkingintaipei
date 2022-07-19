@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>精選旅行</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/common_max1400.css">
+    <title>台北走走</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/maintripNew.css">
+    <!-- <link rel="stylesheet" href="./css/index_max1400.css">
     <link rel="stylesheet" href="./css/common_max576.css">
-    <link rel="stylesheet" href="./css/maintrip.css">
-    <link rel="stylesheet" href="./css/maintrip_max1400.css">
-    <link rel="stylesheet" href="./css/maintrip_max576.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-    </style>
+    <link rel="stylesheet" href="./css/index_max576.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />           
 </head>
 <body>
     <nav class="nav">
-        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
-        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <div class="logo-div" >
+            <a href="./index.html">
+                <img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo">
+            </a>
+        </div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">
+            <i class="fa-solid fa-angle-up"></i>
+            Top
+        </div> 
         <img src="./image/index/more.png" alt="" class="hambergericon">
          
         <!--導航欄-->
-        <ol class="nav-ol">
+        <ol class="nav-ol" >
             <li><a href="./maintrip.html">精選行程</a></li>
             <li><a href="./bloglist.html">走走小記</a></li>
             <li><a href="./customized.html">客製旅遊</a></li>
             <li><a href="./itemlist.html">所有行程</a></li>
             <li><a href="./login.html">會員登入</a></li>
             <li><a href="#" class="engversion-a">ENG</a></li>
-            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+            <li id="searchbarid" class="searchbarLi">
+                <img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
                 <div class="hidesearchbar searchbar_mobile" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
+                    <input type="text" placeholder="想找什麼嗎?">
+                    <button>搜尋</button>
+                    <img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
         </ol>
         
     </nav>
-    <header class="main-header">
+    <header class="maintrip-header">
         
 
         <section class="mainslide">
@@ -69,11 +78,11 @@
             
             
             <!--大圖輪播區-->
-            <h2 class="slidetitle title1 post fade">走進坪林，享受慢活的氛圍</h2>
-            <h2 class="slidetitle title2 fade">茶園，山林，沉浸在自然的環境</h2>
-            <h2 class="slidetitle title3 fade">好好生活，好好放空</h2>
-            <h2 class="slidetitle title4 fade">暫時忘卻工作世界的紛擾</h2>
-            <h2 class="slidetitle title5 fade">一起來吧!我們在茶園相見</h2>
+            <h3 class="slidetitle title1 post fade">走進坪林，享受慢活的氛圍</h3>
+            <h3 class="slidetitle title2 fade">茶園，山林，沉浸在自然的環境</h3>
+            <h3 class="slidetitle title3 fade">好好生活，好好放空</h3>
+            <h3 class="slidetitle title4 fade">暫時忘卻工作世界的紛擾</h3>
+            <h3 class="slidetitle title5 fade">一起來吧!我們在茶園相見</h3>
             <button class="slide-left-btn" id="leftbtn"></button>
             <button class="slide-right-btn" id="rightbtn"></button>
             <!--輪播圖的箭頭-->
@@ -88,23 +97,20 @@
         </section>
     </header>
     <main class="maintrip-main">
-        <h1>
+        <h1 class="maintrip-main-title">
             坪林慢活~2天1夜輕旅行
         </h1>
-        <section class="section">
+        <section class="main-section">
             <div class="postcard">   
                 <div class="postcard-left">
                     <img src="./image/main/stamp.png" alt="">
 
                 </div>
                 <div class="postcard-right">
-                    <p><span>來到老街，跟著大夥一起分組闖關活動</span></p>
-                    <p><span>，體會坪林的歷史風貌。</span></p>
-                    <p><span>在老街享用精緻的風味午餐，飯後再來</span></p>
-                    <p><span>一杯美味的茶!</span></p>
-                    <p><span></span></p>
-                    
-
+                    <p><span>來到老街，跟著大夥一起分組闖關活動，</span></p>
+                    <p><span>體會坪林的歷史風貌。</span></p>
+                    <p><span>在老街享用精緻的風味午餐，</span></p>
+                    <p><span>飯後再來一杯美味的茶!</span></p>
                 </div>
 
             </div>
@@ -117,12 +123,10 @@
 
                 </div>
                 <div class="postcard-right">
-                    <p><span>下午沿著觀魚步道，體會無汙染的自然</span></p>
-                    <p><span>生態，再換上腳踏車，輕鬆的漫遊在自</span></p>
-                    <p><span>然風景之中。</span></p>
-                    <p><span></span></p>
-                    <p><span></span></p>
-                    
+                    <p><span>下午沿著觀魚步道，</span></p>
+                    <p><span>體會無汙染的自然生態，</span></p>
+                    <p><span>再換上腳踏車，</span></p>
+                    <p><span>輕鬆的漫遊在自然風景之中。</span></p>   
                 </div>
             </div>
 
@@ -132,13 +136,10 @@
 
                 </div>
                 <div class="postcard-right">
-                    <p><span>晚上在民宿一起享用晚餐，開放的廚房</span></p>
-                    <p><span>，讓大家有機會一起分享彼此的</span></p>
-                    <p><span>好手藝。</span></p>
+                    <p><span>晚上在民宿一起享用晚餐，</span></p>
+                    <p><span>開放的廚房，</span></p>
+                    <p><span>讓大家有機會一起分享彼此的好手藝。</span></p>
                     <p></p>
-                    <p></p>
-                    
-
                 </div>
 
             </div>
@@ -151,13 +152,10 @@
 
                 </div>
                 <div class="postcard-right">
-                    <p><span>4月-5月是螢火蟲的季節，晚餐過後跟著</span></p>
-                    <p><span>我們的腳步，一起探訪螢火蟲的棲息地</span></p>
-                    <p><span>，體會自然的美景。</span></p>
-                    <p></p>
-                    <p></p>
-                  
-
+                    <p><span>4月-5月是螢火蟲的季節，</span></p>
+                    <p><span>晚餐過後跟著我們的腳步，</span></p>
+                    <p><span>一起探訪螢火蟲的棲息地，</span></p>
+                    <p><span>體會自然的美景。</span></p>
                 </div>
 
             </div>
@@ -167,12 +165,10 @@
 
                 </div>
                 <div class="postcard-right">
-                    <p><span>隔日一早，邀請大家一同體會一日茶農</span></p>   
-                    <p><span>生活，從採茶到茶葉製作體驗，享用</span></p>
-                    <p><span>美味的茶及茶點。</span></p>
-                    <p></p>
-                    <p></p>
-
+                    <p><span>隔日一早，</span></p>   
+                    <p><span>邀請大家一同體會一日茶農生活，</span></p>
+                    <p><span>從採茶到茶葉製作體驗，</span></p>
+                    <p><span>享用美味的茶及茶點。</span></p>
                 </div>
 
             </div>
@@ -184,13 +180,13 @@
         <section class="information">
             <ol class="information-ol">
                 <li>
-                    <h3>場次:</h3>
+                    <h4>場次:</h4>
                     <p>4月22-23(六-日)<br>4月29-26(六-日)<br>
                     5月6-7(六-日)<br>
                     5月13-14(六-日)</p>
                 </li>          
                 <li>
-                    <h3>注意事項:</h3>
+                    <h4>注意事項:</h4>
                     <p>本次活動所走的路線，<br>
                         預計是中等難度，適合平日就有健<br>                
                         行運動的人參與，不適合六歲以下<br>                
@@ -198,7 +194,7 @@
                     </p>
                 </li>
                 <li>
-                    <h3>費用</h3>
+                    <h4>費用</h4>
                     <p>
                         成人:2500TWD<br>
                         兒童:1000TWD<br>
@@ -206,7 +202,7 @@
                 </li>
                 <li class="timeline"> 
                     <div>   
-                        <h3>DAY1行程</h3>
+                        <h4>DAY1行程</h4>
                         <p>
                             集合時間:10:00<br>
                             集合地點:坪林區公所前<br>
@@ -218,7 +214,7 @@
                         </p>
                     </div>
                     <div>   
-                        <h3>DAY2行程</h3>
+                        <h4>DAY2行程</h4>
                         <p>
                             06:00-07:00:採茶體驗<br>
                             07:00-08:00:早餐時間<br>
@@ -230,7 +226,12 @@
                     </div>    
                 </li>
             </ol>
-            <a href="./login.html">我要參加</a>
+            <div class="hyperLinkBtn joinBtn">
+                <a href="./login.html">
+                    <p>我要參加</p>
+                </a>
+            </div>
+           
                    
             
             
@@ -245,17 +246,19 @@
     </main>
     
     <footer class="footer">
-        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <a class="footer-logo-a" id="footer_logoid">
+            <img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img">
+        </a>
         <ol class="footer-ol">
-            <li><a href=""><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
-            <li><a href=""><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
-            <li><a href=""><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
-            
+            <li><a href="#"><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href="#"><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href="#"><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->    
         </ol>
         <!--免責聲明-->
         <p class="declare">
             本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
-            參考資源:島內散步:https://walkin.tw/<br>
+            參考資源:<br>
+            島內散步:https://walkin.tw/<br>
             方格子https://vocus.cc/<br>
             走靜貓空https://maokong.travel.taipei/<br>
             新北市觀光旅遊網https://newtaipei.travel/
