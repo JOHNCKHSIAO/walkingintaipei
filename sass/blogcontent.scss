@@ -1,0 +1,122 @@
+@import'base/var';
+@import 'base/font';
+@import'component/button';
+@import'mixin/mixin';
+
+.bloglist-main{
+    box-sizing: border-box;
+    background-color:#E0E0E0;
+    // border:1px solid red;
+    width:auto;
+    margin:0 auto;
+    padding-bottom: 50px;
+
+}
+
+.bloglist-main-div{
+    display:flex;
+    border:1px solid green;
+}
+
+.bloglist-aside{
+    width:200px;
+    height:300px;
+    // border:1px solid red; 
+    padding:20px;
+    box-sizing: border-box;
+    background-color:#F5F5F5;
+    position:sticky;
+    top:56px;
+    box-shadow: 3px 3px 3px grey;
+    z-index: 1;
+
+    ol{
+        box-sizing: border-box;
+        position:relative;
+        
+        &::before{
+
+            @include decorateSideLine(180px,5px,$orange,-1px,-3px);
+
+        }
+
+        li{
+            height:30px;
+            margin:20px;
+        }
+
+        img{
+            width:18px;
+        }
+
+        span{
+            font-size: 18px;
+            color:black;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    }
+   
+
+}
+.blogcontent-section{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid red;
+    margin:0 auto;
+
+    .blogcontent-section-title{
+        width:900px;
+        background-color:#E0E0E0;
+        margin:0 auto;
+        margin-top: 40px;
+        box-sizing: border-box;
+        height:64px;
+        font-weight: 700;
+        text-align: center;
+         border:1px solid blue; 
+    }
+
+    article{
+        width:900px;
+        font-size: 20px;
+        line-height: 2;
+        border: 1px solid red;
+        margin: 0 auto;
+
+        p{
+            width:80%;
+            margin: 0 auto;
+            border:1px solid green;
+        }
+
+        .blogcontent-img{   
+            display:block;
+            width:500px;
+            margin:0 auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        
+        }
+       
+        
+       
+        
+    }
+    .media_container{
+        /* border:1px solid red; */
+        width:220px;
+        position:absolute;
+        right:1%;
+        bottom:-2%;
+        img{
+            width:40px;
+            margin-top: 10px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+
+}

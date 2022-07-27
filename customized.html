@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>客製旅遊</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/common_max1400.css">
-    <link rel="stylesheet" href="./css/common_max576.css">
-    <link rel="stylesheet" href="./css/customized.css">
-    <link rel="stylesheet" href="./css/customized_max1400.css">
-    <link rel="stylesheet" href="./css/customized_max576.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-    </style>
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>客製旅遊</title>
+<link
+    href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/customizedNew.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />           
 </head>
 <body>
+   
     <nav class="nav">
-        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
-        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <div class="logo-div" >
+            <a href="./index.html">
+                <img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo">
+            </a>
+        </div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">
+            <i class="fa-solid fa-angle-up"></i>
+            Top
+        </div> 
         <img src="./image/index/more.png" alt="" class="hambergericon">
          
         <!--導航欄-->
-        <ol class="nav-ol">
+        <ol class="nav-ol" >
             <li><a href="./maintrip.html">精選行程</a></li>
             <li><a href="./bloglist.html">走走小記</a></li>
-            <li><a href="./customized.html">客製旅遊</a></li>
+            <li class="nav_underline"><a href="./customized.html">客製旅遊</a></li>
             <li><a href="./itemlist.html">所有行程</a></li>
             <li><a href="./login.html">會員登入</a></li>
             <li><a href="#" class="engversion-a">ENG</a></li>
-            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+            <li id="searchbarid" class="searchbarLi">
+                <img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
                 <div class="hidesearchbar searchbar_mobile" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
+                    <input type="text" placeholder="想找什麼嗎?">
+                    <button>搜尋</button>
+                    <img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
         </ol>
@@ -45,12 +52,12 @@
             <ol class="header-ol">
                 <li>
                     <div class="outline">
-                        <div class="header-pic1">
+                        <div class="header-pic pic1">
 
                         </div>
                     </div>
                     <div class="header-text">
-                        <h2>員工旅遊</h2>
+                        <h3>員工旅遊</h3>
                         <p>
                             我們提供最深刻的在地旅遊服務，結合當地文化與特產，深度體會在地生活。是您最好的合作夥伴。
                         </p>
@@ -59,13 +66,13 @@
                 </li>
                 <li>
                     <div class="outline">
-                        <div class="header-pic2">
+                        <div class="header-pic pic2">
 
                         </div>
                     </div>
                     <div class="header-text">
                         
-                        <h2>親子日</h2>
+                        <h3>親子日</h3>
                         <p>
                             我們提供最深刻的在地旅遊服務，結合當地文化與特產，深度體會在地生活。是您最好的合作夥伴。
                         </p>
@@ -73,14 +80,14 @@
                 </li>
                 <li>
                     <div class="header-text">
-                        <h2>校外教學</h2>
+                        <h3>校外教學</h3>
                         <p>
                             我們提供最深刻的在地旅遊服務，結合當地文化與特產，深度體會在地生活。是您最好的合作夥伴。
                         </p>
 
                     </div>
                     <div class="outline">
-                        <div class="header-pic3">
+                        <div class="header-pic pic3">
 
                         </div>
                     </div>
@@ -88,14 +95,14 @@
                 </li>
                 <li>
                     <div class="header-text">
-                        <h2>Team Building</h2>
+                        <h3>Team Building</h3>
                         <p>
                             我們提供最深刻的在地旅遊服務，結合當地文化與特產，深度體會在地生活。是您最好的合作夥伴。
                         </p>
 
                     </div>
                     <div class="outline">
-                        <div class="header-pic4">
+                        <div class="header-pic pic4">
 
                         </div>
                     </div>
@@ -146,23 +153,30 @@
             或來電00000000將有專人為您服務!
 
         </p>
-        <a href="" class="btn">客製化旅行表單填寫</a>
+        <div class="hyperLinkBtn middle">
+            <a href="" class="btn">
+                <p>客製化旅行</p>
+            </a>
+        </div>
+        
         <img src="./image/customized/light-bulb.png" alt="" class="icon2">
         <img src="./image/customized/united.png" alt="" class="icon3">
     </main>
     
     <footer class="footer">
-        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <a class="footer-logo-a" id="footer_logoid">
+            <img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img">
+        </a>
         <ol class="footer-ol">
-            <li><a href=""><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
-            <li><a href=""><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
-            <li><a href=""><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
-            
+            <li><a href="#"><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href="#"><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href="#"><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->    
         </ol>
         <!--免責聲明-->
         <p class="declare">
             本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
-            參考資源:島內散步:https://walkin.tw/<br>
+            參考資源:<br>
+            島內散步:https://walkin.tw/<br>
             方格子https://vocus.cc/<br>
             走靜貓空https://maokong.travel.taipei/<br>
             新北市觀光旅遊網https://newtaipei.travel/
