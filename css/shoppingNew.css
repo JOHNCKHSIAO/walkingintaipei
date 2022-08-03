@@ -1,0 +1,422 @@
+@charset "UTF-8";
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.25%;
+}
+
+h1 {
+  font-size: 36rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 28rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 24rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 20rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16rem;
+  line-height: 1.5;
+}
+
+.hyperLinkBtn {
+  width: 180px;
+  height: 40px;
+  background: #FF9105;
+  border-radius: 5px;
+}
+.hyperLinkBtn:hover {
+  transform: scale(1.05);
+}
+.hyperLinkBtn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hyperLinkBtn a p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.otherBtn {
+  width: 180px;
+  height: 40px;
+  background: #FBBC04;
+  border-radius: 5px;
+}
+.otherBtn:hover {
+  transform: scale(1.05);
+}
+.otherBtn p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.shopping-header {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #E0E0E0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navigation {
+  /* border:1px solid blue; */
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #4A240C;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.shopping-header-title {
+  text-align: center;
+  margin: 25px auto 20px auto;
+  width: 160px;
+  position: relative;
+}
+.shopping-header-title::before {
+  content: "";
+  display: block;
+  width: 160px;
+  border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0;
+}
+
+.shopping-main {
+  box-sizing: border-box;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #E0E0E0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid gold;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+/*左側選擇的商品欄位*/
+.selected {
+  box-sizing: border-box;
+  width: 310px;
+  height: 350px;
+  padding: 5px;
+}
+.selected img {
+  width: 300px;
+}
+.selected h4 {
+  line-height: 2;
+  margin-left: 10px;
+  text-align: center;
+}
+.selected p {
+  line-height: 2;
+}
+
+.shopping-form {
+  border: 2px dashed grey;
+  width: 900px;
+  position: relative;
+  padding: 5px;
+}
+.shopping-form .time {
+  width: 100%;
+}
+.shopping-form .time label {
+  font-size: 20px;
+}
+.shopping-form .time select {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.shopping-form .time option {
+  font-size: 20px;
+}
+.shopping-form .number {
+  width: 550px;
+  margin-top: 20px;
+}
+.shopping-form .number .adult-number {
+  width: 100%;
+}
+.shopping-form .number .adult-number span {
+  display: inline-block;
+  font-size: 20px;
+  height: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.shopping-form .number .adult-number .select-alert {
+  font-size: 16px;
+  color: red;
+  opacity: 0;
+}
+.shopping-form .number .adult-number div {
+  display: inline-block;
+  border: none;
+  background-color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.shopping-form .number .adult-number span[id] {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #FBBC04;
+  margin-right: 0;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+.shopping-form .number .child-number {
+  /* border:1px solid yellow; */
+  margin-top: 10px;
+  width: 700px;
+}
+.shopping-form .number .child-number span {
+  display: inline-block;
+  font-size: 20px;
+  height: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.shopping-form .number .child-number .next_step_alert {
+  font-size: 16px;
+  color: red;
+  opacity: 0;
+}
+.shopping-form .number .child-number:nth-child(2) {
+  margin-left: 20px;
+}
+.shopping-form .number .child-number div {
+  display: inline-block;
+  border: none;
+  background-color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  color: #4A240C;
+  vertical-align: middle;
+}
+.shopping-form .number .child-number span[id] {
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #FBBC04;
+  margin-right: 0;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+.shopping-form .price-div {
+  width: 700px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto 0px auto;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+}
+.shopping-form .price-div .price_container {
+  font-size: 28px;
+  background-color: #E0E0E0;
+}
+.shopping-form .price-div .price_container span {
+  color: red;
+  margin-left: 20px;
+}
+.shopping-form .price-div .next_step {
+  font-size: 24px;
+  line-height: 2;
+  text-align: center;
+  color: white;
+  width: 110px;
+  height: 48px;
+  background-color: #FF9105;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.shopping-form .info {
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  display: none;
+}
+.shopping-form .info .info_major h4 {
+  margin-bottom: 20px;
+}
+.shopping-form .info .info_major div {
+  font-size: 22px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+}
+.shopping-form .info .info_major label {
+  font-size: 20px;
+}
+.shopping-form .info .info_major input {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+  width: 200px;
+}
+.shopping-form .info .info_other {
+  margin-bottom: 50px;
+}
+.shopping-form .info .info_other h4 {
+  margin-top: 20px;
+}
+.shopping-form .info .info_other div {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.shopping-form .info .info_other div:nth-Child(2n+1).info_other_child {
+  background-color: #E0E0E0;
+}
+.shopping-form .info .info_other .info_other_child {
+  box-sizing: border-box;
+  padding: 10px;
+  /* border:1px solid red; */
+}
+.shopping-form .info .info_other .info_other_child .info_other_child-div {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+}
+.shopping-form .info .info_other .info_other_child label {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.shopping-form .info .info_other .info_other_child input {
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+  width: 200px;
+}
+.shopping-form .info .diet-habit {
+  /* border:1px solid yellow; */
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 22px;
+  border-top: 2px dashed grey;
+  background-color: #E0E0E0;
+}
+.shopping-form .info .diet-habit h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.shopping-form .info .diet-habit label {
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.shopping-form .info .diet-habit label[for*=meat] {
+  margin-left: 40px;
+}
+.shopping-form .info .diet-habit input {
+  width: 40px;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+}
+.shopping-form .info .diet-habit label[for*=note] {
+  margin-left: 0px;
+}
+.shopping-form .info .diet-habit input[type=text] {
+  width: 300px;
+}
+.shopping-form .info .diet-habit #diet_confirm {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: red;
+  opacity: 0;
+}
+.shopping-form .info .textarea {
+  /* width:300px; */
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.shopping-form .info .textarea h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.shopping-form .info .textarea textarea {
+  display: block;
+  margin-left: 20px;
+  height: 120px;
+  width: 300px;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+}
+.shopping-form .info .nextOrLast {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 400px;
+  display: flex;
+}
+.shopping-form .info .nextOrLast .nextOrLast_choice {
+  border: 0;
+  font-size: 22px;
+  line-height: 2;
+  text-align: center;
+  color: white;
+  width: 110px;
+  height: 48px;
+  background-color: #FF9105;
+  border-radius: 5px;
+  /* margin-left: 150px; */
+  cursor: pointer;
+}
+.shopping-form .display_block {
+  display: block;
+}
+.shopping-form .display_flex_jtify_sa {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=shoppingNew.css.map */

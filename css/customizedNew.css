@@ -85,6 +85,7 @@ p {
 .customized-header h1 {
   width: 150px;
   margin: 0 auto;
+  margin-bottom: 40px;
   position: relative;
 }
 .customized-header h1::before {
@@ -99,7 +100,6 @@ p {
 
 .customized-header-section {
   width: 100%;
-  border: 1px solid red;
 }
 
 .header-ol {
@@ -116,7 +116,6 @@ p {
   justify-content: space-between;
   margin-top: 20px;
   /* padding:30px; */
-  border: 1px solid green;
 }
 .header-ol li .outline {
   /*圓形裝飾外框*/
@@ -149,7 +148,6 @@ p {
   /*介紹文字部分*/
   width: 45%;
   box-sizing: border-box;
-  border: 1px solid white;
   padding: 20px;
 }
 .header-ol li .header-text h3 {
@@ -186,7 +184,6 @@ p {
   text-align: center;
   margin: 40px auto 40px auto;
   width: 140px;
-  border: 1px solid red;
   position: relative;
 }
 .customized-main h2::before {
@@ -202,7 +199,6 @@ p {
 .main-ol {
   width: 1100px;
   margin: 0 auto;
-  border: 2px solid yellow;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -210,7 +206,6 @@ p {
 }
 .main-ol li {
   box-sizing: border-box;
-  border: 1px solid blue;
   width: 540px;
   margin-bottom: 50px;
   width: px;
@@ -270,7 +265,7 @@ p {
   width: 100px;
   position: absolute;
   left: 250px;
-  bottom: 250px;
+  bottom: 230px;
 }
 
 .icon3 {

@@ -1,0 +1,141 @@
+@import'base/var';
+@import 'base/font';
+@import'component/button';
+@import'mixin/mixin';
+.item-header{
+    width:1280px;
+    box-sizing: border-box;
+    padding:5px;
+    margin:0 auto;
+    // border:1px solid blue;
+    background-color: #E0E0E0;
+    position:relative;
+
+    .navigation{
+        /* border:1px solid blue; */
+        margin-left:50px;
+        margin-top: 10px;
+    
+    }
+
+    a{
+        text-decoration: none;
+        color:#4A240C;
+        font-size:16px;
+        letter-spacing:3px;
+    }
+
+    .item-header-title{
+        text-align:center;
+        margin:0 auto;
+        margin-top:30px;
+        margin-bottom:10px;
+        width:366px;
+        position: relative;
+        &::before{
+            @include decorateBottomLine(366px,5px,$orange,90%,0);
+        }
+      
+    }
+}
+
+.item-main{
+    box-sizing: border-box;
+    // padding:5px;
+    width:1280px;
+    margin:0 auto;
+    background-color:#E0E0E0;
+    // border:1px solid red; 
+    position:relative;
+    display:flex;
+    justify-content:space-around;
+
+}
+
+.item-section-left{
+    width:750px;
+    // border:1px solid blue;
+    /* padding: 1px; */
+
+    img{
+        width:750px;
+        height:500px;
+        display:block;
+        border-radius:5px;
+    }
+
+    ol{
+        box-sizing: border-box;
+        // border:1px solid green;
+        width:750px;
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 30px;
+        li{
+            h4{
+                text-indent: 20px;
+                margin-bottom: 10px;
+                position: relative;
+                &::before{
+                    @include decorateSideLine(26px,5px,$orange,3px,0px);
+                }
+                
+            }
+        
+            p{
+                color:#4A240C;
+                line-height: 2;
+                margin-bottom:20px;
+            }
+
+        }
+    }
+
+   
+}
+
+.item-section-right{
+    background-color: #fff;
+    border:1px solid yellow;
+    /* box-sizing: border-box; */
+    width:400px;
+    padding:20px;
+    height:750px;
+    h4{
+       
+        text-indent: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        &::before{
+            @include decorateSideLine(26px,5px,$orange,3px,0px);
+        }
+    
+    }
+
+    p{
+
+        line-height: 2;
+        margin-bottom:20px;
+        color:#4A240C;
+    }
+
+    a{
+        display:block;
+        width:140px;
+        height:48px;
+        text-decoration:none;
+        background-color: #FF9105;
+        color:white;
+        margin:0 auto;
+        border-radius:5px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 2;
+
+        &:hover{
+            transform:scale(1.05);
+        }
+    }
+
+   
+}

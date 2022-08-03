@@ -5,51 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的行程</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/common_max1400.css">
-    <link rel="stylesheet" href="./css/common_max576.css">
-    <link rel="stylesheet" href="./css/shopping.css">
-    <link rel="stylesheet" href="./css/shopping_max1400.css">
-    <link rel="stylesheet" href="./css/shopping_max576.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shoppingNew.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
 </head>
 <body>
     <nav class="nav">
-        <div class="logo-div" ><a href="./index.html"><img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo"></a></div>
-        <div id="gototop" class="gototop_mobile gototopdiv ">Top</div> 
+        <div class="logo-div" >
+            <a href="./index.html">
+                <img src="./image/index/logo_top.svg" alt="logo圖" class="nav-logo">
+            </a>
+        </div>
+        <div id="gototop" class="gototop_mobile gototopdiv ">
+            <i class="fa-solid fa-angle-up"></i>
+            Top
+        </div> 
         <img src="./image/index/more.png" alt="" class="hambergericon">
          
         <!--導航欄-->
-        <ol class="nav-ol">
+        <ol class="nav-ol" >
             <li><a href="./maintrip.html">精選行程</a></li>
             <li><a href="./bloglist.html">走走小記</a></li>
             <li><a href="./customized.html">客製旅遊</a></li>
-            <li><a href="./itemlist.html">所有行程</a></li>
+            <li class="nav_underline"><a href="./itemlist.html">所有行程</a></li>
             <li><a href="./login.html">會員登入</a></li>
             <li><a href="#" class="engversion-a">ENG</a></li>
-            <li id="searchbarid"><img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
+            <li id="searchbarid" class="searchbarLi">
+                <img src="./image/index/search.png" alt="搜尋logo" class="searchbarlogo">
                 <div class="hidesearchbar searchbar_mobile" id="searchbararea">
-                    <input type="text" placeholder="想找什麼嗎?"><button>搜尋</button><img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
+                    <input type="text" placeholder="想找什麼嗎?">
+                    <button>搜尋</button>
+                    <img src="./image/index/cancel.png" alt="" class="mobile_closenav" id="mobile_closenav">
                 </div>
             </li>
         </ol>
         
     </nav>
     <header class="shopping-header">
-        <div class="navigation"><a href="./itemlist.html">所有行程</a> <a href="./item.html">>貓空健行半日遊></a><a href="./shooping.html">我的行程</a> </div>
-        <h1>我的行程</h1>
+        <div class="navigation"><a href="./itemlist.html">所有行程</a> <a href="./item.html">>貓空健行半日遊></a><a href="./shopping.html">我的行程</a> </div>
+        <h1 class="shopping-header-title">我的行程</h1>
     </header>
     <main class="shopping-main">
         <div class="form-container">
             <div class="selected">
                 <img src="./image/pay/pic1.jpg" alt="">
-                <h2>靜遊貓空健行半日遊</h2>
+                <h4>靜遊貓空健行半日遊</h4>
                 <p>
-                    靜遊貓空半日健行，附午餐。回程搭乘貓空纜車。時間: 早上08:00-12:00
+                    靜遊貓空半日健行，附午餐。回程搭乘貓空纜車。時間: 早上08:00-12:00。
                 </p>
             </div>
             <form action="#" class="shopping-form">
@@ -96,7 +98,7 @@
                  <!--以下是下一步過後的操作-->  
                 <div class="info" id="info">
                     <div class="info_major">
-                        <h2>主要聯絡人:報名期間主要聯絡人</h2>
+                        <h4>主要聯絡人:報名期間主要聯絡人</h4>
                         <div>
                             <label for="mk22_major_name">姓名</label>
                             <input type="text" name="mk22_major_name" id="mk22_major_name" required minlength="2">
@@ -115,43 +117,43 @@
                     <div class="info_other" id="info_other">
                     </div>
                     <div class="diet-habit">
-                        <h2>飲食習慣</h2>
+                        <h4>飲食習慣</h4>
                         <label for="mk22_diet_habit_veg">素食</label>
                         <input type="number" id="mk22_diet_habit_veg" name="mk22_diet_habit_veg">人
                         <label for="mk22_diet_habit_meat">葷食</label>
                         <input type="number" id="mk22_diet_habit_meat" name="mk22_diet_habit_meat">人
-                        <label for="diet_habit_note"><h2>飲食備註</h2></label>
+                        <label for="diet_habit_note"><h4>飲食備註</h4></label>
                         <input type="text" id="diet_habit_note" name="diet_habit_note">
                         <div id="diet_confirm">請確認數量</div>
                     </div>
                     <div class="textarea">
-                        <label for="mk22_textarea"><h2>其他備註事項</h2></label>
+                        <label for="mk22_textarea"><h4>其他備註事項</h4></label>
                         <textarea name="mk22_textarea" id="mk22_textarea"></textarea>
                     </div>
                     <div class="nextOrLast">
                         <button class="nextOrLast_choice" id="buy">確認結帳</button>
                         <div class="nextOrLast_choice" id="laststep">回上一步</div>
-
                     </div>
 
                 </div>
 
             </form>
         </div>
-        
     </main>
     <footer class="footer">
-        <a class="footer-logo-a" id="footer_logoid"><img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img"></a>
+        <a class="footer-logo-a" id="footer_logoid">
+            <img src="./image/index/logo_bottom_white.svg" alt="" class="footer-logo-img">
+        </a>
         <ol class="footer-ol">
-            <li><a href=""><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
-            <li><a href=""><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
-            <li><a href=""><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->
-            
+            <li><a href="#"><img src="./image/index/facebook.png" alt=""></a></li><!--iglogo-->
+            <li><a href="#"><img src="./image/index/instagram.png" alt=""></a></li><!--fblogo-->
+            <li><a href="#"><img src="./image/index/youtube.png" alt=""></a></li><!--YOUTUBE LOGO-->    
         </ol>
         <!--免責聲明-->
         <p class="declare">
             本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。<br>
-            參考資源:島內散步:https://walkin.tw/<br>
+            參考資源:<br>
+            島內散步:https://walkin.tw/<br>
             方格子https://vocus.cc/<br>
             走靜貓空https://maokong.travel.taipei/<br>
             新北市觀光旅遊網https://newtaipei.travel/

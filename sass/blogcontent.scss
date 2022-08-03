@@ -15,7 +15,7 @@
 
 .bloglist-main-div{
     display:flex;
-    border:1px solid green;
+    // border:1px solid green;
 }
 
 .bloglist-aside{
@@ -64,7 +64,7 @@
 .blogcontent-section{
     box-sizing: border-box;
     position: relative;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin:0 auto;
 
     .blogcontent-section-title{
@@ -76,20 +76,20 @@
         height:64px;
         font-weight: 700;
         text-align: center;
-         border:1px solid blue; 
+        //  border:1px solid blue; 
     }
 
     article{
         width:900px;
         font-size: 20px;
         line-height: 2;
-        border: 1px solid red;
+        // border: 1px solid red;
         margin: 0 auto;
 
         p{
             width:80%;
             margin: 0 auto;
-            border:1px solid green;
+            // border:1px solid green;
         }
 
         .blogcontent-img{   

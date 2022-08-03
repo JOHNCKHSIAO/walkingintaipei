@@ -1,4 +1,4 @@
-/*表單操作 宣告操作的物件*/
+/*------------表單操作 宣告操作的物件----------------------------*/
     let selectForm=document.querySelector("#mk22-time");
     let adultMinus=document.querySelector("#adult-number-minus-btn");
     let adultPlus=document.querySelector("#adult-number-plus-btn");
@@ -25,56 +25,7 @@
     let buy=document.querySelector("#buy");
     let laststep=document.querySelector("#laststep");
 
- /*先宣告點擊行為的匿名函式 後續才可以移除監聽*/
-
-    let  clickandAddAdult=function(){
-        selectValue==""?  alertselect(1) : adultCal(1); //先判斷有無選取梯次
-        adultNumber.textContent=adultIndex;
-        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
-        next_step_alert.style.opacity=0;
-    }
-    let  clickandMinusAdult=function(){
-        selectValue==""?  alertselect(1) : adultCal(-1);
-        adultNumber.textContent=adultIndex;
-        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
-        next_step_alert.style.opacity=0;
-    }
-    let  clickandAddChild=function(){
-        selectValue==""?  alertselect(1) : childCal(1);
-        childNumber.textContent=childIndex;
-        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
-        next_step_alert.style.opacity=0;
-    }
-    let  clickandMinusChild=function(){
-        selectValue==""?  alertselect(1) : childCal(-1);
-        childNumber.textContent=childIndex;
-        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
-        next_step_alert.style.opacity=0;
-    }
-    let next_stepFn=function(e){
-        //先判斷有無選取人數
-        e.preventDefault();
-        if(window.innerWidth<=576 && (childIndex==0 && adultIndex==0)){
-            alert("請先選擇人數")
-        }else if( childIndex==0 && adultIndex==0 ){
-            next_step_alert.style.opacity=100;
-        }else{
-            console.log("click");
-            totalNumofPeople= childIndex+adultIndex;
-            info.classList.add("display_block");
-            createNewInput(totalNumofPeople);
-            diet_habit.classList.add("display_block");
-            textarea.classList.add("display_block");
-            nextOrLast.classList.add("display_flex_jtify_sa");
-            selectForm.disabled="disabled";
-            adultPlus.removeEventListener("click",clickandAddAdult);
-            adultMinus.removeEventListener("click",clickandMinusAdult);
-            childPlus.removeEventListener("click",clickandAddChild);
-            childMinus.removeEventListener("click",clickandMinusChild);
-            next_step.removeEventListener("click",next_stepFn); //避免重複點擊
-        }   
-    }
-
+/*-------------------頁面操作行為開始-------------*/
 /*先選擇梯次*/
 
     selectForm.addEventListener("change",function(){
@@ -112,9 +63,70 @@ buy.addEventListener("click",function(e){
 
 /*回到上一步(重新整理)*/
 laststep.addEventListener("click",function(){
-    let redirect=document.querySelector(".navigation>a[href='./shooping.html']")
+    let redirect=document.querySelector(".navigation>a[href='./shopping.html']")
     redirect.click();
 })
+
+
+/*-------------------頁面操作行為結束-------------*/
+
+
+
+/*函式區*/
+
+    function clickandAddAdult(){
+        selectValue==""?  alertselect(1) : adultCal(1); //先判斷有無選取梯次
+        adultNumber.textContent=adultIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+        next_step_alert.style.opacity=0;
+    }
+
+    function clickandMinusAdult(){
+        selectValue==""?  alertselect(1) : adultCal(-1);
+        adultNumber.textContent=adultIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+        next_step_alert.style.opacity=0;
+    }
+
+  function clickandAddChild(){
+        selectValue==""?  alertselect(1) : childCal(1);
+        childNumber.textContent=childIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+        next_step_alert.style.opacity=0;
+    }
+
+   function clickandMinusChild(){
+        selectValue==""?  alertselect(1) : childCal(-1);
+        childNumber.textContent=childIndex;
+        totalPrice.textContent=`TWD${childIndex*300+adultIndex*500}元`;
+        next_step_alert.style.opacity=0;
+    }
+
+    function next_stepFn(e){
+        //先判斷有無選取人數
+        e.preventDefault();
+        if(window.innerWidth<=576 && (childIndex==0 && adultIndex==0)){
+            alert("請先選擇人數")
+        }else if( childIndex==0 && adultIndex==0 ){
+            next_step_alert.style.opacity=100;
+        }else{
+            console.log("click");
+            totalNumofPeople= childIndex+adultIndex;
+            info.classList.add("display_block");
+            createNewInput(totalNumofPeople);
+            diet_habit.classList.add("display_block");
+            textarea.classList.add("display_block");
+            nextOrLast.classList.add("display_flex_jtify_sa");
+            selectForm.disabled="disabled";
+            adultPlus.removeEventListener("click",clickandAddAdult);
+            adultMinus.removeEventListener("click",clickandMinusAdult);
+            childPlus.removeEventListener("click",clickandAddChild);
+            childMinus.removeEventListener("click",clickandMinusChild);
+            next_step.removeEventListener("click",next_stepFn); //避免重複點擊
+        }   
+    }
+
+
 
    
 /*大人或小孩人數計算*/
@@ -148,16 +160,16 @@ function alertselect(arg){
 
 /*新增貼文*/
 function createNewInput(num){
-    console.log(info);
+
     for(let i=num-1;i>=1;i--){
         let info_Content=`
             <div class="info_other_child">
-                <h2>成員${i}</h2>
-                <div>
+                <h4>成員${i}</h4>
+                <div class="info_other_child-div">
                     <label for="mk22_other_name_${i}">姓名</label>
                     <input type="text" name="mk22_other_name_${i}" id="mk22_other_name_${i}" required minlength="2">
                 </div>
-                <div>
+                <div class="info_other_child-div">
                     <label for="other_id_${i}">身分證字號</label>     
                     <input type="password" name="other_id_${i}" placeholder="請輸入身分證字號"id="other_id_${i}" required minlength="10" pattern="^[A-Z]{1}[1-2]{1}[0-9]{8}$" >
                 </div>

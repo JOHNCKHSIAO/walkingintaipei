@@ -83,7 +83,7 @@ h1{
 }
 .item-section-right{
  background-color: #fff;
- /* border:1px solid yellow; */
+  border:1px solid yellow;
  /* box-sizing: border-box; */
  width:400px;
  padding:20px;
