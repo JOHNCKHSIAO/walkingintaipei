@@ -1,0 +1,32 @@
+@import'base/var';
+@import 'base/font';
+@import'component/button';
+@import'mixin/mixin';
+.login-main{
+    box-sizing: border-box;
+    /* padding:5px; */
+    width:1280px;
+    margin:0 auto;
+    background-color:#E0E0E0;
+    /* border:1px solid red; */
+    display:flex;
+    
+}
+.bgimage{
+    width:928px;
+    /* border: 1px solid black; */
+    background-image: url("../image/login/trip-29.jpg");
+    background-size: cover;
+}
+
+.login-section{
+    /* border:1px solid blue; */
+    width:450px;
+    margin-left:auto;
+    padding:30px;
+    background-color:#D6D2C5;
+    .login-section-title{
+        
+    }
+
+}

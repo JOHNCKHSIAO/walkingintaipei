@@ -1,0 +1,154 @@
+@charset "UTF-8";
+html {
+  font-family: "Roboto", sans-serif;
+  /* 預設字體 */
+  font-size: 6.25%;
+}
+
+h1 {
+  font-size: 36rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 28rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 24rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 20rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16rem;
+  line-height: 1.5;
+}
+
+.hyperLinkBtn {
+  width: 180px;
+  height: 40px;
+  background: #FF9105;
+  border-radius: 5px;
+}
+.hyperLinkBtn:hover {
+  transform: scale(1.05);
+}
+.hyperLinkBtn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hyperLinkBtn a p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.otherBtn {
+  width: 180px;
+  height: 40px;
+  background: #FBBC04;
+  border-radius: 5px;
+}
+.otherBtn:hover {
+  transform: scale(1.05);
+}
+.otherBtn p {
+  font-size: 20px;
+  line-height: 2;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+.itemlist-header {
+  width: 1280px;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  background-color: #E0E0E0;
+  position: relative;
+}
+.itemlist-header h1 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 150px;
+  position: relative;
+}
+.itemlist-header h1::before {
+  content: "";
+  display: block;
+  width: 150px;
+  border-bottom: 5px solid #FBBC04;
+  position: absolute;
+  top: 90%;
+  left: 0;
+}
+
+.itemlist-main {
+  box-sizing: border-box;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #E0E0E0;
+  border: 1px solid red;
+  position: relative;
+}
+
+.itemlist-ol {
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  margin-bottom: 30px;
+}
+.itemlist-ol li {
+  width: 330px;
+  /* border:1px solid #C4C4C4; */
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.itemlist-ol li:hover {
+  transform: scale(1.05);
+}
+.itemlist-ol a {
+  text-decoration: none;
+}
+.itemlist-ol img {
+  width: 330px;
+}
+.itemlist-ol h4 {
+  color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.itemlist-ol p {
+  padding: 10px;
+  line-height: 2;
+  color: #4A240C;
+}
+.itemlist-ol div {
+  box-sizing: border-box;
+  font-size: 20px;
+  color: black;
+  padding-right: 25px;
+  text-align: end;
+}
+
+/*# sourceMappingURL=itemlistNew.css.map */
