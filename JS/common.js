@@ -5,7 +5,7 @@
     let searchbarArea=document.querySelector("#searchbararea");
     let searchbarLi=document.querySelector("#searchbarid");
     let hideSearchbar=function(){
-        if(window.innerWidth>576){
+        if(window.innerWidth>992){
             searchbarArea.classList.add("hidesearchbar");
         }
         
@@ -13,8 +13,8 @@
 
     searchbarLi.addEventListener("click",function(e){
         e.stopPropagation();
-        if(window.innerWidth>576){
-            searchbarArea.className="searchbar";
+        if(window.innerWidth>992){
+            searchbarArea.classList.remove("hidesearchbar");
         }
         
     })
@@ -28,7 +28,7 @@
     let gototopdiv=document.querySelector("#gototop");
     /*判斷是否為手機版*/
     if(window.innerWidth<576){
-        gototopdiv.classList.remove("gototopdiv");
+        // gototopdiv.classList.remove("gototopdiv");
         // document.removeEventListener("click",hideSearchbar);  
     }
     /*監測scroll行為*/
@@ -62,10 +62,11 @@
 (function(){
     let hambergericon=document.querySelector(".hambergericon");
     // console.log(hambergericon);
-    let nav_ol_mobile=document.querySelector(".nav-ol");
+    let nav_ol_mobile=document.querySelector("#nav_ol");
     // console.log(nav_ol_mobile);
     let mobile_closenav=document.querySelector("#mobile_closenav");
     hambergericon.addEventListener("click",function(){
+        // nav_ol_mobile.classList.remove("nav-ol");
         nav_ol_mobile.classList.add("nav_ol_mobile");
         setTimeout(function(){
         nav_ol_mobile.classList.add("nav_ol_open");

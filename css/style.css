@@ -88,8 +88,8 @@ p {
 
 .hyperLinkBtn {
   width: 180px;
-  height: 32px;
-  background: #FBBC04;
+  height: 40px;
+  background: #FF9105;
   border-radius: 5px;
 }
 .hyperLinkBtn:hover {
@@ -102,6 +102,7 @@ p {
   height: 100%;
 }
 .hyperLinkBtn a p {
+  font-size: 20px;
   line-height: 2;
   color: #E0E0E0;
   text-align: center;
@@ -109,7 +110,7 @@ p {
 
 .otherBtn {
   width: 180px;
-  height: 32px;
+  height: 40px;
   background: #FBBC04;
   border-radius: 5px;
 }
@@ -117,6 +118,7 @@ p {
   transform: scale(1.05);
 }
 .otherBtn p {
+  font-size: 20px;
   line-height: 2;
   color: #E0E0E0;
   text-align: center;
@@ -130,7 +132,6 @@ body {
   width: auto;
   height: 56px;
   background-color: #fff;
-  /* border: 1px solid green; */
   margin: 0 auto;
   position: sticky;
   top: 0px;
@@ -141,9 +142,6 @@ body {
 .nav .logo-div {
   margin-right: auto;
   /* border: 1px solid black; */
-}
-.nav .logo-div a {
-  /* border:1px solid red; */
 }
 .nav .logo-div img.nav-logo {
   /*logo 的img檔*/
@@ -157,7 +155,6 @@ body {
 }
 .nav .gototopdiv {
   /* display:block; */
-  color: #FBBC04;
   display: none;
   position: fixed;
   bottom: 50px;
@@ -166,9 +163,12 @@ body {
   box-sizing: border-box;
   width: 72px;
   height: 72px;
-  line-height: 4.5;
-  font-size: 20rem;
+  line-height: 3;
+  font-size: 24rem;
   text-align: center;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
   opacity: 60%;
   cursor: pointer;
 }
@@ -184,7 +184,6 @@ body {
 }
 .nav .nav-ol {
   height: 100%;
-  /* margin:0 auto; */
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -213,6 +212,7 @@ body {
   width: 70px;
   text-align: center;
   position: relative;
+  /*click觸發的搜尋bar*/
 }
 .nav .nav-ol .searchbarLi .searchbarlogo {
   position: absolute;
@@ -222,42 +222,41 @@ body {
   width: 30px;
   cursor: pointer;
 }
-.nav .nav-ol .searchbar {
-  box-sizing: border-box;
-  width: 300px;
+.nav .nav-ol .searchbarLi .searchbar {
+  /* border:1px solid black; */
+  width: 350px;
   height: 50px;
   position: absolute;
-  top: 100%;
+  top: 55px;
   right: 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
-  border-radius: 5px;
-  padding-left: 10px;
+  border-radius: 10px;
 }
-.nav .nav-ol .searchbar input {
+.nav .nav-ol .searchbarLi .searchbar input {
   display: inline-block;
   border: 1px solid #E0E0E0;
-  font-family: "Roboto", sans-serif;
-  font-size: 16rem;
-  height: 30px;
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+  font-size: 18px;
+  height: 40px;
   width: 240px;
 }
-.nav .nav-ol .searchbar button {
-  font-family: "Roboto", sans-serif;
-  height: 30px;
+.nav .nav-ol .searchbarLi .searchbar button {
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+  height: 40px;
   width: 60px;
-  font-size: 16rem;
+  font-size: 18px;
   display: inline-block;
   border: 0;
   background-color: #fff;
   cursor: pointer;
 }
-.nav .nav-ol .searchbar .mobile_closenav {
+.nav .nav-ol .searchbarLi .hidesearchbar {
   display: none;
 }
-.nav .nav-ol .hidesearchbar {
+.nav .nav-ol .searchbarLi .mobile_closenav {
   display: none;
 }
 
@@ -304,6 +303,103 @@ body {
   font-size: 12rem;
   position: absolute;
   right: 1%;
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    align-items: center;
+  }
+  .nav .nav-ol {
+    display: none;
+  }
+  .nav .nav_ol_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -60vw;
+    background-color: #FF9105;
+  }
+  .nav .nav_ol_mobile li {
+    width: 100%;
+  }
+  .nav .nav_ol_mobile li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+  }
+  .nav .nav_ol_mobile .searchbarLi {
+    width: 100%;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbarlogo {
+    display: none;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbar {
+    position: static;
+  }
+  .nav .nav_ol_mobile .searchbarLi .hidesearchbar {
+    display: block;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbar_mobile {
+    background-color: #FF9105;
+    margin: 0 auto;
+    display: block;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbar_mobile input {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 70%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbar_mobile button {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    position: static;
+    display: block;
+    height: 36px;
+    width: 30%;
+    border-radius: 5px;
+    margin: 20px auto 20px auto;
+  }
+  .nav .nav_ol_mobile .searchbarLi .searchbar_mobile .mobile_closenav {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .nav .nav_ol_open {
+    transform: translateX(-60vw);
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+  .nav .nav_ol_close {
+    transform: translateX(60vw);
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+  }
+  .nav .hambergericon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .nav .nav_underline {
+    /*首頁以外  選到的要有底線*/
+    border: 0;
+  }
+  .nav .hidesearchbar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

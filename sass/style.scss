@@ -11,7 +11,7 @@ body{
     width:auto;
     height:56px;
     background-color: #fff;
-    /* border: 1px solid green; */
+    // border: 1px solid green;
     margin:0 auto;
     position:sticky;
     top:0px;
@@ -23,7 +23,7 @@ body{
         margin-right:auto;
         /* border: 1px solid black; */
         a{
-            /* border:1px solid red; */
+            // border:1px solid red;
         }
         img.nav-logo{
             /*logo 的img檔*/
@@ -40,7 +40,7 @@ body{
 
     .gototopdiv{
         /* display:block; */
-        color:$orange;
+        
         display:none;
         position:fixed;
         bottom:50px;
@@ -49,10 +49,12 @@ body{
         box-sizing: border-box;
         width:72px;
         height:72px;
-        line-height: 4.5;
-        font-size: 20rem;
+        line-height: 3;
+        font-size: 24rem;
         text-align: center;
-        // background-color: #fff;
+        color:black;
+        background-color: #fff;
+        border-radius: 50%;
         opacity: 60%;
         cursor: pointer;
     }
@@ -72,13 +74,9 @@ body{
  
     .nav-ol{
         height:100%;
-        // width:655px;
-        //  border:1px solid blue; 
-        /* margin:0 auto; */
         display:flex;
         justify-content:flex-end;
         position:relative;
-
         li{
             width:100px;
             // border:1px solid red; 
@@ -108,7 +106,6 @@ body{
             text-align: center;
             position: relative;
             // border:1px solid yellow;
-
             .searchbarlogo{
                 position: absolute;
                 top:50%;
@@ -117,56 +114,54 @@ body{
                 width:30px;
                 cursor: pointer;
             }
-        }
-        
-        .searchbar{
-                //  border:1px solid black; 
-                box-sizing: border-box;
-                width:300px;
+
+            /*click觸發的搜尋bar*/
+
+            .searchbar{
+                /* border:1px solid black; */
+                width:350px;
                 height:50px;
                 position:absolute;
-                top:100%;
+                top:55px;
                 right:0px;
                 display:flex;
                 justify-content: space-around;
                 align-items: center;
                 background-color:#fff;
-                border-radius:5px;
-                padding-left: 10px;
-        
+                border-radius:10px;
+
                 input{
                     display:inline-block;
-                    border:1px solid $white;
-                    font-family:'Roboto', sans-serif;
-                    font-size:16rem;
-                    height:30px;
+                    border:1px solid #E0E0E0;
+                    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體";
+                    font-size:18px;
+                    height:40px;
                     width:240px;
                 }
-        
+
                 button{
-        
-                    font-family:'Roboto', sans-serif;
-                    height:30px;
+                    font-family: 'Noto Sans TC', sans-serif,"微軟正黑體"; 
+                    height:40px;
                     width:60px;
-                    font-size:16rem;
+                    font-size:18px;
                     display:inline-block;
                     border:0;
                     background-color: #fff;
                     cursor: pointer;
                 }
-                .mobile_closenav{
-                    display:none;
-                }
 
-            
             }
+            .searchbar_mobile{
 
+            }
             .hidesearchbar{
                 display:none;
-             }
-
-        
-        
+            }
+            .mobile_closenav{
+                display:none;
+            }
+        }
+       
     }
    
 }
@@ -236,4 +231,125 @@ body{
     }
    
     
+}
+
+
+@media screen and (max-width:992px){
+    .nav{
+        align-items: center;
+        .nav-ol{
+            display:none;
+        }
+        .nav_ol_mobile{
+            display:flex;
+            flex-direction: column;
+            justify-content:start;
+            width:60vw;
+            height:100vh;
+            position:absolute;
+            top:0;
+            right:-60vw;
+            background-color:#FF9105;
+            // border:1px solid blue;
+            li{
+                width:100%;
+              
+                a{
+                    display: block;
+                    text-align: center;
+                    // border:1px solid blue;
+                    width:100%;
+                    color:white;
+                    font-size: 18px;
+                }
+            }
+            
+            .searchbarLi{
+                width:100%;
+                // border:1px solid green;
+                // background-color:#FF9105;
+                
+                .searchbarlogo{
+                    display: none;
+                }
+                .searchbar{
+                    position: static;
+                }
+                .hidesearchbar{
+                    display:block;
+                }
+                .searchbar_mobile{
+                    
+                    background-color:#FF9105;
+                    // padding:5px;
+                    // border:1px solid blue;
+                    margin: 0 auto;
+                    display:block;
+                    input{
+                        display:block;
+                        margin: 0 auto;
+                        border-radius: 5px;  
+                        width:70%;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 20px;
+                        padding-left:5px;
+                    }
+
+                    button{
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 18px;
+                        position: static;
+                        display:block;
+                        height:36px;
+                        width:30%;
+                        border-radius: 5px;
+                        margin:20px auto 20px auto;
+                      
+                    }
+
+                    .mobile_closenav{
+                        display:block;
+                        width:40px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                    }
+
+                }
+                
+               
+            }
+         
+        }
+        .nav_ol_open{
+            transform: translateX(-60vw);
+            transition-duration: .5s;
+            transition-property: all;
+            transition-timing-function: ease;
+        }
+        .nav_ol_close{
+            transform: translateX(60vw);
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease;
+        }
+    
+        .hambergericon{
+            display:block;
+            width:30px;
+            height:30px;
+            margin-right: 20px;
+           
+        }
+        .nav_underline{
+            /*首頁以外  選到的要有底線*/
+            border:0;
+        }
+
+       
+
+    .hidesearchbar{
+        display:none;
+        }
+    }
+   
 }
