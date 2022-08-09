@@ -269,7 +269,7 @@ body {
   padding: 20px;
   background-color: grey;
   position: relative;
-  /* border:1px solid black; */
+  border: 1px solid black;
   display: flex;
   /*版權免責聲明*/
 }
@@ -398,6 +398,11 @@ body {
     border: 0;
   }
   .nav .hidesearchbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer .declare {
     display: none;
   }
 }

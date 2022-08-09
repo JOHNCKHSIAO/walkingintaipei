@@ -180,7 +180,7 @@ body{
     padding:20px;
     background-color: grey;
     position: relative;
-    /* border:1px solid black; */
+    border:1px solid black; 
     display:flex;
     
     .footer-logo-a{
@@ -352,4 +352,11 @@ body{
         }
     }
    
+}
+@media screen and (max-width:768px){
+   .footer{
+    .declare{
+        display:none;
+    }
+   }
 }
