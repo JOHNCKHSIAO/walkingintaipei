@@ -119,7 +119,7 @@ p {
   clip-path: polygon(38% 0, 50% 0, 100% 50%, 50% 100%, 38% 100%, 88% 50%);
   position: absolute;
   top: 48%;
-  left: 97%;
+  right: 1.3%;
   cursor: pointer;
 }
 .mainslide .dots {
@@ -199,10 +199,9 @@ p {
 
 .maintrip-main {
   box-sizing: border-box;
-  padding: 5px;
-  width: 1280px;
+  width: auto;
+  max-width: 1280px;
   margin: 0 auto;
-  /* border:1px solid yellow; */
   background-color: #E0E0E0;
 }
 
@@ -211,13 +210,13 @@ p {
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 40px;
-  width: 400px;
+  width: 360px;
   position: relative;
 }
 .maintrip-main-title::before {
   content: "";
   display: block;
-  width: 400px;
+  width: 360px;
   border-bottom: 5px solid #FBBC04;
   position: absolute;
   top: 90%;
@@ -226,7 +225,7 @@ p {
 
 .main-section {
   box-sizing: border-box;
-  width: 1200px;
+  width: 95%;
   margin: 0 auto;
   margin-top: 30px;
   display: flex;
@@ -236,7 +235,8 @@ p {
 .main-section .postcard {
   box-sizing: border-box;
   background-color: #fff;
-  width: 550px;
+  width: 45%;
+  max-width: 550px;
   height: 360px;
   margin-top: 30px;
   display: flex;
@@ -245,7 +245,6 @@ p {
   /* transform: translate(0,-20px); */
 }
 .main-section .postcard .postcard-left {
-  width: 90px;
   border-right: 5px dashed #D3D3D3;
 }
 .main-section .postcard .postcard-left img {
@@ -257,12 +256,12 @@ p {
   height: 70px;
 }
 .main-section .postcard .postcard-right {
-  /* border:1px solid red; */
   box-sizing: border-box;
+  width: 83%;
 }
 .main-section .postcard .postcard-right P {
   box-sizing: border-box;
-  width: 430px;
+  width: 98%;
   padding: 5px;
   color: #4A240C;
   font-weight: 600;
@@ -272,14 +271,15 @@ p {
 }
 .main-section .postcard .postcard-right span {
   display: block;
-  width: 420px;
+  width: 100%;
   margin-top: 30px;
 }
 .main-section .postcard-pic {
   /*精選旅行的照片*/
   display: block;
   margin-top: 30px;
-  width: 550px;
+  max-width: 550px;
+  width: 45%;
   box-shadow: 3px 3px 3px grey;
   border-radius: 5px;
   /* transform: rotate(1deg); */
@@ -304,13 +304,14 @@ p {
 }
 
 .information {
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 1px;
   border-radius: 5px;
   margin-bottom: 40px;
 }
 .information .information-ol {
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -318,7 +319,7 @@ p {
 }
 .information .information-ol li {
   background-color: #fff;
-  width: 350px;
+  width: 32%;
   box-sizing: border-box;
   padding: 20px;
   margin-top: 20px;
@@ -355,6 +356,258 @@ p {
 .information .joinBtn {
   margin: 0 auto;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .mainslide {
+    /*點點的區塊*/
+  }
+  .mainslide .dots {
+    top: 94%;
+  }
+  .mainslide .title1 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    display: none;
+  }
+  .mainslide .title2 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .mainslide .title3 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+  }
+  .mainslide .title4 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+  }
+  .mainslide .title5 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+
+  .main-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .main-section .postcard {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 550px;
+    height: 360px;
+    margin-top: 30px;
+    display: flex;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px;
+    /* transform: translate(0,-20px); */
+  }
+  .main-section .postcard .postcard-left {
+    width: 90px;
+    border-right: 5px dashed #D3D3D3;
+  }
+  .main-section .postcard .postcard-left img {
+    /*郵票的圖*/
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  .main-section .postcard .postcard-right {
+    /* border:1px solid red; */
+    box-sizing: border-box;
+  }
+  .main-section .postcard .postcard-right P {
+    box-sizing: border-box;
+    width: 430px;
+    padding: 5px;
+    color: #4A240C;
+    font-weight: 600;
+    height: 75px;
+    border-bottom: 3px solid #D3D3D3;
+    vertical-align: bottom;
+  }
+  .main-section .postcard .postcard-right span {
+    display: block;
+    width: 420px;
+    margin-top: 30px;
+  }
+  .main-section .postcard-pic {
+    /*精選旅行的照片*/
+    display: block;
+    margin-top: 30px;
+    width: 550px;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px;
+    /* transform: rotate(1deg); */
+  }
+
+  .main-section :nth-child(1) {
+    order: 1;
+  }
+  .main-section :nth-child(2) {
+    order: 2;
+  }
+  .main-section :nth-child(3) {
+    order: 4;
+  }
+  .main-section :nth-child(4) {
+    order: 3;
+  }
+  .main-section :nth-child(5) {
+    order: 5;
+  }
+  .main-section :nth-child(6) {
+    order: 6;
+  }
+  .main-section :nth-child(7) {
+    order: 8;
+  }
+  .main-section :nth-child(8) {
+    order: 7;
+  }
+  .main-section :nth-child(9) {
+    order: 9;
+  }
+  .main-section :nth-child(10) {
+    order: 10;
+  }
+
+  .information {
+    width: 100%;
+  }
+  .information .information-ol {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information .information-ol li {
+    width: 350px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .information .information-ol .timeline {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .information .information-ol .timeline div {
+    margin-top: 20px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainslide {
+    /*點點的區塊*/
+    /*換圖的動畫*/
+  }
+  .mainslide .dots {
+    top: 94%;
+  }
+  .mainslide .slide-left-btn {
+    width: 24px;
+    height: 40px;
+  }
+  .mainslide .slide-right-btn {
+    width: 24px;
+    height: 40px;
+  }
+  .mainslide .title1 {
+    font-size: 22px;
+    top: 75%;
+    left: 10%;
+    display: none;
+  }
+  .mainslide .title2 {
+    font-size: 22px;
+    top: 30%;
+    left: 10%;
+  }
+  .mainslide .title3 {
+    font-size: 22px;
+    top: 20%;
+    left: 60%;
+  }
+  .mainslide .title4 {
+    font-size: 22px;
+    top: 15%;
+    left: 55%;
+  }
+  .mainslide .title5 {
+    font-size: 22px;
+    top: 80%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-section {
+    width: 100%;
+  }
+  .main-section .postcard {
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 98%;
+    height: 300px;
+    /* transform: translate(0,-20px); */
+  }
+  .main-section .postcard .postcard-left {
+    width: 20%;
+    min-width: 60px;
+    border-right: 5px dashed #D3D3D3;
+    height: auto;
+  }
+  .main-section .postcard .postcard-left img {
+    /*郵票的圖*/
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 70px;
+    width: 95%;
+  }
+  .main-section .postcard .postcard-right {
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    height: auto;
+  }
+  .main-section .postcard .postcard-right P {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 0px;
+    padding-left: 5px;
+    color: #4A240C;
+    font-weight: 600;
+    height: auto;
+    font-size: 16px;
+  }
+  .main-section .postcard .postcard-right span {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=maintripNew.css.map */
