@@ -74,24 +74,25 @@ p {
 }
 
 .customized-header {
-  width: 1280px;
-  box-sizing: border-box;
-  padding: 5px;
+  width: auto;
   margin: 0 auto;
+  max-width: 1280px;
+  box-sizing: border-box;
   /* border:1px solid blue; */
   background-color: #E0E0E0;
   position: relative;
 }
-.customized-header h1 {
-  width: 150px;
+.customized-header .customized-title {
+  width: 140px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 40px;
   position: relative;
 }
-.customized-header h1::before {
+.customized-header .customized-title::before {
   content: "";
   display: block;
-  width: 150px;
+  width: 140px;
   border-bottom: 5px solid #FBBC04;
   position: absolute;
   top: 90%;
@@ -99,50 +100,34 @@ p {
 }
 
 .customized-header-section {
-  width: 100%;
+  width: auto;
 }
 
 .header-ol {
+  width: 92%;
+  margin: 0 auto;
   box-sizing: border-box;
-  /* border:1px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .header-ol li {
   box-sizing: border-box;
-  width: 600px;
+  width: 560px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  /* padding:30px; */
-}
-.header-ol li .outline {
-  /*圓形裝飾外框*/
-  /* border:2px solid red; */
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  background: linear-gradient(#e66465, #9198e5);
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #D6D2C5;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+  padding: 10px;
 }
 .header-ol li .header-pic {
-  width: 300px;
-  height: 300px;
+  display: block;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  margin: 20px;
-  background-size: cover;
-}
-.header-ol li .pic1 {
-  background-image: url("../image/customized/top_1.jpg");
-}
-.header-ol li .pic2 {
-  background-image: url("../image/customized/top_2.jpg");
-}
-.header-ol li .pic3 {
-  background-image: url("../image/customized/top_3.jpg");
-}
-.header-ol li .pic4 {
-  background-image: url("../image/customized/top_4.jpg");
 }
 .header-ol li .header-text {
   /*介紹文字部分*/
@@ -173,8 +158,8 @@ p {
 
 .customized-main {
   box-sizing: border-box;
-  padding: 5px;
-  width: 1280px;
+  width: auto;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #E0E0E0;
   /* border:1px solid red; */
@@ -197,8 +182,10 @@ p {
 }
 
 .main-ol {
-  width: 1100px;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -206,9 +193,14 @@ p {
 }
 .main-ol li {
   box-sizing: border-box;
-  width: 540px;
+  width: 48%;
   margin-bottom: 50px;
-  width: px;
+}
+.main-ol li img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
 }
 .main-ol h3 {
   width: 140px;
@@ -233,12 +225,6 @@ p {
   font-weight: 600;
   /* border:1px solid red; */
 }
-.main-ol img {
-  display: block;
-  width: 540px;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px grey;
-}
 
 .intro {
   width: 350px;
@@ -252,6 +238,7 @@ p {
 
 .middle {
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .icon1 {
@@ -264,15 +251,165 @@ p {
 .icon2 {
   width: 100px;
   position: absolute;
-  left: 250px;
-  bottom: 230px;
+  left: 10%;
+  bottom: 15%;
 }
 
 .icon3 {
-  width: 100px;
+  width: 80px;
   position: absolute;
-  left: 1200px;
+  right: 10%;
   bottom: 100px;
 }
 
-/*# sourceMappingURL=customizedNew.css.map */
+@media screen and (max-width: 992px) {
+  .main-ol {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* justify-content:space-between; */
+  }
+  .main-ol li {
+    box-sizing: border-box;
+    width: 470px;
+    margin-bottom: 50px;
+  }
+  .main-ol li img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px grey;
+  }
+  .main-ol h3 {
+    width: 140px;
+    text-indent: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .main-ol h3::before {
+    content: "";
+    display: block;
+    height: 30px;
+    border-left: 5px solid #FBBC04;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+  }
+  .main-ol p {
+    line-height: 2;
+    color: #4A240C;
+    margin-top: 10px;
+    font-weight: 600;
+    /* border:1px solid red; */
+  }
+
+  .main-ol :nth-child(1) {
+    order: 1;
+  }
+  .main-ol :nth-child(2) {
+    order: 2;
+  }
+  .main-ol :nth-child(3) {
+    order: 4;
+  }
+  .main-ol :nth-child(4) {
+    order: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon1 {
+    width: 60px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon2 {
+    display: none;
+  }
+
+  .icon3 {
+    width: 60px;
+    right: 1%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-ol {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .header-ol li {
+    box-sizing: border-box;
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #D6D2C5;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    padding: 10px;
+  }
+  .header-ol li .header-pic {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .header-ol li .header-text {
+    /*介紹文字部分*/
+    width: 245px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .header-ol li .header-text h3 {
+    text-indent: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .header-ol li .header-text h3::before {
+    content: "";
+    display: block;
+    height: 30px;
+    border-left: 5px solid #FBBC04;
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+  .header-ol li .header-text p {
+    width: 100%;
+    line-height: 2;
+    color: #4A240C;
+    font-weight: 600;
+  }
+
+  .main-ol {
+    padding: 10px;
+    /* justify-content:space-between; */
+  }
+  .main-ol li {
+    box-sizing: border-box;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .icon3 {
+    display: none;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=customizedNeW.css.map */

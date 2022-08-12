@@ -608,6 +608,14 @@ p {
     width: 100%;
     margin-top: 30px;
   }
+  .main-section .postcard-pic {
+    /*精選旅行的照片*/
+    display: block;
+    width: 98%;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px;
+    /* transform: rotate(1deg); */
+  }
 }
 
 /*# sourceMappingURL=maintripNew.css.map */
