@@ -74,7 +74,8 @@ p {
 }
 
 .shopping-header {
-  width: 1280px;
+  width: auto;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #E0E0E0;
   padding-top: 5px;
@@ -82,7 +83,6 @@ p {
 }
 
 .navigation {
-  /* border:1px solid blue; */
   margin-left: 50px;
   margin-top: 10px;
 }
@@ -111,18 +111,20 @@ p {
 
 .shopping-main {
   box-sizing: border-box;
-  width: 1280px;
+  width: auto;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #E0E0E0;
 }
 
 .form-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border: 2px solid gold;
   border-radius: 5px;
   background-color: #fff;
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 10px;
@@ -134,8 +136,10 @@ p {
 /*左側選擇的商品欄位*/
 .selected {
   box-sizing: border-box;
-  width: 310px;
+  width: 25%;
+  min-width: 315px;
   height: 350px;
+  margin: 0 auto;
   padding: 5px;
 }
 .selected img {
@@ -151,8 +155,9 @@ p {
 }
 
 .shopping-form {
+  margin: 0 auto;
   border: 2px dashed grey;
-  width: 900px;
+  width: 73%;
   position: relative;
   padding: 5px;
 }
@@ -209,9 +214,8 @@ p {
   text-align: center;
 }
 .shopping-form .number .child-number {
-  /* border:1px solid yellow; */
   margin-top: 10px;
-  width: 700px;
+  width: 100%;
 }
 .shopping-form .number .child-number span {
   display: inline-block;
@@ -249,7 +253,8 @@ p {
   text-align: center;
 }
 .shopping-form .price-div {
-  width: 700px;
+  width: 75%;
+  max-width: 700px;
   height: 100px;
   padding-left: 20px;
   padding-right: 20px;
@@ -417,6 +422,70 @@ p {
 .shopping-form .display_flex_jtify_sa {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+  .form-container {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selected {
+    width: 315px;
+    height: 350px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .shopping-form {
+    padding: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shopping-form {
+    margin: 0 auto;
+    border: 2px dashed grey;
+    width: 95%;
+    position: relative;
+    padding: 5px;
+  }
+  .shopping-form .time {
+    width: 100%;
+  }
+  .shopping-form .time label {
+    font-size: 20px;
+  }
+  .shopping-form .time select {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .shopping-form .time option {
+    font-size: 20px;
+  }
+  .shopping-form .number {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .shopping-form .number .adult-number {
+    width: 100%;
+  }
+  .shopping-form .number .child-number {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .shopping-form .number .child-number:nth-child(2) {
+    margin-left: 0px;
+  }
+  .shopping-form .price-div {
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=shoppingNew.css.map */

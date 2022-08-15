@@ -5,10 +5,11 @@
 .login-main{
     box-sizing: border-box;
     /* padding:5px; */
-    width:1280px;
+    max-width:1280px;
+    width:auto;
     margin:0 auto;
     background-color:#E0E0E0;
-    /* border:1px solid red; */
+    // border:1px solid red;
     display:flex;
     
 }
@@ -201,4 +202,256 @@
         color:red;
       }
     }
+}
+@media screen and (max-width:992px) {
+    
+    .bgimage{
+        width:928px;
+        /* border: 1px solid black; */
+        background-image: url("../image/login/trip-29.jpg");
+        background-size: cover;
+    }
+
+    .login-section{
+        // border:1px solid blue;
+        width:380px;
+       
+        .use-soclialmedia{
+            // border:1px solid red;
+           
+            span{
+                
+                &::before{
+                    width:100px;
+                }
+                &::after{
+                    width:100px;
+                }
+            }
+        }
+        .socialmeedia-btn-container{
+            
+            button{
+                width:180px;
+                height:50px;
+            }
+        }
+    
+        .use-email{
+            // border:1px solid red;
+            box-sizing: border-box;
+            width:380px;
+           
+            span{
+                
+                &::before{
+
+                    width:100px;
+                }
+                &::after{
+                    width:100px;
+                }
+            }
+        }
+    
+    }
+
+    .newuser-formplace{
+        width:100%;
+        .form-ol{
+            width:100%;
+            // border: 1px solid red;
+            li{
+                padding-top:10px;
+                padding-bottom:10px;
+                width:100%;
+                box-sizing: border-box;
+                margin-top:10px;
+                // border:1px solid black;
+            }
+    
+            input{
+                width:100%;
+            }
+        
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .login-section{
+        // border:1px solid blue;
+        width:350px;
+       
+        .use-soclialmedia{
+            // border:1px solid red;
+           
+            span{
+                
+                &::before{
+                    width:90px;
+                }
+                &::after{
+                    width:90px;
+                }
+            }
+        }
+        .socialmeedia-btn-container{
+            
+            button{
+                width:170px;
+                height:50px;
+            }
+        }
+    
+        .use-email{
+            // border:1px solid red;
+            box-sizing: border-box;
+            width:350px;
+           
+            span{
+                
+                &::before{
+
+                    width:90px;
+                }
+                &::after{
+                    width:90px;
+                }
+            }
+        }
+    
+    }
+
+    .newuser-formplace{
+        width:100%;
+        .form-ol{
+            width:100%;
+            // border: 1px solid red;
+            li{
+                padding-top:10px;
+                padding-bottom:10px;
+                width:100%;
+                box-sizing: border-box;
+                margin-top:10px;
+                // border:1px solid black;
+            }
+    
+            input{
+                width:100%;
+            }
+
+            
+        
+        }
+        #createnew-btn{
+            width:160px;
+            height: 50px;
+            line-height: 2.5;
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .login-main{
+        background-color:#D6D2C5;;
+    }
+    .bgimage{
+       display:none;
+    }
+
+    .login-section{
+        // border:1px solid blue;
+        width:330px;
+        margin:0 auto;
+        padding:5px;
+       
+        .login-section-title{
+            font-size: 28px;
+        }        
+        .use-soclialmedia{
+            // border:1px solid red;
+           
+            span{
+                font-size: 20px;
+                &::before{
+                    top:15px;
+                    width:90px;
+                }
+                &::after{
+                    top:15px;
+                    width:90px;
+                }
+            }
+        }
+        .socialmeedia-btn-container{
+            // border:1px solid green;
+            flex-wrap: wrap;
+            
+            button{
+                width:160px;
+                height:50px;
+            }
+
+            #facebook-signup-btn{
+                background-color:#3b5998;
+                color:white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;  
+            }
+
+            #google-signup-btn{
+                font-size: 16px;
+            }
+
+        }
+    
+        .use-email{
+            // border:1px solid red;
+            box-sizing: border-box;
+            width:100%;
+           
+            span{
+                font-size: 20px;
+                &::before{
+
+                    width:90px;
+                }
+                &::after{
+                    width:90px;
+                }
+            }
+        }
+    
+    }
+
+    .newuser-formplace{
+        width:100%;
+        .form-ol{
+            width:100%;
+            // border: 1px solid red;
+            li{
+                padding-top:10px;
+                padding-bottom:10px;
+                width:100%;
+                box-sizing: border-box;
+                margin-top:10px;
+                // border:1px solid black;
+            }
+    
+            input{
+                width:100%;
+            }
+
+            
+        
+        }
+        #createnew-btn{
+            width:160px;
+            height: 50px;
+            line-height: 2.5;
+        }
+    }
+
 }

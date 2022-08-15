@@ -4,15 +4,16 @@
 @import'mixin/mixin';
 
 .shopping-header{
-    width:1280px;
+    width:auto;
+    max-width:1280px;
     margin:0 auto;
     background-color: #E0E0E0;
     padding-top: 5px;
     padding-bottom: 5px;
-    //  border:1px solid blue;
+    // border:1px solid blue;
 }
 .navigation{
-    /* border:1px solid blue; */
+    // border:1px solid blue;
     margin-left:50px;
     margin-top: 10px;
     a{
@@ -38,7 +39,8 @@
 
 .shopping-main{
     box-sizing: border-box;
-    width:1280px;
+    width:auto;
+    max-width:1280px;
     margin:0 auto;
     background-color:#E0E0E0;
     // border:1px solid red;
@@ -46,11 +48,12 @@
 
 .form-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border:2px solid gold;
     border-radius: 5px;
     background-color: #fff;
-    width:1280px;
+    width:100%;
     margin:0 auto;
     margin-bottom: 50px;
     padding:10px;
@@ -63,8 +66,10 @@
 .selected{
     box-sizing: border-box;
     // border:1px solid grey;
-    width:310px;
+    width:25%;
+    min-width: 315px;
     height:350px;
+    margin: 0 auto;
     padding:5px;
     img{
         width:300px;
@@ -81,11 +86,10 @@
   
 }
 
-
-
 .shopping-form{ 
+    margin:0 auto;
     border:2px dashed grey;
-    width:900px;
+    width:73%;
     position:relative;
     padding: 5px;
     .time{
@@ -150,9 +154,9 @@
             
         }
         .child-number{
-            /* border:1px solid yellow; */
+            // border:1px solid yellow;
             margin-top:10px;
-            width:700px;
+            width:100%;
             span{
                 // border:1px solid red;
                 display:inline-block;
@@ -195,7 +199,8 @@
     }
 
     .price-div{
-        width:700px;
+        width:75%;
+        max-width:700px;
         height:100px;
         padding-left:20px;
         padding-right: 20px;
@@ -413,6 +418,94 @@
     .display_flex_jtify_sa{
         display:flex;
         justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+    .form-container{
+        width:100%;
+        box-sizing: border-box;
+        border:0;
+        flex-direction: column;
+        align-items: center;
+        // border:1px solid red;
+    }
+
+    .selected{
+       
+        // border:1px solid blue;
+        width: 315px;
+        height:350px;
+        margin-bottom: 20px;
+        padding:5px;
+    }
+    
+    .shopping-form{ 
+        padding:0;
+        width:85%; 
+        // border:1px solid navy;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .shopping-form{ 
+        margin:0 auto;
+        border:2px dashed grey;
+        width:95%;
+        position:relative;
+        padding: 5px;
+        .time{
+            width:100%;
+            // border:1px solid blue;
+            // margin-top:20px;
+            label{
+                font-size: 20px;
+            }
+            select{
+                display:inline-block;
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            option{
+                font-size: 20px;
+            }
+        
+        }
+        .number{
+            width:100%;
+            // border:1px solid blue;
+            margin-top:20px;
+    
+            .adult-number{
+                // border:1px solid yellow;
+                width:100%;
+                
+            }
+            .child-number{
+                // border:1px solid yellow;
+                margin-top:10px;
+                width:100%;
+                span{
+                    // border:1px solid red;
+                  
+                }
+               
+                &:nth-child(2){
+                    margin-left: 0px;
+                }
+                
+            }
+    
+        
+        }
+    
+        .price-div{
+            width:90%;
+            padding-left:0px;
+            padding-right:0px;
+            // border:1px solid green;
+        }   
     }
     
 }

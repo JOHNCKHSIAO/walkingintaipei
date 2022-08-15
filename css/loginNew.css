@@ -76,10 +76,10 @@ p {
 .login-main {
   box-sizing: border-box;
   /* padding:5px; */
-  width: 1280px;
+  max-width: 1280px;
+  width: auto;
   margin: 0 auto;
   background-color: #E0E0E0;
-  /* border:1px solid red; */
   display: flex;
 }
 
@@ -256,6 +256,183 @@ p {
   font-size: 20px;
   margin-left: 20px;
   color: red;
+}
+
+@media screen and (max-width: 992px) {
+  .bgimage {
+    width: 928px;
+    /* border: 1px solid black; */
+    background-image: url("../image/login/trip-29.jpg");
+    background-size: cover;
+  }
+
+  .login-section {
+    width: 380px;
+  }
+  .login-section .use-soclialmedia span::before {
+    width: 100px;
+  }
+  .login-section .use-soclialmedia span::after {
+    width: 100px;
+  }
+  .login-section .socialmeedia-btn-container button {
+    width: 180px;
+    height: 50px;
+  }
+  .login-section .use-email {
+    box-sizing: border-box;
+    width: 380px;
+  }
+  .login-section .use-email span::before {
+    width: 100px;
+  }
+  .login-section .use-email span::after {
+    width: 100px;
+  }
+
+  .newuser-formplace {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .newuser-formplace .form-ol input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-section {
+    width: 350px;
+  }
+  .login-section .use-soclialmedia span::before {
+    width: 90px;
+  }
+  .login-section .use-soclialmedia span::after {
+    width: 90px;
+  }
+  .login-section .socialmeedia-btn-container button {
+    width: 170px;
+    height: 50px;
+  }
+  .login-section .use-email {
+    box-sizing: border-box;
+    width: 350px;
+  }
+  .login-section .use-email span::before {
+    width: 90px;
+  }
+  .login-section .use-email span::after {
+    width: 90px;
+  }
+
+  .newuser-formplace {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .newuser-formplace .form-ol input {
+    width: 100%;
+  }
+  .newuser-formplace #createnew-btn {
+    width: 160px;
+    height: 50px;
+    line-height: 2.5;
+  }
+}
+@media screen and (max-width: 576px) {
+  .login-main {
+    background-color: #D6D2C5;
+  }
+
+  .bgimage {
+    display: none;
+  }
+
+  .login-section {
+    width: 330px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  .login-section .login-section-title {
+    font-size: 28px;
+  }
+  .login-section .use-soclialmedia span {
+    font-size: 20px;
+  }
+  .login-section .use-soclialmedia span::before {
+    top: 15px;
+    width: 90px;
+  }
+  .login-section .use-soclialmedia span::after {
+    top: 15px;
+    width: 90px;
+  }
+  .login-section .socialmeedia-btn-container {
+    flex-wrap: wrap;
+  }
+  .login-section .socialmeedia-btn-container button {
+    width: 160px;
+    height: 50px;
+  }
+  .login-section .socialmeedia-btn-container #facebook-signup-btn {
+    background-color: #3b5998;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  .login-section .socialmeedia-btn-container #google-signup-btn {
+    font-size: 16px;
+  }
+  .login-section .use-email {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .login-section .use-email span {
+    font-size: 20px;
+  }
+  .login-section .use-email span::before {
+    width: 90px;
+  }
+  .login-section .use-email span::after {
+    width: 90px;
+  }
+
+  .newuser-formplace {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol {
+    width: 100%;
+  }
+  .newuser-formplace .form-ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .newuser-formplace .form-ol input {
+    width: 100%;
+  }
+  .newuser-formplace #createnew-btn {
+    width: 160px;
+    height: 50px;
+    line-height: 2.5;
+  }
 }
 
 /*# sourceMappingURL=loginNew.css.map */
