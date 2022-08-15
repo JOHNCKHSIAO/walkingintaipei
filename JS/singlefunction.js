@@ -147,3 +147,49 @@ export function copyURL(){
 
     })
 }
+
+/*這是走走小計收合側邊欄的功能*/
+export function blogListSideToggle(){
+    const bloglistAsideOringin = document.querySelector('#bloglistAsideOringin');
+    const bloglistAsideRwd = document.querySelector('#bloglistAsideRwd');
+    const xbtn = document.querySelector('#xbtn');
+    // window.addEventListener('resize',()=>{
+
+    //     if(window.innerWidth <= 1025){
+    //         bloglistAsideOringin.classList.add('display-none');
+    //         bloglistAsideRwd.classList.remove('display-none');
+    //     }else{
+    //         bloglistAsideOringin.classList.remove('display-none');
+    //         bloglistAsideOringin.className = 'bloglist-aside';
+    //         bloglistAsideRwd.classList.add('display-none');
+
+    //     } 
+    // })
+
+        bloglistAsideRwd.addEventListener('click',(e)=>{
+            e.stopPropagation();
+            // bloglistAsideRwd.classList.add('opacity-zero');
+            bloglistAsideRwd.classList.add('display-none');
+            bloglistAsideOringin.classList.remove('forRWD');
+            bloglistAsideOringin.classList.remove('close-aside');
+            bloglistAsideOringin.classList.add('show-aside');
+            window.setTimeout(()=>{
+            bloglistAsideOringin.classList.add('show-aside-animate');
+            },0)
+        })
+        xbtn.addEventListener("click",(e)=>{
+            e.stopPropagation();
+            if(window.innerWidth <= 1025){
+            bloglistAsideOringin.classList.add('close-aside');
+            window.setTimeout(()=>{
+                bloglistAsideRwd.classList.remove('display-none');
+                bloglistAsideOringin.classList.add('forRWD');
+                bloglistAsideOringin.classList.remove('show-aside');
+                bloglistAsideOringin.classList.remove('show-aside-animate');
+            },500)
+            }
+        })
+
+   
+
+}

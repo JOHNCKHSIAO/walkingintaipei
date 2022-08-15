@@ -54,7 +54,7 @@
     </nav>
     <main class="bloglist-main">
         <div class="bloglist-main-div">
-            <aside class="bloglist-aside"> <!--側邊導覽列--->
+            <aside class="bloglist-aside forRWD" id="bloglistAsideOringin"> <!--側邊導覽列--->
                 <ol>
                     <li><h4>文章分類<h4></li>
                     <li>
@@ -70,14 +70,18 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./bloglist.html">
+                        <a href="#">
                             <img src="./image/blog/article.png" alt="">
                             <span id="all_article">所有文章(6)</span>
                         </a>
                     </li>
+                    <div class="sideclose"><i class="fa-solid fa-circle-xmark" id="xbtn"></i><div></div>
                 </ol>
 
             </aside>
+            <div class="bloglist-aside-rwd" id="bloglistAsideRwd">
+                文章分類
+            </div>
             <section class="blogcontent-section">
                 <div id="fb-root"></div>
                 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v13.0" nonce="mkDgJtPc"></script>
@@ -161,8 +165,9 @@
 
     <script src="./JS/common.js"></script>
     <script type="module">
-        import {copyURL} from './JS/singlefunction.js'
+        import {copyURL,blogListSideToggle} from './JS/singlefunction.js'
         copyURL();
+        blogListSideToggle();
     </script>
   
 </body>

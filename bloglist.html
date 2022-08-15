@@ -10,7 +10,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bloglistNew.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />           
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <nav class="nav">
@@ -46,7 +47,7 @@
 
     <main class="bloglist-main">
         <div class="bloglist-main-div">
-            <aside class="bloglist-aside"> <!--側邊導覽列--->
+            <aside class="bloglist-aside forRWD" id="bloglistAsideOringin"> <!--側邊導覽列--->
                 <ol>
                     <li><h4>文章分類<h4></li>
                     <li>
@@ -62,57 +63,66 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./bloglist.html">
+                        <a href="#">
                             <img src="./image/blog/article.png" alt="">
                             <span id="all_article">所有文章(6)</span>
                         </a>
                     </li>
+                   <div class="sideclose"><i class="fa-solid fa-circle-xmark" id="xbtn"></i><div>
                 </ol>
-
+                
             </aside>
+            <div class="bloglist-aside-rwd" id="bloglistAsideRwd">
+                文章分類
+            </div>
             <section class="bloglist-section">
-                <div><h1 class=bloglist-section-title>走走小記</h1></div>
+                <h1 class=bloglist-section-title>走走小記</h1>
                 <p>這裡紀錄我們的旅行跟各地的風景</p>
                 <ol class="bloglist-ol">
                     <li class="culture">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list1.jpg" alt="">
-                            <p>文化記事:青山宮與台北大拜拜</p>
+                            <p class="article-title">文化記事:</p>
+                            <p>青山宮與台北大拜拜</p>
                         </a>
                     </li>
                     <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list2.jpg" alt="">
-                            <p>旅行紀錄:3/23(二)陽明山健行一日遊~</p>
+                            <p class="article-title">旅行紀錄:</p>
+                            <p>3/23(二)陽明山健行一日遊~</p>
                         </a>
                     </li>
                     <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list3.jpg" alt="">
-                            <p>旅行紀錄:3/23(二)政大—貓空健走紀錄</p>
+                            <p class="article-title">旅行紀錄</p>
+                            <p>:3/23(二)政大—貓空健走紀錄</p>
                         </a>
                     </li>
     
                     <li class="travel-note">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list4.jpg" alt="">
-                            <p>旅行紀錄:3/24(三)陽明山一日散步</p>
+                            <p class="article-title">旅行紀錄:</p>
+                            <p>3/24(三)陽明山一日散步</p>
                         </a>
                     </li>
                     <li class="culture">
                         <a href="./blogcontent.html">
                             <img src="./image/blog/list5.jpg" alt="">
-                            <p>文化記事:隱藏在貓空山裡的優人神鼓</p>
+                            <p class="article-title">文化記事:</p>
+                            <p>隱藏在貓空山裡的優人神鼓</p>
                         </a>
                     </li>
                     <li class="travel-note"> 
                         <a href="">
                             <img src="./image/blog/list6.jpg" alt="">
-                            <p>旅行紀錄:3/25(四)銀河洞健行</p>
+                            <p class="article-title">旅行紀錄:</p>
+                            <p>3/25(四)銀河洞健行</p>
                         </a>
                     </li>
                 </ol>
-
             </section>
 
         </div>
@@ -140,8 +150,9 @@
 
     <script src="./JS/common.js"></script>
     <script type="module">
-        import {blogListFilter} from './JS/singlefunction.js'
+        import {blogListFilter,blogListSideToggle} from './JS/singlefunction.js'
         blogListFilter();
+        blogListSideToggle();
     </script>  
 </body>
 </html>
